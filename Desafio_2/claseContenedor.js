@@ -43,7 +43,7 @@ class Contenedor {
         try {
             const products = await this.#viewFile()
             let productWithId = products.find(item => item.id === id)
-            if(productWithId.length){
+            if(productWithId){
                 return productWithId
             }else{
                 throw Error = "No existe un producto con este id.\n"
@@ -67,13 +67,34 @@ class Contenedor {
     }
         
     deleteById = async id => { //void  =>  Elimina del archivo el objeto con el id buscado.
-
+        try {
+            const products = await this.#viewFile()
+            let productWithId = products.find(item => item.id === id)
+            if(productWithId){
+                let productsWhitoutIdItem = products.filter(item => item.id !== id )
+                await fs.promises.writeFile(this.fileRoute,
+                                            JSON.stringify([...productsWhitoutIdItem], null, 4))
+                
+                console.log("Producto eliminado con éxito")
+            }else{
+                throw Error = "No existe un producto con este id.\n"
+            }
+        } catch (error) {
+            console.log(error)
+        }
     } 
     
-    deleteAll = async () => { // void  =>  Elimina todos los objetos presentes en el archivo.
-
+    deleteAll = async () => { 
+        try {
+            const products = await this.#viewFile()
+            if(products.length){
+                await fs.promises.writeFile(this.fileRoute, '[]' ,'utf8') 
+            }
+            console.log("Producto eliminado con éxito")
+        } catch (error) {
+            console.error('El archivo no se pudo grabar ', error)
+        }
     }        
-        
 }
 
 module.exports = Contenedor
