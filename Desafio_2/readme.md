@@ -8,7 +8,7 @@
 + deleteById(Number): void  =>  ***Elimina del archivo el objeto con el id buscado.***
 + deleteAll(): void  =>  ***Elimina todos los objetos presentes en el archivo.***
 
-*** *Sugerencia: usar un archivo para la clase y otro de test, que la importe.***
+***Sugerencia: usar un archivo para la clase y otro de test, que la importe.**
 
 ### Aspectos a incluir en el entregable:
 + El método save incorporará al producto un id numérico, que deberá ser siempre uno más que el id 

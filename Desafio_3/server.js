@@ -4,7 +4,8 @@ const app = express()
 
 const productos = new Contenedor('./productos.json');
 app.get('/', async (req, res) => {
-    res.send(`<h1 style="color:red;">Desafío 3 - Clase 6</h1>`)
+    const message = 'Bienvenido al desafío 3 del curso de backend de CoderHouse'
+    res.send(`<h1 style="color:red;">${message}</h1>`)
 }) 
 
 app.get('/productos', async (req, res) => {

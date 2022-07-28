@@ -1,6 +1,6 @@
-const fs = require('fs')
+import fs from 'fs'
 
-class Contenedor {
+export default class Contenedor {
     constructor(fileRoute){
         this.fileRoute = fileRoute
     }
@@ -10,7 +10,7 @@ class Contenedor {
         try {
             items = await fs.promises.readFile(this.fileRoute, 'utf-8');
         } catch (error) {
-            console.log(error)
+            console.log(`Ha ocurrido el siguiente error: ${error}`)
         }
         if(items === '') items = '[]';
         return (JSON.parse(items))
@@ -22,10 +22,8 @@ class Contenedor {
             if(products.length){ 
                 /*Si ya existen productos en el fichero, estos se deben mantener y agregar los nuevos*/
                 await fs.promises.writeFile(this.fileRoute,
-                                            JSON.stringify([...products,
-                                                           {...objData, id: products.length + 1}],
-                                                           null, 4),
-                                            'utf-8')
+                    JSON.stringify([...products, {...objData, id: products.length + 1}], null, 4),
+                    'utf-8')
 
                 return products.length + 1
             }else{
@@ -36,7 +34,7 @@ class Contenedor {
                 return 1
             }
         } catch (error) {
-            console.log(`Ha ocurrido el siguiente error: ${error}`)
+            throw `Ha ocurrido el siguiente error: ${error}`
         }          
     }
     getById = async id => { 
@@ -49,7 +47,7 @@ class Contenedor {
                 throw Error = "No existe un producto con este id.\n"
             }
         } catch (error) {
-            return error
+            throw `Ha ocurrido el siguiente error: ${error}\n`
         }
     } 
 
@@ -62,11 +60,11 @@ class Contenedor {
                 throw Error = "No hay productos cargados.\n"
             }
         } catch (error) {
-            return error
+            throw `Ha ocurrido el siguiente error: ${error}\n`
         }
     }
         
-    deleteById = async id => { //void  =>  Elimina del archivo el objeto con el id buscado.
+    deleteById = async id => { 
         try {
             const products = await this.#viewFile()
             let productWithId = products.find(item => item.id === id)
@@ -74,13 +72,11 @@ class Contenedor {
                 let productsWhitoutIdItem = products.filter(item => item.id !== id )
                 await fs.promises.writeFile(this.fileRoute,
                                             JSON.stringify([...productsWhitoutIdItem], null, 4))
-                
-                console.log("Producto eliminado con éxito")
             }else{
                 throw Error = "No existe un producto con este id.\n"
             }
         } catch (error) {
-            console.log(error)
+            throw `Ha ocurrido el siguiente error: ${error}\n`
         }
     } 
     
@@ -88,13 +84,10 @@ class Contenedor {
         try {
             const products = await this.#viewFile()
             if(products.length){
-                await fs.promises.writeFile(this.fileRoute, '[]' ,'utf8') 
+                await fs.promises.writeFile(this.fileRoute, JSON.stringify([], null, 4))
             }
-            console.log("Producto eliminado con éxito")
         } catch (error) {
-            console.error('El archivo no se pudo grabar ', error)
+            throw `El archivo no se pudo grabar: ${error}\n`
         }
     }        
 }
-
-module.exports = Contenedor
