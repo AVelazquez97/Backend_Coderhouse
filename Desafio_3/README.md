@@ -10,4 +10,3 @@ los productos disponibles
 ### anterior para acceder a los datos persistidos del servidor.
 
 ***Sugerencia: Antes de iniciar el servidor, colocar en el archivo 'productos.txt' tres productos como en el ejemplo del desafío anterior**
-
