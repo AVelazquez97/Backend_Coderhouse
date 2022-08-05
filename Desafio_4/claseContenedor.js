@@ -100,11 +100,28 @@ class Contenedor {
                 const product = await this.getById(randomId)
                 return product
             }else{
-                return { error : 'No se encontraron productos' }
+                return { msg : 'No se encontraron productos' }
             }
         } catch (error) {
             throw `${error}`
         }
+    }
+
+    updateProduct = async objData => {
+        try {
+            let products = await this.#viewFile()
+            const productIndex = products.findIndex(product => product.id === objData.id)
+            if(productIndex !== -1){ 
+                products[productIndex] = objData
+                await fs.promises.writeFile(this.fileRoute, JSON.stringify(products, null, 4), 'utf-8')
+
+                return { msg : `El producto con el id ${objData.id} fue actualizado con éxito` }
+            }else{
+                return { error : 'El producto con el id indicado no existe' }
+            }
+        } catch (error) {
+            throw `${error}`
+        }          
     }
 }
 

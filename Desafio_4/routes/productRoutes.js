@@ -55,9 +55,25 @@ productRouter.post('/', async (req, res) => {
 
 // Ruta que recibe y actualiza un producto según su id.***
 productRouter.put('/:id', async (req, res) => {
-    const {id} = req.params
-    const {product} = req.body
-    res.json({})
+    let {id} = req.params
+    id = parseInt(id)
+    let {title, price, thumbnail} = req.body
+    if(!isNaN(id)){
+        if(title && price && thumbnail){
+            //si los tres campos del form están completos, se procede a ingresar el producto
+            price = parseFloat(price)
+            try {
+                const respuesta = await productos.updateProduct({title, price, thumbnail, id})
+                res.json(respuesta)
+            } catch (error) {
+                res.json({error})
+            }
+        }else{
+            res.json( {error:"Algunos campos quedaron vacíos. Intenta nuevamente."} )
+        }
+    } else{
+        res.json( {error:"El parámetro no es un número"} )
+    }  
 })
 
 // Ruta que elimina un producto según su id
@@ -77,10 +93,3 @@ productRouter.delete('/:id', async (req, res) => {
 })
 
 module.exports = productRouter
-
-// const {pos} = req.params
-
-// //se elimina la palabra que se encuentre en la pos indicada, y se almacena como string para su posterior uso
-// const eliminada = words.splice(pos-1, 1).join('') 
-// frase = words.map(palabra => palabra).join(' ') //luego se convierte el array a un string nuevamente
-// res.json({status: "ok", eliminada})
