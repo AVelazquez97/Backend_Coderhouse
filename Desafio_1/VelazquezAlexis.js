@@ -29,9 +29,7 @@ class Usuario{
     }
    
     getBookNames(){
-        const bookNames = this.libros.map(function(nombre) {
-            return nombre.nombreLibro;
-        });
+        const bookNames = this.libros.map(nombre => nombre.nombreLibro)
         return bookNames
     }
 }
