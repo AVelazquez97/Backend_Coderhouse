@@ -6,21 +6,21 @@ class Contenedor {
     }
     
     #viewFile = async () => {
-        let items = [];
+        let products = []
         try {
-            items = await fs.promises.readFile(this.fileRoute, 'utf-8');
+            products = await fs.promises.readFile(this.fileRoute, 'utf-8');
+            if(products === '') products = '[]'
         } catch (error) {
-            console.log(error)
+            return []
         }
-        if(items === '') items = '[]';
-        return (JSON.parse(items))
+        return (JSON.parse(products))
     }
 
     save = async objData => {
         try {
             const products = await this.#viewFile()
             if(products.length){ 
-                /*Si ya existen productos en el fichero, estos se deben mantener y agregar los nuevos*/
+                /*Si ya existen productos en el fichero, estos se deben mantener y agregar el nuevo*/
                 await fs.promises.writeFile(this.fileRoute,
                     JSON.stringify([...products, {...objData, id: products.length + 1}], null, 4),
                     'utf-8')
@@ -72,7 +72,7 @@ class Contenedor {
                 let productsWhitoutIdItem = products.filter(item => item.id !== id )
                 await fs.promises.writeFile(this.fileRoute,
                                             JSON.stringify([...productsWhitoutIdItem], null, 4))
-                return { exito : 'El producto fue eliminado' }
+                return { msg : 'El producto fue eliminado' }
             }else{
                 return { error : 'Producto no encontrado' }
             }
@@ -100,7 +100,7 @@ class Contenedor {
                 const product = await this.getById(randomId)
                 return product
             }else{
-                return { msg : 'No se encontraron productos' }
+                return { error : 'No se encontraron productos' }
             }
         } catch (error) {
             throw `${error}`
