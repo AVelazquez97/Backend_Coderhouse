@@ -4,6 +4,12 @@ const app = express()
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+app.use(express.static('public'))
+
+/* ----------------------------- engine settings ---------------------------- */
+app.set("view engine", "ejs");
+/* ----------------------------- --------------- ---------------------------- */
+
 routes(app)
 
 const PORT = process.env.PORT || 8080
