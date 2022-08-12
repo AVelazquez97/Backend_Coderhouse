@@ -1,5 +1,4 @@
 const express =  require('express')
-const handlebars = require('express-handlebars')
 const routes = require("./routes/index")
 const app = express() 
 
