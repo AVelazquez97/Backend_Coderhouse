@@ -8,15 +8,13 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.static('public'))
 
 /* ----------------------------- engine settings ---------------------------- */
-
 app.engine(
-    "hbs",
-    handlebars({
-        extname: ".hbs",
-        defaultLayout: 'index.hbs',
+    'hbs', 
+    handlebars.engine({
+        extname: '.hbs',  
+        defaultLayout: 'index.hbs' ,
     })
-);
-app.engine('handlebars', engine());
+)
 app.set("view engine", "hbs");
 app.set("views", "./views");
 

@@ -4,7 +4,7 @@ const { Router } = express
 const productRouter = Router()
 
 const Contenedor = require('../claseContenedor.js')
-const productos = new Contenedor('../productos.json')
+const productos = new Contenedor('./productos.json')
 
 
 /* -------------------------------- Productos ------------------------------- */
@@ -18,7 +18,9 @@ productRouter.get('/', async (req, res) => {
             hayProductos: products.length
         });
     } catch (error) {
-        res.json({error})
+        res.render("vista", {
+            error
+        });
     }
 })
 

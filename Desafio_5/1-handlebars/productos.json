@@ -2,7 +2,7 @@
     {
         "title": "Pantalón",
         "price": 150,
-        "thumbnail": "https://listado.mercadolibre.com.uy/pantalon-cargo",
+        "thumbnail": "https://cdn4.iconfinder.com/data/icons/clothes-195/64/JEAN-denim-garment-trouser-jeans-128.png",
         "id": 1
     },
     {
@@ -16,17 +16,5 @@
         "price": 345.67,
         "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/globe-earth-geograhy-planet-school-256.png",
         "id": 3
-    },
-    {
-        "title": "Ropa2",
-        "price": 55.5,
-        "thumbnail": "https://www.ambientum.com/ambientum/residuos/ideas-combatir-microplasticos-ropa.asp",
-        "id": 5
-    },
-    {
-        "title": "Campera",
-        "price": 500.5,
-        "thumbnail": "https://www.mvdsport.uy/shop/indumentaria-2/buzos-y-camperas/camperon-givova-giubbotto-olanda/",
-        "id": 6
     }
 ]
