@@ -1,0 +1,29 @@
+body{
+    background-color: #eef4ed;
+}
+
+h1 {
+    color: #0b2545;
+}
+
+label {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.btn-send-product {
+    color: #eef4ed;
+    background-color: #134074;
+    border-color: #134074;
+}
+
+.btn-view-products {
+    color: #eef4ed;
+    background-color: #0b2545;
+    border-color: #0b2545;
+}
+
+.jumbotron {
+    background-color: #8da9c4;
+    min-height: 90vh;
+}
