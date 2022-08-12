@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Pantalón",
+        "price": 150,
+        "thumbnail": "https://cdn4.iconfinder.com/data/icons/clothes-195/64/JEAN-denim-garment-trouser-jeans-128.png",
+        "id": 1
+    },
+    {
+        "title": "Calculadora",
+        "price": 234.56,
+        "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-256.png",
+        "id": 2
+    },
+    {
+        "title": "Globo Terráqueo",
+        "price": 345.67,
+        "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/globe-earth-geograhy-planet-school-256.png",
+        "id": 3
+    },
+    {
+        "title": "Sombrero Rosa",
+        "price": 250,
+        "thumbnail": "https://cdn3.iconfinder.com/data/icons/summer-vol-1-6/512/summer_set-15-128.png",
+        "id": 4
+    }
+]

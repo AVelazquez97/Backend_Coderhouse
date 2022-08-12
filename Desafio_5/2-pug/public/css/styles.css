@@ -1,0 +1,42 @@
+body{
+    background-color: #eef4ed;
+}
+
+.jumbotron {
+    background-color: #8da9c4;
+    min-height: 90vh;
+}
+
+h1 {
+    color: #0b2545;
+}
+
+label {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.btn-send-product,
+.btn-back-to-insert {
+    color: #eef4ed;
+    background-color: #134074;
+    border-color: #134074;
+}
+
+.btn-view-products {
+    color: #eef4ed;
+    background-color: #0b2545;
+    border-color: #0b2545;
+}
+
+.table td,
+.table th {
+    border-radius: 0.3rem;
+    vertical-align: middle;
+    border: 1px solid;
+    border-color: #8da9c4;
+}
+
+hr {
+    background-color: #eef4ed;
+}
