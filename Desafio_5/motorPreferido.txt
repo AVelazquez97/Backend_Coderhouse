@@ -1,0 +1,7 @@
+Teniendo que elegir por uno solo, iría por pug. Ya que la sintáxis es bastante limpia y 
+es relativamente fácil de configurar. Además se asemeja bastante al lenguaje python por el tema de la indentación.
+
+Por otra parte, ejs tiene lo suyo. Está muy bueno que te obligue a definir el directorio "views" ya que te fuerza a 
+modularizar los proyectos y llevar una cierta estructura. 
+
+Definitivamente handlebars no lo usaría bajo ningún concepto.
