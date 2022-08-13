@@ -4,10 +4,10 @@ body{
 
 .jumbotron {
     background-color: #8da9c4;
-    min-height: 90vh;
+    min-height: 85vh;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     color: #0b2545;
 }
 

@@ -22,5 +22,11 @@
         "price": 500,
         "thumbnail": "https://cdn3.iconfinder.com/data/icons/restaurant-146/128/a-14-128.png",
         "id": 4
+    },
+    {
+        "title": "Zapatillas nike",
+        "price": 500.6,
+        "thumbnail": "https://cdn0.iconfinder.com/data/icons/running-with-iwatch/128/1-04-2-128.png",
+        "id": 5
     }
 ]
