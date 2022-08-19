@@ -1,26 +1,44 @@
 [
     {
         "autor": "alexisvelazquez2012@gmail.com",
-        "texto": "Hola!",
+        "msg": "Hola!",
         "fyh": "18/8/2022, 22:28:36",
         "id": 1
     },
     {
-        "autor": "sadasd",
-        "texto": "sadasd",
-        "fyh": "18/8/2022, 23:26:51",
-        "id": 2
-    },
-    {
         "autor": "roberto@gmail.com",
-        "texto": "Hola!",
+        "msg": "Hola!",
         "fyh": "18/8/2022, 23:50:52",
         "id": 3
     },
     {
-        "autor": "asdasd",
-        "texto": "asdasdsad",
-        "fyh": "18/8/2022, 23:52:26",
+        "autor": "alexisvelazquez2012@gmail.com",
+        "msg": "Qué onda?",
+        "fyh": "18/8/2022, 23:59:39",
+        "id": 3
+    },
+    {
+        "autor": "juan@gmail.com",
+        "msg": "Hola chicos!",
+        "fyh": "19/8/2022, 00:02:55",
         "id": 4
+    },
+    {
+        "autor": "pedro",
+        "msg": "Hoy es un lindo día!",
+        "fyh": "19/8/2022, 00:21:28",
+        "id": 5
+    },
+    {
+        "autor": "asdasd",
+        "msg": "asdasd",
+        "fyh": "19/8/2022, 00:23:48",
+        "id": 6
+    },
+    {
+        "autor": "Juan",
+        "msg": "Hola!",
+        "fyh": "19/8/2022, 00:37:23",
+        "id": 7
     }
 ]

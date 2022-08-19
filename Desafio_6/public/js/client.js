@@ -36,34 +36,30 @@ const addMessageForm = document.getElementById('addMessageForm')
 addMessageForm.addEventListener('submit', evt => {
     evt.preventDefault()
 
-    const msg = { autor: inputUsername.value, texto: inputMessage.value }
-    socket.emit('new-message', msg);
+    const msg = { autor: inputUsername.value, msg: inputMessage.value }
+    socket.emit('new-message', msg)
     addMessageForm.reset()
     inputMessage.focus()
+    inputUsername.value = ""
 })
 
-socket.on('view-messages', mensajes => {
-    const html = makeHtmlList(mensajes)
-    document.getElementById('message-list').innerHTML = html
+socket.on('view-messages', messages => {
+    makeHtmlList(messages).then(html => document.getElementById('message-list').innerHTML = html)
 })
 
-function makeHtmlList(mensajes) {
-    return mensajes.map(mensaje => {
-        return (`
-            <div>
-                <b style="color:blue;">${mensaje.autor}</b>
-                [<span style="color:brown;">${mensaje.fyh}</span>] :
-                <i style="color:green;">${mensaje.texto}</i>
-            </div>
-        `)
-    }).join(" ");
+async function makeHtmlList(messages) {
+    const res = await fetch('templates/viewMessages.hbs')
+    let template = await res.text()
+    template = Handlebars.compile(template)
+    const html = template({ messages })
+    return html
 }
 
 inputUsername.addEventListener('input', () => {
-    const hayEmail = inputUsername.value.length
+    const existEmail = inputUsername.value.length
     const hayTexto = inputMessage.value.length
-    inputMessage.disabled = !hayEmail
-    btnSend.disabled = !hayEmail || !hayTexto
+    inputMessage.disabled = !existEmail
+    btnSend.disabled = !existEmail || !hayTexto
 })
 
 inputMessage.addEventListener('input', () => {

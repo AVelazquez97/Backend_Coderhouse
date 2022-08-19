@@ -36,3 +36,17 @@ label {
 hr {
     background-color: #eef4ed;
 }
+
+/* Estilos de viewMessages.hbs */
+b{
+    color:blue;
+}
+
+span{
+    color:brown;
+}
+
+i{
+    color:green;
+}
+
