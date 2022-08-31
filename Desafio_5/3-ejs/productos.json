@@ -28,5 +28,17 @@
         "price": 500.6,
         "thumbnail": "https://cdn0.iconfinder.com/data/icons/running-with-iwatch/128/1-04-2-128.png",
         "id": 5
+    },
+    {
+        "title": "Zapato",
+        "price": 200.4,
+        "thumbnail": "https://www.google.com",
+        "id": 6
+    },
+    {
+        "title": "Yerba baldo",
+        "price": 200,
+        "thumbnail": "https://tiendacdn.farmashop.com.uy/media/catalog/product/cache/509ffcfb512056e813c9070a614fbf77/7/6/76606_10.jpg",
+        "id": 7
     }
 ]
