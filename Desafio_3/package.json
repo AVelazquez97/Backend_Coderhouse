@@ -4,13 +4,13 @@
     "express": "^4.18.1"
   },
   "name": "desafio_3",
-  "description": "",
+  "description": "Desarrollo de un servidor con expressJS y una api restful con dos rutas definidas.",
   "version": "1.0.0",
   "main": "server.js",
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js" 
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",

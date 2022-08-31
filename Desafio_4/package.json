@@ -1,11 +1,11 @@
 {
   "name": "desafio_4",
   "version": "1.0.0",
-  "description": "Servidor basado en NodeJS y ExpressJS que ofrece una API RESTful",
+  "description": "Servidor basado en NodeJS y ExpressJS que ofrece una API RESTful completa",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",

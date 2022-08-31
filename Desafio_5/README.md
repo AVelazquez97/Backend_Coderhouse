@@ -27,9 +27,20 @@ imagen)
 + Utilizar bootstrap para maquetar la vista creada por dicho motor de plantillas y el 
 formulario de ingreso de productos.
 
+* * *
 
-***IMPORTANTE:**
+# *IMPORTANTE:
 
-Recordar que es necesario instalar las dependencias posicionandose en el directorio raíz (desafio_5)
+Recordar que se deben instalar las dependencias posicionandose en el directorio raíz (desafio_5)
 
-Para la ejecución de cada proyecto con diferente motor de plantillas, es necesario posicionarse en el respectivo directorio.
+Luego, estando en el directorio del desafío 5, para poder ejecutar cada proyecto con diferente motor de plantillas es necesario posicionarse en el respectivo directorio como se puede apreciar a continuación:
+
+1. **Handlebars:** ``` cd 1-handlebars ```
+
+2. **Pug:** ``` cd 2-pug ```
+
+3. **EJS:** ``` cd 3-ejs ```
+
+Por último, independientemente del motor de plantillas seleccionado, se deberá iniciar el server con la siguiente orden:
+
+``` node server.js ```

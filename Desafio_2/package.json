@@ -2,10 +2,11 @@
   "type": "module",
   "name": "desafio_2",
   "version": "1.0.0",
-  "description": "+ save(Object): Number  =>  ***Recibe un objeto, lo guarda en el archivo, devuelve el id asignado.*** + getById(Number): Object  =>  ***Recibe un id y devuelve el objeto con ese id, o null si no está.*** + getAll(): Object[]  =>  ***Devuelve un array con los objetos presentes en el archivo.*** + deleteById(Number): void  =>  ***Elimina del archivo el objeto con el id buscado.*** + deleteAll(): void  =>  ***Elimina todos los objetos presentes en el archivo.***",
+  "description": "Desarrollo de una clase que sirve para trabajar con ficheros externos (simulando crud)",
   "main": "claseContenedor.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "start": "node test.js"
   },
   "keywords": [],
   "author": "",
