@@ -1,13 +1,13 @@
 {{#if messages.length}}
-<div class="table-responsive">
+  <div class='table-responsive'>
     {{#each messages}}
-    <div>
+      <div>
         <b>{{this.autor}}</b>
         [<span>{{this.fyh}}</span>] :
         <i>{{this.msg}}</i>
-    </div>
+      </div>
     {{/each}}
-</div>
+  </div>
 {{else}}
-    <h3 class="alert alert-warning mt-2">{{messages.error}}</h3>
+  <h3 class='alert alert-warning mt-2'>{{messages.error}}</h3>
 {{/if}}

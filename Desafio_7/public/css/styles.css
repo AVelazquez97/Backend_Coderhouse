@@ -1,52 +1,56 @@
-body{
-    background-color: #eef4ed;
+body {
+  background-color: #eef4ed;
 }
 
 .jumbotron {
-    background-color: #8da9c4;
+  background-color: #8da9c4;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #0b2545;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0b2545;
 }
 
 label {
-    font-weight: bold;
-    font-style: italic;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .btn-send-product,
 .btn-send-message {
-    color: #eef4ed;
-    background-color: #134074;
-    border-color: #134074;
+  color: #eef4ed;
+  background-color: #134074;
+  border-color: #134074;
 }
 
-.table-responsive{
-    border-radius: 5px;
+.table-responsive {
+  border-radius: 5px;
 }
 
 .table tr,
 .table td,
 .table th {
-    vertical-align: middle;
-    border-radius: 5px;
+  vertical-align: middle;
+  border-radius: 5px;
 }
 
 hr {
-    background-color: #eef4ed;
+  background-color: #eef4ed;
 }
 
 /* Estilos de viewMessages.hbs */
-b{
-    color:blue;
+b {
+  color: blue;
 }
 
-span{
-    color:brown;
+span {
+  color: brown;
 }
 
-i{
-    color:green;
+i {
+  color: green;
 }
-
