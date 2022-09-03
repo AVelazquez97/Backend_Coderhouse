@@ -12,22 +12,22 @@ const Sockets = (io) => {
     console.log(`\nUn cliente con el id: [${socket.id}] se ha conectado.`);
 
     // carga inicial de productos
-    socket.emit('view-products', await productsApi.getAll());
+    socket.emit('view-products', await productsApi.readProducts());
 
     // actualizacion de productos
     socket.on('update-product', async (product) => {
-      const productId = await productsApi.save(product);
-      io.sockets.emit('view-products', await productsApi.getAll());
+      const productId = await productsApi.insertProduct(product);
+      io.sockets.emit('view-products', await productsApi.readProducts());
     });
 
     // carga inicial de mensajes
-    socket.emit('view-messages', await messagesApi.getAllMessages());
+    socket.emit('view-messages', await messagesApi.readMsgs());
 
     // actualizacion de mensajes
     socket.on('new-message', async (msg) => {
       msg.fyh = new Date().toLocaleString();
-      await messagesApi.save(msg);
-      io.sockets.emit('view-messages', await messagesApi.getAllMessages());
+      await messagesApi.insertMsg(msg);
+      io.sockets.emit('view-messages', await messagesApi.readMsgs());
     });
 
     socket.on('disconnect', (_) => {

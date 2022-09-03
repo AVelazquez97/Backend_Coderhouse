@@ -1,5 +1,7 @@
 import knex from 'knex';
 import createTable from '../utils/createTableMsgs.js';
+import insertNewElement from '../utils/insertElement.js';
+import readAllElements from '../utils/readElements.js';
 
 class msgContainer {
   constructor(dbConfigs, tableName) {
@@ -19,45 +21,27 @@ class msgContainer {
     }
   };
 
-  save = async (msgData) => {
-    // try {
-    //   const messages = await this.#viewFile();
-    //   if (messages.length) {
-    //     /*Si ya existen mensajes en el fichero, estos se deben mantener y agregar el nuevo*/
-    //     await fs.promises.writeFile(
-    //       this.fileRoute,
-    //       JSON.stringify(
-    //         [...messages, { ...msgData, id: messages.length + 1 }],
-    //         null,
-    //         4
-    //       ),
-    //       'utf-8'
-    //     );
-    //     return messages.length + 1;
-    //   } else {
-    //     await fs.promises.writeFile(
-    //       this.fileRoute,
-    //       JSON.stringify([{ ...msgData, id: 1 }], null, 4),
-    //       'utf-8'
-    //     );
-    //     return 1;
-    //   }
-    // } catch (error) {
-    //   throw `${error}`;
-    // }
+  insertMsg = async (msgData) => {
+    try {
+      insertNewElement(this.config, this.tableName, msgData);
+      console.log(
+        `El mensage fue insertado correctamente en la base de datos.`
+      );
+    } catch (error) {
+      throw `${error}`;
+    }
   };
 
-  getAllMessages = async () => {
-    //   try {
-    //     const messages = await this.#viewFile();
-    //     if (messages.length) {
-    //       return messages;
-    //     } else {
-    //       return { error: 'No se encontraron mensajes' };
-    //     }
-    //   } catch (error) {
-    //     throw `${error}`;
-    //   }
+  readMsgs = async () => {
+    try {
+      const messages = await readAllElements(this.config, this.tableName);
+      if (!messages.length) {
+        return 'No se encontraron mensajes en la base de datos.';
+      }
+      return messages;
+    } catch (error) {
+      throw `${error}`;
+    }
   };
 }
 

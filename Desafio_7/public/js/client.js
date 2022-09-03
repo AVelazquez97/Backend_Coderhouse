@@ -1,6 +1,10 @@
 const socket = io.connect();
 
 /* ---------------------------- products section ---------------------------- */
+const inputName = document.getElementById('nombre');
+const inputPrice = document.getElementById('precio');
+const inputThumbnail = document.getElementById('foto');
+const btnSendProduct = document.getElementById('btnSendProduct');
 const addProductForm = document.getElementById('addProductForm');
 
 addProductForm.addEventListener('submit', (evt) => {
@@ -27,6 +31,19 @@ async function makeHtmlTable(products) {
   const html = template({ products });
   return html;
 }
+
+inputName.addEventListener('input', () => {
+  const existName = inputName.value.length;
+  const existPrice = inputPrice.value.length;
+  inputPrice.disabled = !existName;
+  btnSendProduct.disabled = !existName || !existPrice;
+});
+
+inputPrice.addEventListener('input', () => {
+  const existPrice = inputPrice.value.length;
+  inputThumbnail.disabled = !existPrice;
+  btnSendProduct.disabled = !existPrice;
+});
 
 /* ---------------------------- messages section ---------------------------- */
 
@@ -61,12 +78,12 @@ async function makeHtmlList(messages) {
 
 inputUsername.addEventListener('input', () => {
   const existEmail = inputUsername.value.length;
-  const hayTexto = inputMessage.value.length;
+  const existText = inputMessage.value.length;
   inputMessage.disabled = !existEmail;
-  btnSend.disabled = !existEmail || !hayTexto;
+  btnSend.disabled = !existEmail || !existText;
 });
 
 inputMessage.addEventListener('input', () => {
-  const hayTexto = inputMessage.value.length;
-  btnSend.disabled = !hayTexto;
+  const existText = inputMessage.value.length;
+  btnSend.disabled = !existText;
 });
