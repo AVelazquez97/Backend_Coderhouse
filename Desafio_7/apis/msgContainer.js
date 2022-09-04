@@ -3,7 +3,7 @@ import createTable from '../utils/createTableMsgs.js';
 import insertNewElement from '../utils/insertElement.js';
 import readAllElements from '../utils/readElements.js';
 
-class msgContainer {
+class MsgContainer {
   constructor(dbConfigs, tableName) {
     this.db = knex(dbConfigs);
     this.config = dbConfigs;
@@ -45,4 +45,4 @@ class msgContainer {
   };
 }
 
-export default msgContainer;
+export default MsgContainer;

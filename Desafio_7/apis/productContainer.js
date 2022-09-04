@@ -3,7 +3,7 @@ import createTable from '../utils/createTableProducts.js';
 import insertNewElement from '../utils/insertElement.js';
 import readAllElements from '../utils/readElements.js';
 
-class productContainer {
+class ProductContainer {
   constructor(dbConfigs, tableName) {
     this.db = knex(dbConfigs);
     this.config = dbConfigs;
@@ -41,4 +41,4 @@ class productContainer {
     }
   };
 }
-export default productContainer;
+export default ProductContainer;

@@ -1,11 +1,11 @@
-import productContainer from './apis/productContainer.js';
-import msgContainer from './apis/msgContainer.js';
+import ProductContainer from './apis/productContainer.js';
+import MsgContainer from './apis/msgContainer.js';
 
 import option from './databases/configMariaDB.js';
 import config from './databases/configSQLiteDB.js';
 
-const productsApi = new productContainer(option, 'products');
-const messagesApi = new msgContainer(config, 'messages');
+const productsApi = new ProductContainer(option, 'products');
+const messagesApi = new MsgContainer(config, 'messages');
 
 const Sockets = (io) => {
   io.on('connection', async (socket) => {
