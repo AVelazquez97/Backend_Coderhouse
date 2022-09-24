@@ -33,7 +33,7 @@ class ProductContainer {
     try {
       const products = await readAllElements(this.config, this.tableName);
       if (!products.length) {
-        return 'No se encontraron productos en la base de datos.';
+        throw 'No se encontraron productos en la base de datos.';
       }
       return products;
     } catch (error) {

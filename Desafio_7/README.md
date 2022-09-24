@@ -1,4 +1,4 @@
-# Desafío 7 - Websocket + MySQL + SQLite
+# Desafío 7 - NUESTRA PRIMERA BASE DE DATOS
 
 ## Consigna: Tomando como base las clases Contenedor en memoria y en archivos, desarrollar un nuevo contenedor con idénticos métodos pero que funcione sobre bases de datos, utilizando Knex para la conexión. Esta clase debe recibir en su constructor el objeto de configuración de Knex y el nombre de la tabla sobre la cual trabajará. Luego, modificar el desafío entregable de la clase 12 ”Chat con Websocket”, y: 
 
