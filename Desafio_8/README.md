@@ -1,4 +1,4 @@
-# Desafío 8 - MongoDB
+# Desafío 8 - MONGODB
 
 ## Consigna: Utilizando Mongo Shell, crear una base de datos llamada ecommerce que contenga dos colecciones:
 
