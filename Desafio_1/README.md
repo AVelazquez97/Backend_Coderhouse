@@ -1,4 +1,6 @@
-# Consigna:
+# Desafío 1 - CLASES
+
+## Consigna:
 ### 1) Declarar una clase Usuario
 
 ### 2) Hacer que Usuario cuente con los siguientes atributos:
