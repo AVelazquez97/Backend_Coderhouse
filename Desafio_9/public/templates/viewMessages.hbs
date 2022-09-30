@@ -2,9 +2,10 @@
   <div class='table-responsive'>
     {{#each messages}}
       <div>
-        <b>{{this.autor}}</b>
+        <b>{{this.email}}</b>
         [<span>{{this.fyh}}</span>] :
         <i>{{this.msg}}</i>
+        <img width='50' src={{this.avatar}} alt='Image not found' />
       </div>
     {{/each}}
   </div>

@@ -1,18 +1,18 @@
 const socket = io.connect();
 
 /* ---------------------------- products section ---------------------------- */
-const inputName = document.getElementById('nombre');
-const inputPrice = document.getElementById('precio');
-const inputThumbnail = document.getElementById('foto');
+const inputTitle = document.getElementById('inputTitle');
+const inputPrice = document.getElementById('inputPrice');
+const inputThumbnail = document.getElementById('inputThumbnail');
 const btnSendProduct = document.getElementById('btnSendProduct');
 const addProductForm = document.getElementById('addProductForm');
 
 addProductForm.addEventListener('submit', (evt) => {
   evt.preventDefault();
   const product = {
-    title: addProductForm[0].value,
-    price: addProductForm[1].value,
-    thumbnail: addProductForm[2].value,
+    title: inputTitle.value,
+    price: inputPrice.value,
+    thumbnail: inputThumbnail.value,
   };
   socket.emit('update-product', product);
   addProductForm.reset();
@@ -30,10 +30,10 @@ const makeHtmlTable = async (products) => {
   template = Handlebars.compile(template);
   const html = template({ products });
   return html;
-}
+};
 
-inputName.addEventListener('input', () => {
-  const existName = inputName.value.length;
+inputTitle.addEventListener('input', () => {
+  const existName = inputTitle.value.length;
   const existPrice = inputPrice.value.length;
   inputPrice.disabled = !existName;
   btnSendProduct.disabled = !existName || !existPrice;
@@ -47,23 +47,63 @@ inputPrice.addEventListener('input', () => {
 
 /* ---------------------------- messages section ---------------------------- */
 
-const inputUsername = document.getElementById('inputUsername');
+/* ----------------------------- denormalization ---------------------------- */
+const schemaAuthor = new normalizr.schema.Entity('author', {}, { idAttribute: 'id' });
+const schemaMsg = new normalizr.schema.Entity('post', { author: schemaAuthor }, { idAttribute: '_id' })
+const schemaMessages = new normalizr.schema.Entity('posts', { messages: [schemaMsg] }, { idAttribute: 'id' })
+/* ----------------------------------------------------------------------------- */
+
+const inputEmail = document.getElementById('inputEmail');
+const inputFirstName = document.getElementById('inputFirstName');
+const inputLastName = document.getElementById('inputLastName');
+const inputAge = document.getElementById('inputAge');
+const inputNickName = document.getElementById('inputNickName');
+const inputUrlAvatar = document.getElementById('inputUrlAvatar');
 const inputMessage = document.getElementById('inputMessage');
 const btnSend = document.getElementById('btnSend');
 const addMessageForm = document.getElementById('addMessageForm');
 
 addMessageForm.addEventListener('submit', (evt) => {
   evt.preventDefault();
-
-  const msg = { autor: inputUsername.value, msg: inputMessage.value };
-  socket.emit('new-message', msg);
+  const message = {
+    author: {
+      email: inputEmail.value,
+      firstName: inputFirstName.value,
+      lastName: inputLastName.value,
+      age: inputAge.value,
+      nickName: inputNickName.value,
+      avatar: inputUrlAvatar.value,
+    },
+    msg: inputMessage.value,
+  };
+  socket.emit('new-message', message);
   addMessageForm.reset();
   inputMessage.focus();
-  inputUsername.value = '';
+  inputEmail.value = '';
 });
 
 socket.on('view-messages', (messages) => {
-  makeHtmlList(messages).then(
+  const messagesSize = JSON.stringify(messages).length;
+  console.log(messages, messagesSize);
+
+  const denormalizedMessages = normalizr.denormalize(
+    messages.result,
+    schemaMessages,
+    messages.entities
+  );
+
+  const denormalizedMessagesSize = JSON.stringify(denormalizedMessages).length;
+  console.log(denormalizedMessages, denormalizedMessagesSize);
+
+  let compressionPercentage = parseInt(
+    (messagesSize * 100) / denormalizedMessagesSize
+  );
+
+  console.log(`Porcentaje de compresión ${compressionPercentage}%`);
+  document.getElementById('compression-info').innerText = compressionPercentage;
+
+  console.log(denormalizedMessages.messages);
+  makeHtmlList(denormalizedMessages.messages).then(
     (html) => (document.getElementById('message-list').innerHTML = html)
   );
 });
@@ -74,10 +114,10 @@ const makeHtmlList = async (messages) => {
   template = Handlebars.compile(template);
   const html = template({ messages });
   return html;
-}
+};
 
-inputUsername.addEventListener('input', () => {
-  const existEmail = inputUsername.value.length;
+inputEmail.addEventListener('input', () => {
+  const existEmail = inputEmail.value.length;
   const existText = inputMessage.value.length;
   inputMessage.disabled = !existEmail;
   btnSend.disabled = !existEmail || !existText;
@@ -87,17 +127,3 @@ inputMessage.addEventListener('input', () => {
   const existText = inputMessage.value.length;
   btnSend.disabled = !existText;
 });
-
-/*
-{
-  author: {
-    id: 'mail del usuario' ,
-    name: 'nombre del usuario' ,
-    lastName: 'apellido del usuario',
-    age: 'edad del usuario',
-    nick: 'alias del usuario',
-    avatar: 'url avatar (foto, logo) del usuario'
-  },
-  msg: 'mensaje del usuario'
-}
-*/

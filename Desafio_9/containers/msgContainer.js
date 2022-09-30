@@ -14,7 +14,7 @@ class MsgContainer {
   #existTable = async () => {
     try {
       if (!(await this.db.schema.hasTable(this.tableName))) {
-        createTable(this.config, this.tableName);
+        await createTable(this.config, this.tableName);
       }
     } catch (error) {
       throw error;
@@ -23,7 +23,22 @@ class MsgContainer {
 
   insertMsg = async (msgData) => {
     try {
-      insertNewElement(this.config, this.tableName, msgData);
+      const { email, firstName, lastName, age, nickName, avatar } =
+        msgData.author;
+      const msg = msgData.msg;
+      const fyh = msgData.fyh;
+
+      const data = {
+        email,
+        firstName,
+        lastName,
+        age,
+        nickName,
+        avatar,
+        msg,
+        fyh,
+      };
+      await insertNewElement(this.config, this.tableName, data);
     } catch (error) {
       throw `${error}`;
     }
@@ -31,10 +46,7 @@ class MsgContainer {
 
   readMsgs = async () => {
     try {
-      const messages = await readAllElements(this.config, this.tableName);
-      if (!messages.length) {
-        return 'No se encontraron mensajes en la base de datos.';
-      }
+      let messages = await readAllElements(this.config, this.tableName);
       return messages;
     } catch (error) {
       throw `${error}`;

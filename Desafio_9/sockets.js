@@ -4,6 +4,8 @@ import MsgContainer from './containers/msgContainer.js';
 import option from './databases/configMariaDB.js';
 import config from './databases/configSQLiteDB.js';
 
+import normalizeMessages from './normalizer/normalizeMessages.js'
+
 const productsApi = new ProductContainer(option, 'products');
 const messagesApi = new MsgContainer(config, 'messages');
 
@@ -16,18 +18,18 @@ const Sockets = (io) => {
 
     // actualizacion de productos
     socket.on('update-product', async (product) => {
-      const productId = await productsApi.insertProduct(product);
+      await productsApi.insertProduct(product);
       io.sockets.emit('view-products', await productsApi.readProducts());
     });
 
     // carga inicial de mensajes
-    socket.emit('view-messages', await messagesApi.readMsgs());
+    socket.emit('view-messages', normalizeMessages(await messagesApi.readMsgs()));
 
     // actualizacion de mensajes
     socket.on('new-message', async (msg) => {
       msg.fyh = new Date().toLocaleString();
       await messagesApi.insertMsg(msg);
-      io.sockets.emit('view-messages', await messagesApi.readMsgs());
+      io.sockets.emit('view-messages', normalizeMessages(await messagesApi.readMsgs()));
     });
 
     socket.on('disconnect', (_) => {

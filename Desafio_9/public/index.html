@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/normalizr@3.6.1/dist/normalizr.browser.min.js"></script>
   </head>
 
   <body>
@@ -27,10 +28,9 @@
               <div class="form-group">
                 <label for="nombre">Nombre</label>
                 <input
-                  id="nombre"
+                  id="inputTitle"
                   class="form-control"
                   type="text"
-                  name="title"
                   placeholder="Nombre"
                 />
               </div>
@@ -40,11 +40,10 @@
                 <label for="precio">Precio</label>
                 <input
                   disabled
-                  id="precio"
+                  id="inputPrice"
                   class="form-control"
                   type="number"
                   step="any"
-                  name="price"
                   placeholder="Precio"
                 />
               </div>
@@ -54,10 +53,9 @@
                 <label for="foto">Foto URL</label>
                 <input
                   disabled
-                  id="foto"
+                  id="inputThumbnail"
                   class="form-control"
                   type="url"
-                  name="thumbnail"
                   placeholder="URL"
                 />
               </div>
@@ -83,27 +81,71 @@
       <section id="message-center">
         <div class="container mt-2">
           <div class="jumbotron">
-            <h1>Centro de mensajes</h1>
+            <h1>Centro de Mensajes</h1>
+            <h2>(Compresión: <span id="compression-info"></span>%)</h2>
             <br />
 
-            <!-- Campo de ingreso de email -->
-            <div class="form-group">
-              <label for="inputUsername">Email</label>
-              <input
-                type="text"
-                id="inputUsername"
-                class="form-control"
-                placeholder="Ingresá tu email"
-              />
-            </div>
+            <form class="container mt-2" id="addMessageForm">
+              <!-- Ingreso de email -->
+              <div class="form-group row">
+                <input
+                  type="email"
+                  id="inputEmail"
+                  class="form-control"
+                  placeholder="Ingresá tu email"
+                />
+              </div>
 
-            <hr />
-            <!-- Acá se inserta la lista de mensajes en caso de que existan -->
-            <div id="message-list"></div>
-            <hr />
+              <div class="form-group row">
+                <!-- Ingreso de nombre del usario -->
+                <input
+                  type="text"
+                  id="inputFirstName"
+                  class="form-control col-md-6"
+                  placeholder="Ingresá tu nombre"
+                />
+                <!-- Ingreso de apellido del usario -->
+                <input
+                  type="text"
+                  id="inputLastName"
+                  class="form-control col-md-6"
+                  placeholder="Ingresá tu apellido"
+                />
+              </div>
 
-            <form id="addMessageForm" autocomplete="off">
-              <div class="form-group">
+              <div class="form-group row">
+                <!-- Ingreso de edad del usario -->
+                <input
+                  type="number"
+                  id="inputAge"
+                  class="form-control col-md-4"
+                  placeholder="Ingresá tu edad"
+                />
+                <!-- Ingreso de nickname del usario -->
+                <input
+                  type="text"
+                  id="inputNickName"
+                  class="form-control col-md-8"
+                  placeholder="Ingresá tu nombre de usuario"
+                />
+              </div>
+
+              <!-- Ingreso de url de avatar -->
+              <div class="form-group row">
+                <input
+                  type="url"
+                  id="inputUrlAvatar"
+                  class="form-control"
+                  placeholder="Ingresá url de tu foto o avatar"
+                />
+              </div>
+
+              <hr />
+              <!-- Acá se inserta la lista de mensajes en caso de que existan -->
+              <div id="message-list"></div>
+              <hr />
+
+              <div class="form-group row">
                 <textarea
                   disabled
                   id="inputMessage"
