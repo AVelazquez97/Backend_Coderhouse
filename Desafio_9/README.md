@@ -59,3 +59,7 @@ Así podremos utilizar los mismos métodos de normalizr que en el backend. Por e
 ```
 new normalizr.schema.Entity, normalizr.denormalize(...,...,...)
 ```
+
+* * * 
+
+## IMPORTANTE: Para la ejecución del proyecto es necesario (además de instalar las dependencias), poner en ejecución un servidor de bases de datos de mysql, ya que los productos están alojados en este tipo de bd.
