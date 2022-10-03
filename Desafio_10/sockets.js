@@ -11,7 +11,7 @@ const messagesApi = new MsgContainer(config, 'messages');
 
 const Sockets = (io) => {
   io.on('connection', async (socket) => {
-    console.info(`\nUn cliente con el id: [${socket.id}] se ha conectado.`);
+    console.info(`\nUn cliente con el id: [${socket.id}] se ha conectado.\n`);
 
     // carga inicial de productos
     socket.emit('view-products', await productsApi.readProducts());
