@@ -12,7 +12,7 @@ const createTable = async (option, tableName) => {
   const db = knex(option);
   try {
     await db.schema.createTable(tableName, (table) => setColumns(table));
-    console.log(`Tabla "${tableName}" creada correctamente.`);
+    console.info(`Tabla "${tableName}" creada correctamente.`);
   } catch (error) {
     throw error;
   } finally {

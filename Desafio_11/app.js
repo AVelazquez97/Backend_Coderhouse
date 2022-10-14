@@ -1,17 +1,20 @@
 import express, { json } from 'express';
-import handlebars from 'express-handlebars';
 import dotenv from 'dotenv';
 import logger from 'morgan';
+import handlebars from 'express-handlebars';
 import cookieParser from 'cookie-parser';
 import session from 'express-session';
 import { default as MongoStore } from 'connect-mongo';
 
+import passport from './src/passport/passport-local.js';
+
 import fakerRouter from './src/routes/productsTest.routes.js';
 import homeRouter from './src/routes/home.routes.js';
-import authRouter from './src/routes/auth.routes.js';
+import authRouter from './src/routes/auth/index.routes.js';
 
 dotenv.config();
 const app = express();
+import './src/databases/connectionMongoDB.js'
 
 /* -------------------------- middlewares settings -------------------------- */
 app.use(logger('dev'));
@@ -53,6 +56,10 @@ app.use(
     },
   })
 );
+
+/* ---------------------------- passport settings --------------------------- */
+app.use(passport.initialize());
+app.use(passport.session());
 
 /* -------------------------- routes settings -------------------------- */
 app.use(homeRouter);

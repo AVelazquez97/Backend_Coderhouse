@@ -1,6 +1,6 @@
 import path from 'path';
-const authenticationMiddleware = async (req, res, next) => {
-  if (req.session.email) {
+const authenticationMiddleware = (req, res, next) => {
+  if (req.isAuthenticated()) {
     return next();
   }
   res.status(401);
