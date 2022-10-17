@@ -9,11 +9,8 @@ import { default as MongoStore } from 'connect-mongo';
 import passport from './src/passport/passport-local.js';
 
 import fakerRouter from './src/routes/productsTest.routes.js';
-<<<<<<< HEAD
 import randomsRouter from './src/routes/randoms.routes.js';
 import infoRouter from './src/routes/info.routes.js';
-=======
->>>>>>> 17010ff2cf077b8d6fc60c63c333bb34b7bb398b
 import homeRouter from './src/routes/home.routes.js';
 import authRouter from './src/routes/auth/index.routes.js';
 
@@ -68,13 +65,9 @@ app.use(passport.session());
 
 /* -------------------------- routes settings -------------------------- */
 app.use(homeRouter);
-<<<<<<< HEAD
 app.use('/api', fakerRouter);
 app.use('/api', randomsRouter);
 app.use('/info', infoRouter);
-=======
-app.use('/api/productos-test', fakerRouter);
->>>>>>> 17010ff2cf077b8d6fc60c63c333bb34b7bb398b
 app.use('/auth', authRouter);
 
 export default app;

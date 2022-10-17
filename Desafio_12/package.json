@@ -21,10 +21,7 @@
     "express-handlebars": "^5.2.0",
     "express-session": "^1.17.3",
     "knex": "^2.3.0",
-<<<<<<< HEAD
     "minimist": "^1.2.7",
-=======
->>>>>>> 17010ff2cf077b8d6fc60c63c333bb34b7bb398b
     "mongoose": "^6.6.5",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
