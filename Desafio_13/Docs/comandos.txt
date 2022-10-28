@@ -1,0 +1,77 @@
+● Ejecutar el servidor (modos FORK y CLUSTER) con nodemon verificando el número de procesos tomados por node:
+  - Modo fork:
+    nodemon server.js --port 8080 CLUSTER
+  
+  - Modo cluster:
+    nodemon server.js --port 8080 FORK
+
+------------------------- ●● ------------------------- ●● ------------------------- ●● -------------------------
+
+● Ejecutar el servidor (con los parámetros adecuados) utilizando Forever, verificando su correcta operación. 
+Listar los procesos por Forever y por sistema operativo:
+  - Instalar forever de manera global:
+    sudo npm i -g forever
+
+  - Ejecutar el servidor en modo fork:
+    forever start server.js --port 3000 FORK
+
+  - Ejecutar el servidor en modo cluster:
+    forever start server.js --port 3000 CLUSTER
+
+  - Listar procesos con forever:
+    forever list
+
+  - Listar procesos con sistema operativo linux:
+    ps -ef | grep /Desafio_13
+
+------------------------- ●● ------------------------- ●● ------------------------- ●● -------------------------
+
+● Ejecutar el servidor (con los parámetros adecuados: modo FORK) utilizando PM2 en sus modos modo fork y cluster.
+Listar los procesos por PM2 y por sistema operativo:
+  - Instalar pm2 de manera global:
+    sudo npm i -g pm2
+
+  - Ejecutar el servidor en modo fork con pm2:
+    pm2 start server.js -- --port 3000 FORK 
+
+  - Ejecutar el servidor en modo cluster con pm2:
+    pm2 start server.js -i max -- --port 3000 FORK
+
+  - Listar procesos con pm2:
+    pm2 list
+
+  - Listar procesos con sistema operativo linux:
+    ps -ef | grep /Desafio_13
+
+------------------------- ●● ------------------------- ●● ------------------------- ●● -------------------------
+
+● Tanto en Forever como en PM2 permitir el modo escucha, para que la actualización del 
+código del servidor se vea reflejado inmediatamente en todos los procesos.
+
+  - Ejecutar el servidor en modo cluster con pm2 en modo escucha:
+    pm2 start server.js --watch -i max -- --port 3000 FORK
+
+  - Forever ya tiene por defecto el modo escucha activado (Comprobado empíricamente)
+
+------------------------- ●● ------------------------- ●● ------------------------- ●● -------------------------
+
+● Levantar servidores para consigna de NGINX:
+
+  - Servidor en modo fork respondiendo al puerto 8080:
+    pm2 start server.js --name="Server1" --watch -- --port 8080 FORK 
+
+  - Servidor en modo cluster respondiendo al puerto 8081:
+    pm2 start server.js --name="Server2" --watch -i max -- --port 8081 FORK
+
+  - Matar el servidor en modo cluster luego de chequear el correcto funcionamiento:
+    pm2 delete Server2
+
+  - Servidores en modo cluster respondiendo al puerto 8082, 8083, 8084, 8085:
+
+    pm2 start server.js --name="Server2" --watch -i max -- --port 8082 FORK
+    pm2 start server.js --name="Server3" --watch -i max -- --port 8083 FORK
+    pm2 start server.js --name="Server4" --watch -i max -- --port 8084 FORK
+    pm2 start server.js --name="Server5" --watch -i max -- --port 8085 FORK
+
+
+  

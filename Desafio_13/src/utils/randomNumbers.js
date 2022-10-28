@@ -1,4 +1,4 @@
-const getRandomNumbers = (cant = 1e6) => {
+const getRandomNumbers = (cant) => {
   let qtyRandomNumbers = {};
 
   const addNumber = (nro) => {

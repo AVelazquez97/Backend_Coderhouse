@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import { cpus } from 'os';
 const router = Router();
 
 router.get('/', (req, res) => {
@@ -10,7 +11,8 @@ router.get('/', (req, res) => {
     pid: process.pid, //Process id
     nodeVersion: process.version, //Versión de node.js
     dirPath: process.cwd(), //Carpeta del proyecto
-    memoryUsage: process.memoryUsage.rss() / 2 ** 20, //Memoria total reservada (rss)
+    memoryUsage: process.memoryUsage.rss() / 2 ** 20, //Memoria total reservada (rss) en MiB
+    numCPUs: cpus().length,
   };
 
   res.render('partials/viewInfo', {

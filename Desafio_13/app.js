@@ -22,8 +22,8 @@ import './src/databases/connectionMongoDB.js'
 app.use(logger('dev'));
 app.use(json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static('public'));
 app.use(cookieParser(process.env.COOKIES_SECRET));
+app.use(express.static('public'));
 
 /* -------------------------- template engine settings -------------------------- */
 app.engine(
