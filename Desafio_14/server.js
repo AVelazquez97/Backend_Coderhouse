@@ -6,6 +6,7 @@ import parseArgs from 'minimist';
 
 import app from './app.js';
 import Sockets from './sockets.js';
+import { loggerInfo, loggerError } from './config/log4.js';
 
 /* ----------------------------- params settings ---------------------------- */
 const options = { default: { port: 8080 } };
@@ -15,7 +16,7 @@ const clusterMode = process.argv[4] == 'CLUSTER';
 /* ----------------------------- server settings ---------------------------- */
 if (clusterMode && cluster.isPrimary) {
   const numCPUs = cpus().length;
-  console.info(`PID MASTER ${process.pid}`);
+  loggerInfo.info(`PID MASTER ${process.pid}`);
 
   for (let i = 0; i < numCPUs; i++) {
     cluster.fork();
@@ -23,7 +24,9 @@ if (clusterMode && cluster.isPrimary) {
 
   cluster.on('exit', (worker) => {
     const fecha = new Date().toLocaleString();
-    console.info(`Worker ${worker.process.pid} fue terminado a las: ${fecha}`);
+    loggerInfo.info(
+      `Worker ${worker.process.pid} fue terminado a las: ${fecha}`
+    );
     cluster.fork();
   });
 } else {
@@ -32,11 +35,14 @@ if (clusterMode && cluster.isPrimary) {
 
   /* ----------------------------- socket settings ---------------------------- */
   Sockets(io);
-  const server = serverHTTP.listen(args.port, (error) => {
-    if (error) throw new Error(`Error en el servidor: ${error}`);
-    console.info(
+  const server = serverHTTP.listen(args.port, () => {
+    loggerInfo.info(
       `Servidor HTTP escuchando en el puerto ${server.address().port}`
     );
-    console.info(`PID WORKER ${process.pid}`);
+    loggerInfo.info(`PID WORKER ${process.pid}`);
+  });
+
+  server.on('error', (error) => {
+    loggerError.error(`Error en el servidor: ${error.message}`);
   });
 }

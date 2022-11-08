@@ -1,8 +1,9 @@
 import { Router } from 'express';
+import compression from "compression";
 import { cpus } from 'os';
 const router = Router();
 
-router.get('/', (req, res) => {
+router.get('/', compression(), (req, res) => {
   const args = process.argv.slice(2).join('; ');
   const info = {
     args, //Argumentos de entrada
@@ -15,7 +16,7 @@ router.get('/', (req, res) => {
     numCPUs: cpus().length,
   };
 
-  res.render('partials/viewInfo', {
+  res.status(200).render('partials/viewInfo', {
     info,
   });
 });

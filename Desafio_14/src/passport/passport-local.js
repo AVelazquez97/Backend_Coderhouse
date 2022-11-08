@@ -1,6 +1,7 @@
 import passport from 'passport';
 import { Strategy as LocalStrategy } from 'passport-local';
 import User from '../models/users.js';
+import { loggerError } from '../../config/log4.js';
 
 passport.use(
   'signup',
@@ -23,11 +24,11 @@ passport.use(
           const user = await User.create(newUser);
           return done(null, user);
         } catch (error) {
-          console.info(`Error creando el usuario: ${error}`);
+          loggerError.error(`Error creando el usuario: ${error}`);
           return done(error);
         }
       } catch (error) {
-        console.info(`Falló el registro de usuario: ${error}`);
+        loggerError.error(`Falló el registro de usuario: ${error}`);
         return done(error);
       }
     }
@@ -46,13 +47,16 @@ passport.use(
       try {
         const user = await User.findOne({ email });
         if (!user) {
+          loggerError.error('No existe el usuario con el mail indicado.');
           return done(null, false);
         }
         if (!user.comparePassword(password)) {
+          loggerError.error('La contraseña no coincide.');
           return done(null, false);
         }
         return done(null, user);
       } catch (error) {
+        loggerError.error(`Error iniciando sesión: ${error}`);
         return done(error);
       }
     }

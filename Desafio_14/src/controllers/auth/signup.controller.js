@@ -6,7 +6,7 @@ const signupController = {
     if (req.isAuthenticated()){
       res.redirect('/');
     }else{
-      res.sendFile(path.join(process.cwd(), '/src/views/signup.html'));
+      res.status(200).sendFile(path.join(process.cwd(), '/src/views/signup.html'));
     }
   },
   postSignup: (req, res) => {
@@ -16,7 +16,7 @@ const signupController = {
   },
   getFailSignup: (req, res) => {
     //Usuario ya registrado
-    res.sendFile(path.join(process.cwd(), '/src/views/signupFail.html'));
+    res.status(200).sendFile(path.join(process.cwd(), '/src/views/signupFail.html'));
   },
 };
 

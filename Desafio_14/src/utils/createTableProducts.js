@@ -1,4 +1,5 @@
 import knex from 'knex';
+import { loggerInfo, loggerError } from '../../config/log4.js';
 
 const setColumns = (table) => {
   table.increments('id');
@@ -12,8 +13,9 @@ const createTable = async (option, tableName) => {
   const db = knex(option);
   try {
     await db.schema.createTable(tableName, (table) => setColumns(table));
-    console.info(`Tabla "${tableName}" creada correctamente.`);
+    loggerInfo.info(`Tabla "${tableName}" creada correctamente.`);
   } catch (error) {
+    loggerError.error(error);
     throw error;
   } finally {
     db.destroy();

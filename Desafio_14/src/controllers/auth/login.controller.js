@@ -6,7 +6,7 @@ const loginController = {
     if (req.isAuthenticated()) {
       res.redirect('/');
     } else {
-      res.sendFile(path.join(process.cwd(), '/src/views/login.html'));
+      res.status(200).sendFile(path.join(process.cwd(), '/src/views/login.html'));
     }
   },
   postLogin: (req, res) => {
@@ -14,7 +14,7 @@ const loginController = {
   },
   getFailLogin: (req, res) => {
     //Credenciales inválidas
-    res.sendFile(path.join(process.cwd(), '/src/views/loginFail.html'));
+    res.status(200).sendFile(path.join(process.cwd(), '/src/views/loginFail.html'));
   },
 };
 

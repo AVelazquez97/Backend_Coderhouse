@@ -1,29 +1,33 @@
 import express, { json } from 'express';
 import dotenv from 'dotenv';
-import logger from 'morgan';
 import handlebars from 'express-handlebars';
 import cookieParser from 'cookie-parser';
 import session from 'express-session';
 import { default as MongoStore } from 'connect-mongo';
-
 import passport from './src/passport/passport-local.js';
+import requestsLogger from './src/middlewares/reqLogger.middleware.js'
+import { loggerInfo } from './config/log4.js';
 
+/* ---------------------------- routes importing ---------------------------- */
 import fakerRouter from './src/routes/productsTest.routes.js';
 import randomsRouter from './src/routes/randoms.routes.js';
 import infoRouter from './src/routes/info.routes.js';
 import homeRouter from './src/routes/home.routes.js';
 import authRouter from './src/routes/auth/index.routes.js';
+import notFoundRouter from './src/routes/404.notFound.routes.js';
 
 dotenv.config();
 const app = express();
-import './src/databases/connectionMongoDB.js'
+
+/* ---------------------------- database settings --------------------------- */
+import './src/databases/connectionMongoDB.js';
 
 /* -------------------------- middlewares settings -------------------------- */
-app.use(logger('dev'));
 app.use(json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser(process.env.COOKIES_SECRET));
 app.use(express.static('public'));
+app.use(requestsLogger);
 
 /* -------------------------- template engine settings -------------------------- */
 app.engine(
@@ -69,5 +73,6 @@ app.use('/api', fakerRouter);
 app.use('/api', randomsRouter);
 app.use('/info', infoRouter);
 app.use('/auth', authRouter);
+app.use(notFoundRouter);
 
 export default app;

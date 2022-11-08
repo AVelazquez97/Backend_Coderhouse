@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
+import { loggerInfo, loggerError } from '../../config/log4.js';
 dotenv.config();
 
 mongoose
@@ -7,5 +8,5 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then((db) => console.info('[Mongoose(MongoBD)] - Conectada'))
-  .catch((err) => console.info('[Mongoose(MongoBD)] - Error:', err.message));
+  .then((db) => loggerInfo.info('[Mongoose(MongoBD)] - Conectada'))
+  .catch((err) => loggerError.error('[Mongoose(MongoBD)] - Error:', err.message));

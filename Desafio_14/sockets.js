@@ -5,13 +5,14 @@ import option from './src/databases/configMariaDB.js';
 import config from './src/databases/configSQLiteDB.js';
 
 import normalizeMessages from './src/normalizer/normalizeMessages.js'
+import { loggerInfo } from './config/log4.js';
 
 const productsApi = new ProductContainer(option, 'products');
 const messagesApi = new MsgContainer(config, 'messages');
 
 const Sockets = (io) => {
   io.on('connection', async (socket) => {
-    console.info(`\nUn cliente con el id: [${socket.id}] se ha conectado.\n`);
+    loggerInfo.info(`\nUn cliente con el id: [${socket.id}] se ha conectado.\n`);
 
     // carga inicial de productos
     socket.emit('view-products', await productsApi.readProducts());
@@ -33,7 +34,7 @@ const Sockets = (io) => {
     });
 
     socket.on('disconnect', (_) => {
-      console.info(`El cliente con el id: [${socket.id}] se ha desconectado.\n`);
+      loggerInfo.info(`El cliente con el id: [${socket.id}] se ha desconectado.\n`);
     });
   });
 };

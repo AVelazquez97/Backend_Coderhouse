@@ -5,8 +5,7 @@ import path from 'path';
 const router = Router();
 
 router.get('/', authenticationMiddleware, (req, res) => {
-  console.info(req.user.email)
-  res.render(path.join(process.cwd(), '/src/views/layouts/home.hbs'), {
+  res.status(200).render(path.join(process.cwd(), '/src/views/layouts/home.hbs'), {
     email: req.user.email,
   });
 });

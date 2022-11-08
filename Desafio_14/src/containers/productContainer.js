@@ -2,6 +2,7 @@ import knex from 'knex';
 import createTable from '../utils/createTableProducts.js';
 import insertNewElement from '../utils/insertElement.js';
 import readAllElements from '../utils/readElements.js';
+import { loggerError } from '../../config/log4.js';
 
 class ProductContainer {
   constructor(dbConfigs, tableName) {
@@ -17,6 +18,7 @@ class ProductContainer {
         createTable(this.config, this.tableName);
       }
     } catch (error) {
+      loggerError.error(error);
       throw error;
     }
   };
@@ -25,7 +27,8 @@ class ProductContainer {
     try {
       insertNewElement(this.config, this.tableName, productData);
     } catch (error) {
-      throw `${error}`;
+      loggerError.error(error);
+      throw error;
     }
   };
 
@@ -37,7 +40,8 @@ class ProductContainer {
       }
       return products;
     } catch (error) {
-      throw `${error}`;
+      loggerError.error(error);
+      throw error;    
     }
   };
 }

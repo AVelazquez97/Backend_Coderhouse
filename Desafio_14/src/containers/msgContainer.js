@@ -2,6 +2,7 @@ import knex from 'knex';
 import createTable from '../utils/createTableMsgs.js';
 import insertNewElement from '../utils/insertElement.js';
 import readAllElements from '../utils/readElements.js';
+import { loggerError } from '../../config/log4.js';
 
 class MsgContainer {
   constructor(dbConfigs, tableName) {
@@ -17,6 +18,7 @@ class MsgContainer {
         await createTable(this.config, this.tableName);
       }
     } catch (error) {
+      loggerError.error(error);
       throw error;
     }
   };
@@ -40,7 +42,8 @@ class MsgContainer {
       };
       await insertNewElement(this.config, this.tableName, data);
     } catch (error) {
-      throw `${error}`;
+      loggerError.error(error);
+      throw error;
     }
   };
 
@@ -49,7 +52,8 @@ class MsgContainer {
       let messages = await readAllElements(this.config, this.tableName);
       return messages;
     } catch (error) {
-      throw `${error}`;
+      loggerError.error(error);
+      throw error;
     }
   };
 }

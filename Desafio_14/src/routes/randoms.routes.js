@@ -13,7 +13,7 @@ router.get('/randoms', (req, res) => {
   const forkedProcess = fork('./src/utils/randomNumbers.js');
   forkedProcess.send(parseInt(cant || 1e6));
   forkedProcess.on('message', (randomNumbers) => {
-    res.json({ port: args.port, pid, randomNumbers });
+    res.status(200).json({ port: args.port, pid, randomNumbers });
   });
 });
 
