@@ -6,7 +6,6 @@ import session from 'express-session';
 import { default as MongoStore } from 'connect-mongo';
 import passport from './src/passport/passport-local.js';
 import requestsLogger from './src/middlewares/reqLogger.middleware.js'
-import { loggerInfo } from './config/log4.js';
 
 /* ---------------------------- routes importing ---------------------------- */
 import fakerRouter from './src/routes/productsTest.routes.js';

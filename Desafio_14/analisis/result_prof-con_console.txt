@@ -1,0 +1,1554 @@
+Statistical profiling result from analisis/con_console.log, (17824 ticks, 26 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+  10998   61.7%          /usr/lib/x86_64-linux-gnu/libnode.so.108
+    476    2.7%          /usr/lib/x86_64-linux-gnu/libc.so.6
+     66    0.4%          /usr/lib/x86_64-linux-gnu/libcrypto.so.3
+     57    0.3%          /usr/lib/x86_64-linux-gnu/libssl.so.3
+     19    0.1%          /usr/lib/x86_64-linux-gnu/libuv.so.1.0.0
+     12    0.1%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+      9    0.1%          [vdso]
+      3    0.0%          /usr/lib/x86_64-linux-gnu/libicuuc.so.71.1
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     51    0.3%    0.8%  LazyCompile: *parse /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+     41    0.2%    0.7%  LazyCompile: *wrap /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:101:22
+     37    0.2%    0.6%  LazyCompile: *resolve node:path:1091:10
+     33    0.2%    0.5%  LazyCompile: *next /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+     30    0.2%    0.5%  LazyCompile: *deserializeObject /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/deserializer.js:65:27
+     27    0.2%    0.4%  LazyCompile: *serializeInto /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/serializer.js:553:23
+     27    0.2%    0.4%  LazyCompile: *SourceNode_walk /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/source-map/lib/source-node.js:221:53
+     25    0.1%    0.4%  LazyCompile: *executeOperationAsync /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/execute_operation.js:15:37
+     23    0.1%    0.4%  LazyCompile: *writeOrBuffer node:internal/streams/writable:368:23
+     20    0.1%    0.3%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:67:35
+     17    0.1%    0.3%  LazyCompile: *next /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:177:16
+     15    0.1%    0.2%  LazyCompile: *getEncodingOps node:buffer:684:24
+     14    0.1%    0.2%  LazyCompile: *emit node:events:460:44
+     13    0.1%    0.2%  LazyCompile: *render /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+     10    0.1%    0.2%  RegExp: (?:\r\n?|\n).*
+     10    0.1%    0.2%  LazyCompile: *_unrefTimer node:net:478:52
+     10    0.1%    0.2%  LazyCompile: *Readable.read node:internal/streams/readable:402:35
+     10    0.1%    0.2%  LazyCompile: *<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/source-map/lib/source-node.js:174:29
+      9    0.1%    0.1%  LazyCompile: *compile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      9    0.1%    0.1%  LazyCompile: *Writable.write node:internal/streams/writable:336:36
+      8    0.0%    0.1%  LazyCompile: *onwrite node:internal/streams/writable:428:17
+      8    0.0%    0.1%  LazyCompile: *_addListener node:events:541:22
+      7    0.0%    0.1%  LazyCompile: *processWaitQueue /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection_pool.js:441:21
+      7    0.0%    0.1%  LazyCompile: *nextTick node:internal/process/task_queues:103:18
+      7    0.0%    0.1%  LazyCompile: *get node:internal/streams/duplex:103:8
+      6    0.0%    0.1%  RegExp: ^(?:[^\x00]*?(?=(\{\{)))
+      6    0.0%    0.1%  RegExp: (^|\r?\n)\s*?$
+      6    0.0%    0.1%  LazyCompile: *processIncomingData /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/message_stream.js:84:29
+      6    0.0%    0.1%  LazyCompile: *normalizeString node:path:66:25
+      6    0.0%    0.1%  LazyCompile: *makeAbs /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/glob/common.js:201:18
+      6    0.0%    0.1%  LazyCompile: *extend /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/utils.js:28:16
+      6    0.0%    0.1%  LazyCompile: *SourceNode_add /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/source-map/lib/source-node.js:172:51
+      6    0.0%    0.1%  Function: ^ondata node:internal/streams/readable:764:18
+      5    0.0%    0.1%  LazyCompile: *slowCases node:internal/util:168:19
+      5    0.0%    0.1%  LazyCompile: *slice node:buffer:599:12
+      5    0.0%    0.1%  LazyCompile: *resolvePath /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:492:36
+      5    0.0%    0.1%  LazyCompile: *renderView /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:183:19
+      5    0.0%    0.1%  LazyCompile: *formatWithOptionsInternal node:internal/util/inspect:2122:35
+      5    0.0%    0.1%  LazyCompile: *castChunk /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:52:19
+      5    0.0%    0.1%  LazyCompile: *appendEscaped /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:416:40
+      5    0.0%    0.1%  Function: ^onStreamRead node:internal/stream_base_commons:167:22
+      5    0.0%    0.1%  Function: ^<anonymous> node:internal/util:351:32
+      4    0.0%    0.1%  RegExp: ^(?:\{\{(~)?\s*else\b)
+      4    0.0%    0.1%  RegExp: ^(?:\{\{(~)?\^\s*(~)?\}\})
+      4    0.0%    0.1%  RegExp: \r?\n\s*?$
+      4    0.0%    0.1%  LazyCompile: *validateNumber node:internal/validators:174:24
+      4    0.0%    0.1%  LazyCompile: *serializeObject /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/serializer.js:260:25
+      4    0.0%    0.1%  LazyCompile: *relative node:path:1190:11
+      4    0.0%    0.1%  LazyCompile: *getPartials /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:52:20
+      4    0.0%    0.1%  LazyCompile: *concat node:buffer:541:32
+      4    0.0%    0.1%  LazyCompile: *anonymous /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:12:42
+      4    0.0%    0.1%  LazyCompile: *_getFile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:299:17
+      4    0.0%    0.1%  LazyCompile: *CommandOperation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/command.js:13:16
+      4    0.0%    0.1%  LazyCompile: *<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/connect-mongo/build/main/lib/MongoStore.js:236:10
+      4    0.0%    0.1%  Function: ^processPromiseRejections node:internal/process/promises:220:34
+      3    0.0%    0.0%  RegExp: ^(?:\))
+      3    0.0%    0.0%  RegExp: ^(?:[^\x00]+)
+      3    0.0%    0.0%  LazyCompile: *write node:buffer:1057:40
+      3    0.0%    0.0%  LazyCompile: *write /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection.js:404:15
+      3    0.0%    0.0%  LazyCompile: *template /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/runtime.js:52:18
+      3    0.0%    0.0%  LazyCompile: *syncExports node:internal/bootstrap/loaders:304:14
+      3    0.0%    0.0%  LazyCompile: *realpathSync node:fs:2469:22
+      3    0.0%    0.0%  LazyCompile: *promisify node:internal/util:327:19
+      3    0.0%    0.0%  LazyCompile: *log node:internal/console/constructor:376:6
+      3    0.0%    0.0%  LazyCompile: *join node:path:1166:7
+      3    0.0%    0.0%  LazyCompile: *handle /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/layer.js:86:49
+      3    0.0%    0.0%  LazyCompile: *get node:internal/bootstrap/node:79:8
+      3    0.0%    0.0%  LazyCompile: *fromOptions /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/write_concern.js:40:23
+      3    0.0%    0.0%  LazyCompile: *fastparse /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/parseurl/index.js:95:20
+      3    0.0%    0.0%  LazyCompile: *accept /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:101:26
+      3    0.0%    0.0%  LazyCompile: *WhitespaceControl.Program /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/whitespace-control.js:19:48
+      3    0.0%    0.0%  LazyCompile: *Readable.on node:internal/streams/readable:886:33
+      3    0.0%    0.0%  LazyCompile: *Long.compare /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/long.js:291:39
+      3    0.0%    0.0%  LazyCompile: *Long.add /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/long.js:252:35
+      3    0.0%    0.0%  LazyCompile: *Long /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/long.js:59:18
+      3    0.0%    0.0%  LazyCompile: *Hash node:internal/crypto/hash:62:14
+      3    0.0%    0.0%  LazyCompile: *ContentStatement /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:228:46
+      3    0.0%    0.0%  Function: ^serveStatic /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/serve-static/index.js:72:31
+      3    0.0%    0.0%  Function: ^processWaitQueue /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection_pool.js:441:21
+      3    0.0%    0.0%  Function: ^onMessage /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection.js:156:14
+      3    0.0%    0.0%  Function: ^make /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/minimatch/minimatch.js:160:15
+      3    0.0%    0.0%  Function: ^isSaved /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/index.js:430:21
+      3    0.0%    0.0%  Function: ^get hello /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection.js:74:14
+      3    0.0%    0.0%  Function: ^formatWithOptionsInternal node:internal/util/inspect:2122:35
+      3    0.0%    0.0%  Function: ^emit node:events:460:44
+      3    0.0%    0.0%  Function: ^afterWriteDispatched node:internal/stream_base_commons:155:30
+      3    0.0%    0.0%  Function: ^Writable.uncork node:internal/streams/writable:344:37
+      3    0.0%    0.0%  Function: ^Timeout node:internal/timers:164:14
+      3    0.0%    0.0%  Function: ^Msg /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/commands.js:317:16
+      3    0.0%    0.0%  Function: ^CommandOperation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/command.js:13:16
+      3    0.0%    0.0%  Function: ^BinMsg /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/commands.js:394:16
+      3    0.0%    0.0%  Function: ^<anonymous> node:path:1082:10
+      3    0.0%    0.0%  Function: ^<anonymous> file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/src/routes/info.routes.js:6:32
+      3    0.0%    0.0%  Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/mongo_client.js:132:36
+      3    0.0%    0.0%  Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/index.js:485:38
+      2    0.0%    0.0%  RegExp: ^\$ref$|^\$id$|^\$db$
+      2    0.0%    0.0%  RegExp: ^(?:undefined(?=([~}\s)])))
+      2    0.0%    0.0%  RegExp: ^(?:true(?=([~}\s)])))
+      2    0.0%    0.0%  RegExp: ^(?:\{\{(~)?\*?)
+      2    0.0%    0.0%  RegExp: ^(?:\{\{(~)?>)
+      2    0.0%    0.0%  RegExp: ^(?:@)
+      2    0.0%    0.0%  RegExp: [&<>"'`=]
+      2    0.0%    0.0%  LazyCompile: *write node:buffer:598:12
+      2    0.0%    0.0%  LazyCompile: *value node:internal/console/constructor:272:20
+      2    0.0%    0.0%  LazyCompile: *serializeLong /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/serializer.js:302:23
+      2    0.0%    0.0%  LazyCompile: *serializeDate /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/serializer.js:110:23
+      2    0.0%    0.0%  LazyCompile: *resolveBSONOptions /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/bson.js:55:28
+      2    0.0%    0.0%  LazyCompile: *replaceStack /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:892:38
+      2    0.0%    0.0%  LazyCompile: *remove node:internal/linkedlist:16:16
+      2    0.0%    0.0%  LazyCompile: *readableAddChunk node:internal/streams/readable:242:26
+      2    0.0%    0.0%  LazyCompile: *readPackageScope node:internal/modules/cjs/loader:361:26
+      2    0.0%    0.0%  LazyCompile: *readInt32LE node:internal/buffer:385:21
+      2    0.0%    0.0%  LazyCompile: *push /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:868:22
+      2    0.0%    0.0%  LazyCompile: *preparePath /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:63:21
+      2    0.0%    0.0%  LazyCompile: *listenerCount node:events:840:23
+      2    0.0%    0.0%  LazyCompile: *internalNameLookup /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:66:50
+      2    0.0%    0.0%  LazyCompile: *hasHooks node:internal/async_hooks:470:18
+      2    0.0%    0.0%  LazyCompile: *hasAspect /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/operation.js:41:14
+      2    0.0%    0.0%  LazyCompile: *getHeader node:_http_outgoing:688:57
+      2    0.0%    0.0%  LazyCompile: *get description /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/sdam/topology.js:146:20
+      2    0.0%    0.0%  LazyCompile: *fresh /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/parseurl/index.js:153:16
+      2    0.0%    0.0%  LazyCompile: *dirname node:path:1275:10
+      2    0.0%    0.0%  LazyCompile: *command /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection.js:251:12
+      2    0.0%    0.0%  LazyCompile: *anonymous /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:549:49
+      2    0.0%    0.0%  LazyCompile: *afterWrite node:internal/streams/writable:490:20
+      2    0.0%    0.0%  LazyCompile: *SourceNode_prepend /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/source-map/lib/source-node.js:197:59
+      2    0.0%    0.0%  LazyCompile: *Readable.removeListener node:internal/streams/readable:916:45
+      2    0.0%    0.0%  LazyCompile: *RES /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/inflight/inflight.js:18:28
+      2    0.0%    0.0%  LazyCompile: *Program /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:113:28
+      2    0.0%    0.0%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:669:37
+      2    0.0%    0.0%  LazyCompile: *FastBuffer node:internal/buffer:958:14
+      2    0.0%    0.0%  LazyCompile: *<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:274:31
+      2    0.0%    0.0%  Function: ^writeOrBuffer node:internal/streams/writable:368:23
+      2    0.0%    0.0%  Function: ^writeHead /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/on-headers/index.js:28:29
+      2    0.0%    0.0%  Function: ^write /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection.js:404:15
+      2    0.0%    0.0%  Function: ^stat node:fs:1508:14
+      2    0.0%    0.0%  Function: ^shouldTransform /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/compression/index.js:270:26
+      2    0.0%    0.0%  Function: ^shouldDestroy /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/index.js:435:27
+      2    0.0%    0.0%  Function: ^shift /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/denque/index.js:122:40
+      2    0.0%    0.0%  Function: ^set expires /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/session/cookie.js:60:14
+      2    0.0%    0.0%  Function: ^session /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/index.js:179:26
+      2    0.0%    0.0%  Function: ^serializeDate /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/serializer.js:110:23
+      2    0.0%    0.0%  Function: ^resolveBSONOptions /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/bson.js:55:28
+      2    0.0%    0.0%  Function: ^readPackageScope node:internal/modules/cjs/loader:361:26
+      2    0.0%    0.0%  Function: ^read /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/utils.js:704:9
+      2    0.0%    0.0%  Function: ^promisify node:internal/util:327:19
+      2    0.0%    0.0%  Function: ^processIncomingData /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/message_stream.js:84:29
+      2    0.0%    0.0%  Function: ^parseAcceptEncoding /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/negotiator/lib/encoding.js:31:29
+      2    0.0%    0.0%  Function: ^onStatError /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/send/index.js:412:57
+      2    0.0%    0.0%  Function: ^noop node:internal/util/debuglog:47:14
+      2    0.0%    0.0%  Function: ^next /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/send/index.js:728:17
+      2    0.0%    0.0%  Function: ^mergeSource /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:267:36
+      2    0.0%    0.0%  Function: ^maybeReadMore_ node:internal/streams/readable:621:24
+      2    0.0%    0.0%  Function: ^makeAbs /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/glob/common.js:201:18
+      2    0.0%    0.0%  Function: ^length /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/denque/index.js:87:23
+      2    0.0%    0.0%  Function: ^isInline /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:956:30
+      2    0.0%    0.0%  Function: ^inflate /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/index.js:371:22
+      2    0.0%    0.0%  Function: ^id /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:44:12
+      2    0.0%    0.0%  Function: ^handle /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:136:31
+      2    0.0%    0.0%  Function: ^getOptions node:internal/fs/utils:319:20
+      2    0.0%    0.0%  Function: ^getHeader node:_http_outgoing:688:57
+      2    0.0%    0.0%  Function: ^get node:internal/bootstrap/node:444:8
+      2    0.0%    0.0%  Function: ^get /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/debug/src/common.js:125:9
+      2    0.0%    0.0%  Function: ^fn node:internal/util:349:14
+      2    0.0%    0.0%  Function: ^extend /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/utils.js:28:16
+      2    0.0%    0.0%  Function: ^end node:_http_outgoing:953:45
+      2    0.0%    0.0%  Function: ^doWrite node:internal/streams/writable:401:17
+      2    0.0%    0.0%  Function: ^blockParamIndex /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:461:44
+      2    0.0%    0.0%  Function: ^attempt /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/passport/lib/middleware/authenticate.js:180:22
+      2    0.0%    0.0%  Function: ^arrayClone node:events:865:20
+      2    0.0%    0.0%  Function: ^append /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/vary/index.js:38:17
+      2    0.0%    0.0%  Function: ^allocate node:buffer:403:18
+      2    0.0%    0.0%  Function: ^addChunk node:internal/streams/readable:312:18
+      2    0.0%    0.0%  Function: ^Socket._writeGeneric node:net:892:42
+      2    0.0%    0.0%  Function: ^Module._load node:internal/modules/cjs/loader:800:24
+      2    0.0%    0.0%  Function: ^Long /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/long.js:59:18
+      2    0.0%    0.0%  Function: ^ClientSession /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/sessions.js:46:16
+      2    0.0%    0.0%  Function: ^<anonymous> node:internal/fs/utils:361:35
+      2    0.0%    0.0%  Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/socket.io/dist/index.js:290:27
+      2    0.0%    0.0%  Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection_pool.js:381:38
+      2    0.0%    0.0%  Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/engine.io/build/server.js:479:30
+      2    0.0%    0.0%  Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/connect-mongo/build/main/lib/MongoStore.js:203:10
+      1    0.0%    0.0%  RegExp: y{1,4}
+      1    0.0%    0.0%  RegExp: ^\s*?\r?\n
+      1    0.0%    0.0%  RegExp: ^\s*?(\r?\n|$)
+      1    0.0%    0.0%  RegExp: ^\.|this\b
+      1    0.0%    0.0%  RegExp: ^(?:\}\}\}\})
+      1    0.0%    0.0%  RegExp: ^(?:\}(~)?\}\})
+      1    0.0%    0.0%  RegExp: ^(?:\|)
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?\{)
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?\s*else\s*(~)?\}\})
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?\^)
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?\/)
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?&)
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?![\s\S]*?\}\})
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?!--)
+      1    0.0%    0.0%  RegExp: ^(?:\.(?=([=~}\s\/.)|])))
+      1    0.0%    0.0%  RegExp: ^(?:([^\s!"#%-,\.\/;->@\[-\^`\{-~]+(?=([=~}\s\/.)|]))))
+      1    0.0%    0.0%  RegExp: ^(?:$)
+      1    0.0%    0.0%  RegExp: ^(?:"(\\["]|[^"])*")
+      1    0.0%    0.0%  RegExp: ^((?:(?:[0-9a-fA-F]{1,4}):){7}(?:(?:[0-9a-fA-F]{1,4})|:)|(?:(?:[0-9a-fA-F]{1,4}):){6}(?:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|:(?:[0-9a-fA-F]{1,4})|:)|(?:(?:[0-9a-fA-F]{1,4}):){5}(?::((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,2}|:)|(?:(?:[0-9a-fA-F]{1,4}):){4}(?:(:(?:[0-9a-fA-F]{1,4})){0,1}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,3}|:)|(?:(?:[0-9a-fA-F]{1,4}):){3}(?:(:(?:[0-9a-fA-F]{1,4})){0,2}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,4}|:)|(?:(?:[0-9a-fA-F]{1,4}):){2}(?:(:(?:[0-9a-fA-F]{1,4})){0,3}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,5}|:)|(?:(?:[0-9a-fA-F]{1,4}):){1}(?:(:(?:[0-9a-fA-F]{1,4})){0,4}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,6}|:)|(?::((?::(?:[0-9a-fA-F]{1,4})){0,5}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(?::(?:[0-9a-fA-F]{1,4})){1,7}|:)))(%[0-9a-zA-Z-.:]{1,})?$
+      1    0.0%    0.0%  RegExp: \=+$
+      1    0.0%    0.0%  RegExp: SSS
+      1    0.0%    0.0%  RegExp: ;\s*charset\s*=
+      1    0.0%    0.0%  RegExp: ; *([!#$%&'*+.^_`|~0-9A-Za-z-]+) *= *("(?:[\u000b\u0020\u0021\u0023-\u005b\u005d-\u007e\u0080-\u00ff]|\\[\u000b\u0020-\u00ff])*"|[!#$%&'*+.^_`|~0-9A-Za-z-]+) *
+      1    0.0%    0.0%  RegExp: (?:^|\/)\.?\.$
+      1    0.0%    0.0%  LazyCompile: *validateString node:internal/validators:159:24
+      1    0.0%    0.0%  LazyCompile: *trim_prefix /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:293:23
+      1    0.0%    0.0%  LazyCompile: *toString /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/utils.js:811:13
+      1    0.0%    0.0%  LazyCompile: *toInteger node:buffer:195:19
+      1    0.0%    0.0%  LazyCompile: *serializeNumber /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/serializer.js:44:25
+      1    0.0%    0.0%  LazyCompile: *serializeBinary /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/serializer.js:462:25
+      1    0.0%    0.0%  LazyCompile: *resolvePossibleLambda /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:527:56
+      1    0.0%    0.0%  LazyCompile: *readFile node:fs:383:18
+      1    0.0%    0.0%  LazyCompile: *popStack /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:960:30
+      1    0.0%    0.0%  LazyCompile: *parse /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/vary/index.js:96:16
+      1    0.0%    0.0%  LazyCompile: *parse /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/commands.js:426:10
+      1    0.0%    0.0%  LazyCompile: *opcode /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:347:26
+      1    0.0%    0.0%  LazyCompile: *now /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/utils.js:536:13
+      1    0.0%    0.0%  LazyCompile: *isDate /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/utils.js:86:16
+      1    0.0%    0.0%  LazyCompile: *handle /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:136:31
+      1    0.0%    0.0%  LazyCompile: *getTemplates /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:135:21
+      1    0.0%    0.0%  LazyCompile: *getDefaultTriggerAsyncId node:internal/async_hooks:432:34
+      1    0.0%    0.0%  LazyCompile: *get node:internal/bootstrap/node:405:8
+      1    0.0%    0.0%  LazyCompile: *fromStringFast node:buffer:418:24
+      1    0.0%    0.0%  LazyCompile: *digest node:internal/crypto/hash:119:40
+      1    0.0%    0.0%  LazyCompile: *command /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/sdam/server.js:150:12
+      1    0.0%    0.0%  LazyCompile: *aliasable /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1006:32
+      1    0.0%    0.0%  LazyCompile: *_write node:internal/streams/writable:286:16
+      1    0.0%    0.0%  LazyCompile: *_copyActual node:buffer:247:21
+      1    0.0%    0.0%  LazyCompile: *_copy node:buffer:205:15
+      1    0.0%    0.0%  LazyCompile: *SubExpression /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:236:40
+      1    0.0%    0.0%  LazyCompile: *SourceNode /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/source-map/lib/source-node.js:35:20
+      1    0.0%    0.0%  LazyCompile: *Module._load node:internal/modules/cjs/loader:800:24
+      1    0.0%    0.0%  LazyCompile: *<anonymous> node:internal/validators:239:3
+      1    0.0%    0.0%  LazyCompile: *<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/mongo_client.js:132:36
+      1    0.0%    0.0%  LazyCompile: *<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:123:11
+      1    0.0%    0.0%  Function: ^writevGeneric node:internal/stream_base_commons:122:23
+      1    0.0%    0.0%  Function: ^write_ node:_http_outgoing:831:16
+      1    0.0%    0.0%  Function: ^writeHead node:_http_server:308:19
+      1    0.0%    0.0%  Function: ^writeCommand /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/message_stream.js:40:17
+      1    0.0%    0.0%  Function: ^wrapmethods /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/index.js:394:25
+      1    0.0%    0.0%  Function: ^wrapSafe node:internal/modules/cjs/loader:1063:18
+      1    0.0%    0.0%  Function: ^wrapHelper /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/internal/wrapHelper.js:6:20
+      1    0.0%    0.0%  Function: ^vary /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/vary/index.js:133:15
+      1    0.0%    0.0%  Function: ^value node:internal/console/constructor:315:20
+      1    0.0%    0.0%  Function: ^value node:internal/console/constructor:272:20
+      1    0.0%    0.0%  Function: ^validateString node:internal/validators:159:24
+      1    0.0%    0.0%  Function: ^updateSessionFromResponse /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/sessions.js:721:35
+      1    0.0%    0.0%  Function: ^unrefActive node:internal/timers:322:21
+      1    0.0%    0.0%  Function: ^template /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/runtime.js:52:18
+      1    0.0%    0.0%  Function: ^supportsOpMsg /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection.js:385:23
+      1    0.0%    0.0%  Function: ^statSync node:fs:1583:18
+      1    0.0%    0.0%  Function: ^startSession /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/mongo_client.js:240:17
+      1    0.0%    0.0%  Function: ^socketListenerWrap node:_http_server:1084:37
+      1    0.0%    0.0%  Function: ^setcookie /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/index.js:655:19
+      1    0.0%    0.0%  Function: ^setWriteHeadHeaders /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/on-headers/index.js:105:30
+      1    0.0%    0.0%  Function: ^setTimeout node:timers:140:20
+      1    0.0%    0.0%  Function: ^setStreamTimeout node:internal/stream_base_commons:237:26
+      1    0.0%    0.0%  Function: ^setOwnProperty node:internal/util:537:24
+      1    0.0%    0.0%  Function: ^setHeader node:_http_outgoing:642:57
+      1    0.0%    0.0%  Function: ^setCharset /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/utils.js:248:41
+      1    0.0%    0.0%  Function: ^set /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/connect-mongo/build/main/lib/MongoStore.js:234:8
+      1    0.0%    0.0%  Function: ^serializeInto /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/serializer.js:553:23
+      1    0.0%    0.0%  Function: ^serializeBson /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/commands.js:379:18
+      1    0.0%    0.0%  Function: ^serialize /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/node_modules/cookie/index.js:101:19
+      1    0.0%    0.0%  Function: ^selectServer /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/sdam/topology.js:254:17
+      1    0.0%    0.0%  Function: ^ret /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/runtime.js:188:15
+      1    0.0%    0.0%  Function: ^require node:internal/modules/cjs/helpers:102:31
+      1    0.0%    0.0%  Function: ^render /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/response.js:1016:29
+      1    0.0%    0.0%  Function: ^render /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/application.js:548:29
+      1    0.0%    0.0%  Function: ^render /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+      1    0.0%    0.0%  Function: ^removeAllListeners node:events:735:32
+      1    0.0%    0.0%  Function: ^release /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/sessions.js:620:12
+      1    0.0%    0.0%  Function: ^refresh node:internal/timers:207:10
+      1    0.0%    0.0%  Function: ^readableAddChunk node:internal/streams/readable:242:26
+      1    0.0%    0.0%  Function: ^readUInt8 node:internal/buffer:248:19
+      1    0.0%    0.0%  Function: ^readSync node:fs:700:18
+      1    0.0%    0.0%  Function: ^readFileAfterStat node:fs:336:27
+      1    0.0%    0.0%  Function: ^readFileAfterRead node:internal/fs/read_file_context:25:27
+      1    0.0%    0.0%  Function: ^readFileAfterOpen node:fs:320:27
+      1    0.0%    0.0%  Function: ^readFile node:fs:383:18
+      1    0.0%    0.0%  Function: ^readFile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/graceful-fs/graceful-fs.js:111:21
+      1    0.0%    0.0%  Function: ^query /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/middleware/query.js:39:24
+      1    0.0%    0.0%  Function: ^pushStackLiteral /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:877:46
+      1    0.0%    0.0%  Function: ^pushProgram /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:615:36
+      1    0.0%    0.0%  Function: ^push /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:868:22
+      1    0.0%    0.0%  Function: ^processTimers node:internal/timers:492:25
+      1    0.0%    0.0%  Function: ^processTicksAndRejections node:internal/process/task_queues:67:35
+      1    0.0%    0.0%  Function: ^prepend /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:76:28
+      1    0.0%    0.0%  Function: ^popState /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:536:40
+      1    0.0%    0.0%  Function: ^popAsyncContext node:internal/async_hooks:553:25
+      1    0.0%    0.0%  Function: ^parseNegate /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/minimatch/minimatch.js:213:22
+      1    0.0%    0.0%  Function: ^parse /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/minimatch/minimatch.js:296:16
+      1    0.0%    0.0%  Function: ^parse /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/cookie/index.js:49:15
+      1    0.0%    0.0%  Function: ^parse /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/content-type/index.js:106:16
+      1    0.0%    0.0%  Function: ^onwrite node:internal/streams/writable:428:17
+      1    0.0%    0.0%  Function: ^onstat /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/send/index.js:717:33
+      1    0.0%    0.0%  Function: ^onParserExecute node:_http_server:753:25
+      1    0.0%    0.0%  Function: ^normalizeEncoding node:internal/util:163:27
+      1    0.0%    0.0%  Function: ^nop node:internal/streams/writable:73:13
+      1    0.0%    0.0%  Function: ^nop node:_http_outgoing:92:13
+      1    0.0%    0.0%  Function: ^nocompress /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/compression/index.js:134:25
+      1    0.0%    0.0%  Function: ^module.exports /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/utils-merge/index.js:16:36
+      1    0.0%    0.0%  Function: ^maybeCallback /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/utils.js:335:23
+      1    0.0%    0.0%  Function: ^makeCallback node:fs:194:22
+      1    0.0%    0.0%  Function: ^lookup /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/view.js:104:40
+      1    0.0%    0.0%  Function: ^log /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/log4js/lib/logger.js:139:6
+      1    0.0%    0.0%  Function: ^listOnTimeout node:internal/timers:512:25
+      1    0.0%    0.0%  Function: ^lambda /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/runtime.js:141:28
+      1    0.0%    0.0%  Function: ^jsonParser /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/body-parser/lib/types/json.js:98:30
+      1    0.0%    0.0%  Function: ^join node:path:1166:7
+      1    0.0%    0.0%  Function: ^isUint8Array node:internal/util/types:13:22
+      1    0.0%    0.0%  Function: ^isTraceHTTPEnabled node:internal/http:40:28
+      1    0.0%    0.0%  Function: ^isSharded /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/wire_protocol/shared.js:39:19
+      1    0.0%    0.0%  Function: ^isFull node:internal/fixed_queue:71:9
+      1    0.0%    0.0%  Function: ^isEmpty /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:73:28
+      1    0.0%    0.0%  Function: ^internalBinding node:internal/bootstrap/loaders:171:45
+      1    0.0%    0.0%  Function: ^inspect node:internal/util/inspect:295:17
+      1    0.0%    0.0%  Function: ^initialize /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/passport/lib/middleware/initialize.js:51:29
+      1    0.0%    0.0%  Function: ^importModuleDynamicallyWrap node:internal/vm/module:436:37
+      1    0.0%    0.0%  Function: ^handle /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/layer.js:86:49
+      1    0.0%    0.0%  Function: ^getcookie /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/index.js:529:19
+      1    0.0%    0.0%  Function: ^getPartials /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:52:20
+      1    0.0%    0.0%  Function: ^getDefaultEncoding node:internal/crypto/util:80:28
+      1    0.0%    0.0%  Function: ^get writeConcern /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/collection.js:125:21
+      1    0.0%    0.0%  Function: ^get node:internal/console/constructor:209:14
+      1    0.0%    0.0%  Function: ^get node:internal/bootstrap/node:405:8
+      1    0.0%    0.0%  Function: ^get node:_http_incoming:112:16
+      1    0.0%    0.0%  Function: ^get isActive /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/transactions.js:98:17
+      1    0.0%    0.0%  Function: ^get closed /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection_pool.js:103:15
+      1    0.0%    0.0%  Function: ^get address /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection_pool.js:95:16
+      1    0.0%    0.0%  Function: ^get /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/bson.js:20:76
+      1    0.0%    0.0%  Function: ^fromOptions /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/write_concern.js:40:23
+      1    0.0%    0.0%  Function: ^format node:internal/util/inspect:2097:16
+      1    0.0%    0.0%  Function: ^finish /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/glob/common.js:120:17
+      1    0.0%    0.0%  Function: ^find /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/collection.js:234:9
+      1    0.0%    0.0%  Function: ^exports.unsign /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/cookie-signature/index.js:36:26
+      1    0.0%    0.0%  Function: ^executeOperation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/execute_operation.js:11:26
+      1    0.0%    0.0%  Function: ^error /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/serve-static/index.js:115:39
+      1    0.0%    0.0%  Function: ^error /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/send/index.js:267:45
+      1    0.0%    0.0%  Function: ^ensureBuffer /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/ensure_buffer.js:15:22
+      1    0.0%    0.0%  Function: ^emitBeforeScript node:internal/async_hooks:509:26
+      1    0.0%    0.0%  Function: ^emitAfterScript node:internal/async_hooks:517:25
+      1    0.0%    0.0%  Function: ^each /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:91:22
+      1    0.0%    0.0%  Function: ^destroy node:internal/streams/destroy:39:17
+      1    0.0%    0.0%  Function: ^deserializeObject /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/deserializer.js:65:27
+      1    0.0%    0.0%  Function: ^decRefCount node:internal/timers:309:21
+      1    0.0%    0.0%  Function: ^debug /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/node_modules/debug/src/debug.js:65:17
+      1    0.0%    0.0%  Function: ^createWriteWrap node:internal/stream_base_commons:109:25
+      1    0.0%    0.0%  Function: ^createHash node:crypto:132:20
+      1    0.0%    0.0%  Function: ^cpus node:os:141:14
+      1    0.0%    0.0%  Function: ^cookieParser /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/cookie-parser/index.js:44:32
+      1    0.0%    0.0%  Function: ^concat node:buffer:541:32
+      1    0.0%    0.0%  Function: ^compression /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/compression/index.js:59:31
+      1    0.0%    0.0%  Function: ^compileFunction node:vm:316:25
+      1    0.0%    0.0%  Function: ^clearTimeout node:timers:185:22
+      1    0.0%    0.0%  Function: ^clearBuffer node:internal/streams/writable:532:21
+      1    0.0%    0.0%  Function: ^classifySexpr /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:363:40
+      1    0.0%    0.0%  Function: ^checkRevision /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/runtime.js:34:23
+      1    0.0%    0.0%  Function: ^checkIsHttpToken node:_http_common:210:26
+      1    0.0%    0.0%  Function: ^braceExpand /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/minimatch/minimatch.js:248:22
+      1    0.0%    0.0%  Function: ^authenticate /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/passport/lib/middleware/authenticate.js:94:31
+      1    0.0%    0.0%  Function: ^appendEscaped /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:416:40
+      1    0.0%    0.0%  Function: ^append node:internal/linkedlist:30:16
+      1    0.0%    0.0%  Function: ^app.<computed> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/application.js:490:25
+      1    0.0%    0.0%  Function: ^alignPool node:buffer:163:19
+      1    0.0%    0.0%  Function: ^adjustOffset node:buffer:1105:22
+      1    0.0%    0.0%  Function: ^addListener node:events:604:58
+      1    0.0%    0.0%  Function: ^acquire /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/sessions.js:593:12
+      1    0.0%    0.0%  Function: ^_write /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/message_stream.js:31:11
+      1    0.0%    0.0%  Function: ^_unrefTimer node:net:478:52
+      1    0.0%    0.0%  Function: ^_log /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/log4js/lib/logger.js:163:7
+      1    0.0%    0.0%  Function: ^_getTemplateName /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:322:19
+      1    0.0%    0.0%  Function: ^_getMaxListeners node:events:414:26
+      1    0.0%    0.0%  Function: ^_dump node:_http_incoming:422:49
+      1    0.0%    0.0%  Function: ^_addListener node:events:541:22
+      1    0.0%    0.0%  Function: ^Writable.write node:internal/streams/writable:336:36
+      1    0.0%    0.0%  Function: ^View /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/view.js:52:14
+      1    0.0%    0.0%  Function: ^TypedEventEmitter /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/mongo_types.js:34:1
+      1    0.0%    0.0%  Function: ^SourceNode_toString /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/source-map/lib/source-node.js:318:61
+      1    0.0%    0.0%  Function: ^Socket._read node:net:679:34
+      1    0.0%    0.0%  Function: ^PathExpression /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:289:42
+      1    0.0%    0.0%  Function: ^OutgoingMessage node:_http_outgoing:103:25
+      1    0.0%    0.0%  Function: ^ObjectId /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/objectid.js:24:22
+      1    0.0%    0.0%  Function: ^MongoDBNamespace /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/utils.js:304:16
+      1    0.0%    0.0%  Function: ^Module.require node:internal/modules/cjs/loader:1043:36
+      1    0.0%    0.0%  Function: ^Module._findPath node:internal/modules/cjs/loader:534:28
+      1    0.0%    0.0%  Function: ^Module._extensions..js node:internal/modules/cjs/loader:1158:37
+      1    0.0%    0.0%  Function: ^Minimatch.debug /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/minimatch/minimatch.js:157:38
+      1    0.0%    0.0%  Function: ^Minimatch /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/minimatch/minimatch.js:128:20
+      1    0.0%    0.0%  Function: ^Long.subtract /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/long.js:720:40
+      1    0.0%    0.0%  Function: ^Long.isLong /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/long.js:236:28
+      1    0.0%    0.0%  Function: ^Long.equals /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/long.js:428:38
+      1    0.0%    0.0%  Function: ^Glob._readdirInGlobStar /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/glob/glob.js:492:46
+      1    0.0%    0.0%  Function: ^Glob._processReaddir /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/glob/glob.js:368:43
+      1    0.0%    0.0%  Function: ^Glob._process /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/glob/glob.js:295:36
+      1    0.0%    0.0%  Function: ^Glob /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/glob/glob.js:117:15
+      1    0.0%    0.0%  Function: ^FastBuffer node:internal/buffer:958:14
+      1    0.0%    0.0%  Function: ^EventEmitter.init node:events:337:29
+      1    0.0%    0.0%  Function: ^ConnectionCheckOutStartedEvent /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection_pool_events.js:102:16
+      1    0.0%    0.0%  Function: ^Binary /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/binary.js:42:20
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/validators:363:42
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/validators:261:39
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/validators:136:40
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/util:350:24
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/modules/esm/translators:160:67
+      1    0.0%    0.0%  Function: ^<anonymous> :1:1
+      1    0.0%    0.0%  Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/source-map/lib/source-node.js:174:29
+      1    0.0%    0.0%  Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/sessions.js:134:43
+      1    0.0%    0.0%  Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/sdam/topology.js:479:26
+      1    0.0%    0.0%  Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/sdam/server_selection.js:192:12
+      1    0.0%    0.0%  Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/sdam/server.js:211:101
+      1    0.0%    0.0%  Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cursor/abstract_cursor.js:430:60
+      1    0.0%    0.0%  Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cursor/abstract_cursor.js:403:42
+      1    0.0%    0.0%  Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection_pool.js:300:23
+      1    0.0%    0.0%  Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:123:11
+
+ [C++]:
+   ticks  total  nonlib   name
+    639    3.6%   10.3%  __write@@GLIBC_2.2.5
+    630    3.5%   10.2%  node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    590    3.3%    9.5%  void node::StreamBase::JSMethod<&node::StreamBase::Writev>(v8::FunctionCallbackInfo<v8::Value> const&)
+    521    2.9%    8.4%  epoll_pwait@@GLIBC_2.6
+    316    1.8%    5.1%  node::loader::ModuleWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+    226    1.3%    3.7%  node::builtins::BuiltinLoader::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    143    0.8%    2.3%  pthread_cond_signal@@GLIBC_2.3.2
+    130    0.7%    2.1%  node::crypto::Hash::New(v8::FunctionCallbackInfo<v8::Value> const&)
+    120    0.7%    1.9%  node::crypto::Hmac::HmacInit(v8::FunctionCallbackInfo<v8::Value> const&)
+    119    0.7%    1.9%  node::fs::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+    118    0.7%    1.9%  __read@@GLIBC_2.2.5
+    109    0.6%    1.8%  node::fs::NewFSReqCallback(v8::FunctionCallbackInfo<v8::Value> const&)
+     97    0.5%    1.6%  void node::StreamBase::JSMethod<&node::StreamBase::WriteBuffer>(v8::FunctionCallbackInfo<v8::Value> const&)
+     83    0.5%    1.3%  fwrite@@GLIBC_2.2.5
+     82    0.5%    1.3%  void node::StreamBase::JSMethod<&(int node::StreamBase::WriteString<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+     67    0.4%    1.1%  __libc_malloc@@GLIBC_2.2.5
+     59    0.3%    1.0%  node::crypto::TLSWrap::GetPeerCertificate(v8::FunctionCallbackInfo<v8::Value> const&)
+     46    0.3%    0.7%  syscall@@GLIBC_2.2.5
+     46    0.3%    0.7%  __mprotect@@GLIBC_PRIVATE
+     40    0.2%    0.6%  node::crypto::Hash::HashUpdate(v8::FunctionCallbackInfo<v8::Value> const&)
+     34    0.2%    0.5%  node::crypto::SecureContext::AddRootCerts(v8::FunctionCallbackInfo<v8::Value> const&)
+     32    0.2%    0.5%  node::crypto::Hmac::HmacDigest(v8::FunctionCallbackInfo<v8::Value> const&)
+     29    0.2%    0.5%  node::BaseObject::~BaseObject()
+     26    0.1%    0.4%  node::crypto::Hmac::New(v8::FunctionCallbackInfo<v8::Value> const&)
+     21    0.1%    0.3%  cfree@GLIBC_2.2.5
+     20    0.1%    0.3%  node::crypto::Hmac::HmacUpdate(v8::FunctionCallbackInfo<v8::Value> const&)
+     18    0.1%    0.3%  node::crypto::TLSWrap::Start(v8::FunctionCallbackInfo<v8::Value> const&)
+     16    0.1%    0.3%  node::IsConstructCallCallback(v8::FunctionCallbackInfo<v8::Value> const&)
+     15    0.1%    0.2%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+     14    0.1%    0.2%  node::crypto::SecureContext::Init(v8::FunctionCallbackInfo<v8::Value> const&)
+     14    0.1%    0.2%  __tls_get_addr@@GLIBC_2.3
+     13    0.1%    0.2%  node::AsyncWrap::EmitTraceEventAfter(node::AsyncWrap::ProviderType, double)
+     13    0.1%    0.2%  _IO_file_xsputn@@GLIBC_2.2.5
+     12    0.1%    0.2%  operator new(unsigned long)@@GLIBCXX_3.4
+     12    0.1%    0.2%  node::crypto::Hash::HashDigest(v8::FunctionCallbackInfo<v8::Value> const&)
+     11    0.1%    0.2%  std::vector<v8::Local<v8::Object>, std::allocator<v8::Local<v8::Object> > >::_M_default_append(unsigned long)
+     11    0.1%    0.2%  node::AsyncHooks::push_async_context(double, double, v8::Local<v8::Object>)
+     11    0.1%    0.2%  getdents64@@GLIBC_2.30
+     10    0.1%    0.2%  fstatat@@GLIBC_2.33
+     10    0.1%    0.2%  __open@@GLIBC_2.2.5
+     10    0.1%    0.2%  __clock_gettime@@GLIBC_PRIVATE
+     10    0.1%    0.2%  BIO_get_data@@OPENSSL_3.0.0
+      9    0.1%    0.1%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+      9    0.1%    0.1%  node::process::BindingData::SlowNumber(v8::FunctionCallbackInfo<v8::Value> const&)
+      9    0.1%    0.1%  __errno_location@@GLIBC_2.2.5
+      8    0.0%    0.1%  node::NodeArrayBufferAllocator::Allocate(unsigned long)
+      8    0.0%    0.1%  __pthread_rwlock_wrlock@GLIBC_2.2.5
+      8    0.0%    0.1%  __mmap@@GLIBC_PRIVATE
+      7    0.0%    0.1%  node::crypto::TLSWrap::ClearOut()
+      7    0.0%    0.1%  node::crypto::CryptoJob<node::crypto::PBKDF2Traits>::Run(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.0%    0.1%  node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.0%    0.1%  node::InternalCallbackScope::Close()
+      7    0.0%    0.1%  node::BaseObject::BaseObject(node::Environment*, v8::Local<v8::Object>)
+      7    0.0%    0.1%  calloc@@GLIBC_2.2.5
+      6    0.0%    0.1%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      6    0.0%    0.1%  node::crypto::NodeBIO::Read(char*, unsigned long)
+      6    0.0%    0.1%  node::Emit(node::Environment*, double, node::AsyncHooks::Fields, v8::Local<v8::Function>)
+      6    0.0%    0.1%  node::AsyncWrap::EmitTraceEventDestroy()
+      6    0.0%    0.1%  __pthread_rwlock_unlock@GLIBC_2.2.5
+      6    0.0%    0.1%  __pthread_mutex_lock@GLIBC_2.2.5
+      5    0.0%    0.1%  node::crypto::TLSWrap::InvokeQueued(int, char const*)
+      5    0.0%    0.1%  node::crypto::NodeBIO::Ctrl(bio_st*, int, long, void*)
+      5    0.0%    0.1%  node::StringBytes::Encode(v8::Isolate*, char const*, unsigned long, node::encoding, v8::Local<v8::Value>*)
+      5    0.0%    0.1%  node::BaseObject::decrease_refcount()
+      5    0.0%    0.1%  node::AsyncWrap::EmitTraceEventBefore()
+      5    0.0%    0.1%  OPENSSL_init_crypto@@OPENSSL_3.0.0
+      5    0.0%    0.1%  CRYPTO_gcm128_setiv@@OPENSSL_3.0.0
+      4    0.0%    0.1%  uv_fs_req_cleanup
+      4    0.0%    0.1%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      4    0.0%    0.1%  node::report::GetReport(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.0%    0.1%  node::fs::FSReqBase::~FSReqBase()
+      4    0.0%    0.1%  node::crypto::SecureContext::SetCiphers(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.0%    0.1%  node::TCPWrap::Connect(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.0%    0.1%  node::StreamBase::Write(uv_buf_t*, unsigned long, uv_stream_s*, v8::Local<v8::Object>)
+      4    0.0%    0.1%  node::InternalMakeCallback(node::Environment*, v8::Local<v8::Object>, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*, node::async_context)
+      4    0.0%    0.1%  node::AsyncWrap::MakeCallback(v8::Local<v8::Function>, int, v8::Local<v8::Value>*)
+      4    0.0%    0.1%  __pthread_getspecific@GLIBC_2.2.5
+      4    0.0%    0.1%  OSSL_PARAM_set_uint64@@OPENSSL_3.0.0
+      4    0.0%    0.1%  CRYPTO_malloc@@OPENSSL_3.0.0
+      4    0.0%    0.1%  BIO_ctrl@@OPENSSL_3.0.0
+      3    0.0%    0.0%  uv_err_name
+      3    0.0%    0.0%  u_hasBinaryProperty_71
+      3    0.0%    0.0%  node::i18n::ConverterObject::Decode(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  node::fs::FSReqCallback::~FSReqCallback()
+      3    0.0%    0.0%  node::fs::FSReqAfterScope::Clear()
+      3    0.0%    0.0%  node::crypto::CryptoJob<node::crypto::RandomBytesTraits>::Run(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  node::StringBytes::Write(v8::Isolate*, char*, unsigned long, v8::Local<v8::Value>, node::encoding)
+      3    0.0%    0.0%  node::StreamBase::CallJSOnreadMethod(long, v8::Local<v8::ArrayBuffer>, unsigned long, node::StreamBase::StreamBaseJSChecks)
+      3    0.0%    0.0%  node::InternalCallbackScope::InternalCallbackScope(node::Environment*, v8::Local<v8::Object>, node::async_context const&, int)
+      3    0.0%    0.0%  node::Environment::release_managed_buffer(uv_buf_t const&)
+      3    0.0%    0.0%  node::Environment::RunAndClearNativeImmediates(bool)
+      3    0.0%    0.0%  node::EmitToJSStreamListener::OnStreamAlloc(unsigned long)
+      3    0.0%    0.0%  node::BaseObject::pointer_data()
+      3    0.0%    0.0%  node::AsyncWrap::AsyncReset(v8::Local<v8::Object>, double, bool)
+      3    0.0%    0.0%  node::AsyncHooks::pop_async_context(double)
+      3    0.0%    0.0%  __close_nocancel@@GLIBC_PRIVATE
+      3    0.0%    0.0%  SSL_in_init@@OPENSSL_3.0.0
+      3    0.0%    0.0%  SHA1_Final@@OPENSSL_3.0.0
+      3    0.0%    0.0%  EVP_CipherUpdate@@OPENSSL_3.0.0
+      3    0.0%    0.0%  EVP_CIPHER_up_ref@@OPENSSL_3.0.0
+      2    0.0%    0.0%  uv_run
+      2    0.0%    0.0%  u_strlen_71
+      2    0.0%    0.0%  u_charType_71
+      2    0.0%    0.0%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      2    0.0%    0.0%  std::ostream::operator<<(int)@@GLIBCXX_3.4
+      2    0.0%    0.0%  std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      2    0.0%    0.0%  std::_Hashtable<char*, std::pair<char* const, std::unique_ptr<v8::BackingStore, std::default_delete<v8::BackingStore> > >, std::allocator<std::pair<char* const, std::unique_ptr<v8::BackingStore, std::default_delete<v8::BackingStore> > > >, std::__detail::_Select1st, std::equal_to<char*>, std::hash<char*>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<char* const, std::unique_ptr<v8::BackingStore, std::default_delete<v8::BackingStore> > >, false>*, unsigned long)
+      2    0.0%    0.0%  operator delete(void*, unsigned long)@@CXXABI_1.3.9
+      2    0.0%    0.0%  operator delete(void*)@@GLIBCXX_3.4
+      2    0.0%    0.0%  non-virtual thunk to node::crypto::TLSWrap::OnStreamAlloc(unsigned long)
+      2    0.0%    0.0%  node::options_parser::GetCLIOptions(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  node::loader::ModuleWrap::Link(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  node::fs::FileHandle::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  node::fs::FSReqCallback::Resolve(v8::Local<v8::Value>)
+      2    0.0%    0.0%  node::fs::FSReqCallback::Reject(v8::Local<v8::Value>)
+      2    0.0%    0.0%  node::fs::FSReqAfterScope::~FSReqAfterScope()
+      2    0.0%    0.0%  node::fs::AfterNoArgs(uv_fs_s*)
+      2    0.0%    0.0%  node::crypto::TLSWrap::Wrap(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  node::crypto::NodeBIO::TryAllocateForWrite(unsigned long)
+      2    0.0%    0.0%  node::crypto::NodeBIO::FreeEmpty()
+      2    0.0%    0.0%  node::crypto::ByteSource::Allocated(void*, unsigned long)
+      2    0.0%    0.0%  node::binding::DLOpen(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  node::ReportWritesToJSStreamListener::OnStreamAfterReqFinished(node::StreamReq*, int)
+      2    0.0%    0.0%  node::ParseEncoding(char const*, node::encoding)
+      2    0.0%    0.0%  node::NodePlatform::GetTracingController()
+      2    0.0%    0.0%  node::NodePlatform::CurrentClockTimeMillis()
+      2    0.0%    0.0%  node::MakeLibuvRequestCallback<uv_fs_s, void (*)(uv_fs_s*)>::Wrapper(uv_fs_s*)
+      2    0.0%    0.0%  node::Environment::allocate_managed_buffer(unsigned long)
+      2    0.0%    0.0%  node::Environment::RunWeakRefCleanup()
+      2    0.0%    0.0%  node::AsyncWrap::EmitDestroy(bool)
+      2    0.0%    0.0%  node::AsyncWrap::EmitAfter(node::Environment*, double)
+      2    0.0%    0.0%  node::AsyncHooks::DefaultTriggerAsyncIdScope::DefaultTriggerAsyncIdScope(node::Environment*, double)
+      2    0.0%    0.0%  int node::StreamBase::WriteString<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  icu_71::OlsonTimeZone::getOffset(double, signed char, int&, int&, UErrorCode&) const
+      2    0.0%    0.0%  icu_71::OlsonTimeZone::getHistoricalOffset(double, signed char, int, int, int&, int&) const
+      2    0.0%    0.0%  fputc@@GLIBC_2.2.5
+      2    0.0%    0.0%  __pthread_mutex_unlock@GLIBC_2.2.5
+      2    0.0%    0.0%  __popcountdi2@@GCC_3.4
+      2    0.0%    0.0%  __open64_nocancel@@GLIBC_PRIVATE
+      2    0.0%    0.0%  __munmap@@GLIBC_PRIVATE
+      2    0.0%    0.0%  __lll_lock_wait_private@@GLIBC_PRIVATE
+      2    0.0%    0.0%  _IO_setb@@GLIBC_2.2.5
+      2    0.0%    0.0%  _IO_padn@@GLIBC_2.2.5
+      2    0.0%    0.0%  SSL_get_error@@OPENSSL_3.0.0
+      2    0.0%    0.0%  OSSL_PARAM_locate@@OPENSSL_3.0.0
+      2    0.0%    0.0%  OPENSSL_cleanse@@OPENSSL_3.0.0
+      2    0.0%    0.0%  EVP_CipherInit_ex@@OPENSSL_3.0.0
+      2    0.0%    0.0%  CRYPTO_free@@OPENSSL_3.0.0
+      1    0.0%    0.0%  void std::vector<v8::Local<v8::String>, std::allocator<v8::Local<v8::String> > >::_M_realloc_insert<v8::Local<v8::String> >(__gnu_cxx::__normal_iterator<v8::Local<v8::String>*, std::vector<v8::Local<v8::String>, std::allocator<v8::Local<v8::String> > > >, v8::Local<v8::String>&&)
+      1    0.0%    0.0%  void node::fs::FillStatsArray<double, v8::Float64Array>(node::AliasedBufferBase<double, v8::Float64Array, std::enable_if<std::is_scalar<double>::value, void>::type>*, uv_stat_t const*, unsigned long)
+      1    0.0%    0.0%  void node::GetSockOrPeerName<node::TCPWrap, &uv_tcp_getpeername>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  uv_try_write2
+      1    0.0%    0.0%  uv_try_write
+      1    0.0%    0.0%  uv_mutex_lock
+      1    0.0%    0.0%  uv_hrtime
+      1    0.0%    0.0%  uv_cond_signal
+      1    0.0%    0.0%  uv_buf_init
+      1    0.0%    0.0%  uprv_floor_71
+      1    0.0%    0.0%  std::ostream::flush()@@GLIBCXX_3.4
+      1    0.0%    0.0%  std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      1    0.0%    0.0%  std::locale::id::_M_id() const@@GLIBCXX_3.4
+      1    0.0%    0.0%  std::__detail::_Prime_rehash_policy::_M_next_bkt(unsigned long) const@@GLIBCXX_3.4.18
+      1    0.0%    0.0%  std::__detail::_Prime_rehash_policy::_M_need_rehash(unsigned long, unsigned long, unsigned long) const@@GLIBCXX_3.4.18
+      1    0.0%    0.0%  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::reserve(unsigned long)@@GLIBCXX_3.4.21
+      1    0.0%    0.0%  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long)@@GLIBCXX_3.4.21
+      1    0.0%    0.0%  std::_Rb_tree_increment(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+      1    0.0%    0.0%  sigemptyset@@GLIBC_2.2.5
+      1    0.0%    0.0%  recvfrom@@GLIBC_2.2.5
+      1    0.0%    0.0%  pthread_sigmask@GLIBC_2.2.5
+      1    0.0%    0.0%  posix_memalign@@GLIBC_2.2.5
+      1    0.0%    0.0%  non-virtual thunk to node::crypto::TLSWrap::IsAlive()
+      1    0.0%    0.0%  non-virtual thunk to node::crypto::TLSWrap::Error() const
+      1    0.0%    0.0%  non-virtual thunk to node::LibuvStreamWrap::IsAlive()
+      1    0.0%    0.0%  non-virtual thunk to node::LibuvStreamWrap::GetAsyncWrap()
+      1    0.0%    0.0%  non-virtual thunk to node::LibuvStreamWrap::DoTryWrite(uv_buf_t**, unsigned long*)
+      1    0.0%    0.0%  node::tracing::TraceEventHelper::GetTracingController()
+      1    0.0%    0.0%  node::loader::ModuleWrap::SetSyntheticExport(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::loader::ModuleWrap::Instantiate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::fs::FSReqBase::binding_data()
+      1    0.0%    0.0%  node::fs::FSReqAfterScope::Proceed()
+      1    0.0%    0.0%  node::fs::AfterScanDir(uv_fs_s*)
+      1    0.0%    0.0%  node::errors::TryCatchScope::~TryCatchScope()
+      1    0.0%    0.0%  node::crypto::TLSWrap::VerifyError(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::crypto::TLSWrap::GetEphemeralKeyInfo(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::crypto::NodeBIO::TryMoveReadHead()
+      1    0.0%    0.0%  node::crypto::NodeBIO::FromBIO(bio_st*)
+      1    0.0%    0.0%  node::crypto::ByteSource::operator=(node::crypto::ByteSource&&)
+      1    0.0%    0.0%  node::contextify::CompiledFnEntry::CompiledFnEntry(node::Environment*, v8::Local<v8::Object>, unsigned int, v8::Local<v8::Function>)
+      1    0.0%    0.0%  node::UVException(v8::Isolate*, int, char const*, char const*, char const*, char const*)
+      1    0.0%    0.0%  node::TCPWrap::SetNoDelay(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::PerIsolatePlatformData::RunForegroundTask(uv_timer_s*)
+      1    0.0%    0.0%  node::LibuvStreamWrap::OnUvAlloc(unsigned long, uv_buf_t*)
+      1    0.0%    0.0%  node::Environment::ToggleImmediateRef(bool)
+      1    0.0%    0.0%  node::Environment::CheckImmediate(uv_check_s*)
+      1    0.0%    0.0%  node::EmitToJSStreamListener::OnStreamRead(long, uv_buf_t const&)
+      1    0.0%    0.0%  node::CleanupQueue::CleanupHookCallback::Hash::operator()(node::CleanupQueue::CleanupHookCallback const&) const
+      1    0.0%    0.0%  node::BufferValue::BufferValue(v8::Isolate*, v8::Local<v8::Value>)
+      1    0.0%    0.0%  node::Buffer::HasInstance(v8::Local<v8::Object>)
+      1    0.0%    0.0%  node::BaseObject::increase_refcount()
+      1    0.0%    0.0%  node::BaseObject::OnGCCollect()
+      1    0.0%    0.0%  node::AsyncWrap::~AsyncWrap()
+      1    0.0%    0.0%  node::AsyncWrap::IsDoneInitializing() const
+      1    0.0%    0.0%  node::AsyncWrap::EmitDestroy(node::Environment*, double)
+      1    0.0%    0.0%  node::AsyncHooks::DefaultTriggerAsyncIdScope::~DefaultTriggerAsyncIdScope()
+      1    0.0%    0.0%  node::AsyncHooks::DefaultTriggerAsyncIdScope::DefaultTriggerAsyncIdScope(node::AsyncWrap*)
+      1    0.0%    0.0%  icu_71::UnicodeFilter::~UnicodeFilter()
+      1    0.0%    0.0%  icu_71::OlsonTimeZone::transitionTimeInSeconds(short) const
+      1    0.0%    0.0%  icu_71::CharString::ensureCapacity(int, int, UErrorCode&)
+      1    0.0%    0.0%  fgets@@GLIBC_2.2.5
+      1    0.0%    0.0%  fdopen@@GLIBC_2.2.5
+      1    0.0%    0.0%  epoll_ctl@@GLIBC_2.3.2
+      1    0.0%    0.0%  brk@@GLIBC_2.2.5
+      1    0.0%    0.0%  base64_stream_encode_final
+      1    0.0%    0.0%  __pthread_rwlock_rdlock@GLIBC_2.2.5
+      1    0.0%    0.0%  __pthread_once@GLIBC_2.2.5
+      1    0.0%    0.0%  __lll_lock_wake_private@@GLIBC_PRIVATE
+      1    0.0%    0.0%  __libc_realloc@@GLIBC_2.2.5
+      1    0.0%    0.0%  __cxxabiv1::__vmi_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const@@CXXABI_1.3
+      1    0.0%    0.0%  _IO_getline@@GLIBC_2.2.5
+      1    0.0%    0.0%  _IO_default_xsputn@@GLIBC_2.2.5
+      1    0.0%    0.0%  X509_PURPOSE_get_by_id@@OPENSSL_3.0.0
+      1    0.0%    0.0%  SSL_write@@OPENSSL_3.0.0
+      1    0.0%    0.0%  SSL_get_shutdown@@OPENSSL_3.0.0
+      1    0.0%    0.0%  PKCS1_MGF1@@OPENSSL_3.0.0
+      1    0.0%    0.0%  OSSL_PARAM_locate_const@@OPENSSL_3.0.0
+      1    0.0%    0.0%  OSSL_PARAM_get_octet_string@@OPENSSL_3.0.0
+      1    0.0%    0.0%  OSSL_PARAM_construct_size_t@@OPENSSL_3.0.0
+      1    0.0%    0.0%  OPENSSL_sk_insert@@OPENSSL_3.0.0
+      1    0.0%    0.0%  EVP_PKEY_derive_init_ex@@OPENSSL_3.0.0
+      1    0.0%    0.0%  EVP_MD_get_size@@OPENSSL_3.0.0
+      1    0.0%    0.0%  EVP_KEYMGMT_is_a@@OPENSSL_3.0.0
+      1    0.0%    0.0%  EVP_EncryptFinal_ex@@OPENSSL_3.0.0
+      1    0.0%    0.0%  EVP_DigestFinal_ex@@OPENSSL_3.0.0
+      1    0.0%    0.0%  EVP_DecryptUpdate@@OPENSSL_3.0.0
+      1    0.0%    0.0%  EVP_CIPHER_CTX_get_iv_length@@OPENSSL_3.0.0
+      1    0.0%    0.0%  EVP_CIPHER_CTX_get_block_size@@OPENSSL_3.0.0
+      1    0.0%    0.0%  EVP_CIPHER_CTX_ctrl@@OPENSSL_3.0.0
+      1    0.0%    0.0%  ERR_set_mark@@OPENSSL_3.0.0
+      1    0.0%    0.0%  ERR_peek_error@@OPENSSL_3.0.0
+      1    0.0%    0.0%  ENGINE_get_pkey_asn1_meth_engine@@OPENSSL_3.0.0
+      1    0.0%    0.0%  CRYPTO_zalloc@@OPENSSL_3.0.0
+      1    0.0%    0.0%  CRYPTO_gcm128_encrypt@@OPENSSL_3.0.0
+      1    0.0%    0.0%  CRYPTO_gcm128_decrypt_ctr32@@OPENSSL_3.0.0
+      1    0.0%    0.0%  CRYPTO_clear_free@@OPENSSL_3.0.0
+      1    0.0%    0.0%  BN_bin2bn@@OPENSSL_3.0.0
+      1    0.0%    0.0%  BN_CTX_start@@OPENSSL_3.0.0
+      1    0.0%    0.0%  BIO_read@@OPENSSL_3.0.0
+      1    0.0%    0.0%  BIO_pop@@OPENSSL_3.0.0
+
+ [Summary]:
+   ticks  total  nonlib   name
+   1142    6.4%   18.5%  JavaScript
+   5016   28.1%   81.1%  C++
+    504    2.8%    8.2%  GC
+  11640   65.3%          Shared libraries
+     26    0.1%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+    924   18.6%    5.2%  node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+    630   12.7%    3.5%  node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    608   12.2%    3.4%  __write@@GLIBC_2.2.5
+    590   11.9%    3.3%  void node::StreamBase::JSMethod<&node::StreamBase::Writev>(v8::FunctionCallbackInfo<v8::Value> const&)
+    316    6.4%    1.8%  node::loader::ModuleWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+    226    4.5%    1.3%  node::builtins::BuiltinLoader::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    130    2.6%    0.7%  node::crypto::Hash::New(v8::FunctionCallbackInfo<v8::Value> const&)
+    120    2.4%    0.7%  node::crypto::Hmac::HmacInit(v8::FunctionCallbackInfo<v8::Value> const&)
+    119    2.4%    0.7%  node::fs::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+    116    2.3%    0.7%  pthread_cond_signal@@GLIBC_2.3.2
+    109    2.2%    0.6%  node::fs::NewFSReqCallback(v8::FunctionCallbackInfo<v8::Value> const&)
+     97    2.0%    0.5%  void node::StreamBase::JSMethod<&node::StreamBase::WriteBuffer>(v8::FunctionCallbackInfo<v8::Value> const&)
+     82    1.6%    0.5%  void node::StreamBase::JSMethod<&(int node::StreamBase::WriteString<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+     81    1.6%    0.5%  fwrite@@GLIBC_2.2.5
+     59    1.2%    0.3%  node::crypto::TLSWrap::GetPeerCertificate(v8::FunctionCallbackInfo<v8::Value> const&)
+     59    1.2%    0.3%  __read@@GLIBC_2.2.5
+     54    1.1%    0.3%  __libc_malloc@@GLIBC_2.2.5
+     46    0.9%    0.3%  syscall@@GLIBC_2.2.5
+     44    0.9%    0.2%  node::loader::ModuleWrap::Link(v8::FunctionCallbackInfo<v8::Value> const&)
+     40    0.8%    0.2%  node::crypto::Hash::HashUpdate(v8::FunctionCallbackInfo<v8::Value> const&)
+     34    0.7%    0.2%  node::crypto::SecureContext::AddRootCerts(v8::FunctionCallbackInfo<v8::Value> const&)
+     32    0.6%    0.2%  node::crypto::Hmac::HmacDigest(v8::FunctionCallbackInfo<v8::Value> const&)
+     28    0.6%    0.2%  __mprotect@@GLIBC_PRIVATE
+     26    0.5%    0.1%  node::crypto::Hmac::New(v8::FunctionCallbackInfo<v8::Value> const&)
+     20    0.4%    0.1%  node::crypto::Hmac::HmacUpdate(v8::FunctionCallbackInfo<v8::Value> const&)
+     18    0.4%    0.1%  node::crypto::TLSWrap::Start(v8::FunctionCallbackInfo<v8::Value> const&)
+     16    0.3%    0.1%  node::IsConstructCallCallback(v8::FunctionCallbackInfo<v8::Value> const&)
+     15    0.3%    0.1%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+     14    0.3%    0.1%  node::crypto::SecureContext::Init(v8::FunctionCallbackInfo<v8::Value> const&)
+     13    0.3%    0.1%  _IO_file_xsputn@@GLIBC_2.2.5
+     12    0.2%    0.1%  operator new(unsigned long)@@GLIBCXX_3.4
+     12    0.2%    0.1%  node::crypto::Hash::HashDigest(v8::FunctionCallbackInfo<v8::Value> const&)
+     10    0.2%    0.1%  cfree@GLIBC_2.2.5
+     10    0.2%    0.1%  __tls_get_addr@@GLIBC_2.3
+     10    0.2%    0.1%  __open@@GLIBC_2.2.5
+      9    0.2%    0.1%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+      9    0.2%    0.1%  node::process::BindingData::SlowNumber(v8::FunctionCallbackInfo<v8::Value> const&)
+      9    0.2%    0.1%  fstatat@@GLIBC_2.33
+      7    0.1%    0.0%  node::crypto::CryptoJob<node::crypto::PBKDF2Traits>::Run(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.1%    0.0%  node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.1%    0.0%  calloc@@GLIBC_2.2.5
+      7    0.1%    0.0%  __pthread_rwlock_wrlock@GLIBC_2.2.5
+      6    0.1%    0.0%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      6    0.1%    0.0%  node::BaseObject::BaseObject(node::Environment*, v8::Local<v8::Object>)
+      6    0.1%    0.0%  BIO_get_data@@OPENSSL_3.0.0
+      5    0.1%    0.0%  node::report::GetReport(v8::FunctionCallbackInfo<v8::Value> const&)
+      5    0.1%    0.0%  node::StringBytes::Encode(v8::Isolate*, char const*, unsigned long, node::encoding, v8::Local<v8::Value>*)
+      4    0.1%    0.0%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      4    0.1%    0.0%  node::crypto::SecureContext::SetCiphers(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.1%    0.0%  node::TCPWrap::Connect(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.1%    0.0%  __clock_gettime@@GLIBC_PRIVATE
+      3    0.1%    0.0%  u_hasBinaryProperty_71
+      3    0.1%    0.0%  node::i18n::ConverterObject::Decode(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.1%    0.0%  node::crypto::CryptoJob<node::crypto::RandomBytesTraits>::Run(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.1%    0.0%  node::StringBytes::Write(v8::Isolate*, char*, unsigned long, v8::Local<v8::Value>, node::encoding)
+      3    0.1%    0.0%  node::StreamBase::Write(uv_buf_t*, unsigned long, uv_stream_s*, v8::Local<v8::Object>)
+      3    0.1%    0.0%  node::NodeArrayBufferAllocator::Allocate(unsigned long)
+      3    0.1%    0.0%  node::AsyncWrap::AsyncReset(v8::Local<v8::Object>, double, bool)
+      3    0.1%    0.0%  __pthread_mutex_lock@GLIBC_2.2.5
+      3    0.1%    0.0%  __errno_location@@GLIBC_2.2.5
+      3    0.1%    0.0%  __close_nocancel@@GLIBC_PRIVATE
+      3    0.1%    0.0%  SHA1_Final@@OPENSSL_3.0.0
+      3    0.1%    0.0%  CRYPTO_gcm128_setiv@@OPENSSL_3.0.0
+      2    0.0%    0.0%  u_strlen_71
+      2    0.0%    0.0%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      2    0.0%    0.0%  std::ostream::operator<<(int)@@GLIBCXX_3.4
+      2    0.0%    0.0%  operator delete(void*)@@GLIBCXX_3.4
+      2    0.0%    0.0%  node::options_parser::GetCLIOptions(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  node::fs::FileHandle::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  node::crypto::TLSWrap::Wrap(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  node::crypto::NodeBIO::TryAllocateForWrite(unsigned long)
+      2    0.0%    0.0%  node::crypto::ByteSource::Allocated(void*, unsigned long)
+      2    0.0%    0.0%  node::binding::DLOpen(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  node::ParseEncoding(char const*, node::encoding)
+      2    0.0%    0.0%  node::NodePlatform::GetTracingController()
+      2    0.0%    0.0%  node::NodePlatform::CurrentClockTimeMillis()
+      2    0.0%    0.0%  node::AsyncHooks::DefaultTriggerAsyncIdScope::DefaultTriggerAsyncIdScope(node::Environment*, double)
+      2    0.0%    0.0%  int node::StreamBase::WriteString<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  icu_71::OlsonTimeZone::getOffset(double, signed char, int&, int&, UErrorCode&) const
+      2    0.0%    0.0%  icu_71::OlsonTimeZone::getHistoricalOffset(double, signed char, int, int, int&, int&) const
+      2    0.0%    0.0%  fputc@@GLIBC_2.2.5
+      2    0.0%    0.0%  __pthread_rwlock_unlock@GLIBC_2.2.5
+      2    0.0%    0.0%  _IO_setb@@GLIBC_2.2.5
+      2    0.0%    0.0%  _IO_padn@@GLIBC_2.2.5
+      2    0.0%    0.0%  SSL_in_init@@OPENSSL_3.0.0
+      2    0.0%    0.0%  OSSL_PARAM_set_uint64@@OPENSSL_3.0.0
+      2    0.0%    0.0%  EVP_CipherInit_ex@@OPENSSL_3.0.0
+      1    0.0%    0.0%  void std::vector<v8::Local<v8::String>, std::allocator<v8::Local<v8::String> > >::_M_realloc_insert<v8::Local<v8::String> >(__gnu_cxx::__normal_iterator<v8::Local<v8::String>*, std::vector<v8::Local<v8::String>, std::allocator<v8::Local<v8::String> > > >, v8::Local<v8::String>&&)
+      1    0.0%    0.0%  void node::GetSockOrPeerName<node::TCPWrap, &uv_tcp_getpeername>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  uv_try_write2
+      1    0.0%    0.0%  uv_try_write
+      1    0.0%    0.0%  uv_mutex_lock
+      1    0.0%    0.0%  uv_cond_signal
+      1    0.0%    0.0%  uv_buf_init
+      1    0.0%    0.0%  uprv_floor_71
+      1    0.0%    0.0%  u_charType_71
+      1    0.0%    0.0%  std::ostream::flush()@@GLIBCXX_3.4
+      1    0.0%    0.0%  std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      1    0.0%    0.0%  std::locale::id::_M_id() const@@GLIBCXX_3.4
+      1    0.0%    0.0%  std::__detail::_Prime_rehash_policy::_M_need_rehash(unsigned long, unsigned long, unsigned long) const@@GLIBCXX_3.4.18
+      1    0.0%    0.0%  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::reserve(unsigned long)@@GLIBCXX_3.4.21
+      1    0.0%    0.0%  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long)@@GLIBCXX_3.4.21
+      1    0.0%    0.0%  std::_Rb_tree_increment(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+      1    0.0%    0.0%  posix_memalign@@GLIBC_2.2.5
+      1    0.0%    0.0%  operator delete(void*, unsigned long)@@CXXABI_1.3.9
+      1    0.0%    0.0%  non-virtual thunk to node::crypto::TLSWrap::IsAlive()
+      1    0.0%    0.0%  non-virtual thunk to node::crypto::TLSWrap::Error() const
+      1    0.0%    0.0%  non-virtual thunk to node::LibuvStreamWrap::IsAlive()
+      1    0.0%    0.0%  non-virtual thunk to node::LibuvStreamWrap::GetAsyncWrap()
+      1    0.0%    0.0%  non-virtual thunk to node::LibuvStreamWrap::DoTryWrite(uv_buf_t**, unsigned long*)
+      1    0.0%    0.0%  node::tracing::TraceEventHelper::GetTracingController()
+      1    0.0%    0.0%  node::loader::ModuleWrap::SetSyntheticExport(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::loader::ModuleWrap::Instantiate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::crypto::TLSWrap::VerifyError(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::crypto::TLSWrap::GetEphemeralKeyInfo(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::crypto::NodeBIO::Ctrl(bio_st*, int, long, void*)
+      1    0.0%    0.0%  node::crypto::NativeKeyObject::CreateNativeKeyObjectClass(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::crypto::ByteSource::operator=(node::crypto::ByteSource&&)
+      1    0.0%    0.0%  node::contextify::CompiledFnEntry::CompiledFnEntry(node::Environment*, v8::Local<v8::Object>, unsigned int, v8::Local<v8::Function>)
+      1    0.0%    0.0%  node::TCPWrap::SetNoDelay(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::BufferValue::BufferValue(v8::Isolate*, v8::Local<v8::Value>)
+      1    0.0%    0.0%  node::Buffer::HasInstance(v8::Local<v8::Object>)
+      1    0.0%    0.0%  node::BaseObject::pointer_data()
+      1    0.0%    0.0%  node::BaseObject::increase_refcount()
+      1    0.0%    0.0%  node::AsyncWrap::IsDoneInitializing() const
+      1    0.0%    0.0%  node::AsyncHooks::DefaultTriggerAsyncIdScope::~DefaultTriggerAsyncIdScope()
+      1    0.0%    0.0%  node::AsyncHooks::DefaultTriggerAsyncIdScope::DefaultTriggerAsyncIdScope(node::AsyncWrap*)
+      1    0.0%    0.0%  icu_71::UnicodeFilter::~UnicodeFilter()
+      1    0.0%    0.0%  icu_71::OlsonTimeZone::transitionTimeInSeconds(short) const
+      1    0.0%    0.0%  icu_71::CharString::ensureCapacity(int, int, UErrorCode&)
+      1    0.0%    0.0%  fgets@@GLIBC_2.2.5
+      1    0.0%    0.0%  fdopen@@GLIBC_2.2.5
+      1    0.0%    0.0%  brk@@GLIBC_2.2.5
+      1    0.0%    0.0%  base64_stream_encode_final
+      1    0.0%    0.0%  __pthread_mutex_unlock@GLIBC_2.2.5
+      1    0.0%    0.0%  __pthread_getspecific@GLIBC_2.2.5
+      1    0.0%    0.0%  __popcountdi2@@GCC_3.4
+      1    0.0%    0.0%  __cxxabiv1::__vmi_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const@@CXXABI_1.3
+      1    0.0%    0.0%  _IO_getline@@GLIBC_2.2.5
+      1    0.0%    0.0%  _IO_default_xsputn@@GLIBC_2.2.5
+      1    0.0%    0.0%  SSL_write@@OPENSSL_3.0.0
+      1    0.0%    0.0%  OSSL_PARAM_locate@@OPENSSL_3.0.0
+      1    0.0%    0.0%  OPENSSL_init_crypto@@OPENSSL_3.0.0
+      1    0.0%    0.0%  OPENSSL_cleanse@@OPENSSL_3.0.0
+      1    0.0%    0.0%  EVP_MD_get_size@@OPENSSL_3.0.0
+      1    0.0%    0.0%  EVP_EncryptFinal_ex@@OPENSSL_3.0.0
+      1    0.0%    0.0%  EVP_DigestFinal_ex@@OPENSSL_3.0.0
+      1    0.0%    0.0%  EVP_CIPHER_up_ref@@OPENSSL_3.0.0
+      1    0.0%    0.0%  EVP_CIPHER_CTX_get_block_size@@OPENSSL_3.0.0
+      1    0.0%    0.0%  EVP_CIPHER_CTX_ctrl@@OPENSSL_3.0.0
+      1    0.0%    0.0%  CRYPTO_zalloc@@OPENSSL_3.0.0
+      1    0.0%    0.0%  CRYPTO_malloc@@OPENSSL_3.0.0
+      1    0.0%    0.0%  CRYPTO_gcm128_encrypt@@OPENSSL_3.0.0
+      1    0.0%    0.0%  CRYPTO_clear_free@@OPENSSL_3.0.0
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+  10998   61.7%  /usr/lib/x86_64-linux-gnu/libnode.so.108
+   5487   49.9%    /usr/lib/x86_64-linux-gnu/libnode.so.108
+    372    6.8%      /usr/lib/x86_64-linux-gnu/libnode.so.108
+     23    6.2%        Function: ^databaseNamespace /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/utils.js:353:27
+     23  100.0%          Function: ^Msg /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/commands.js:317:16
+     19   82.6%            Function: ^command /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection.js:251:12
+      4   17.4%            LazyCompile: *command /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection.js:251:12
+     16    4.3%        Function: ^onMessage /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection.js:156:14
+     16  100.0%          Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection.js:60:44
+     11   68.8%            LazyCompile: *emit node:events:460:44
+      5   31.3%            LazyCompile: *processIncomingData /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/message_stream.js:84:29
+     16    4.3%        Function: ^asString /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/date-format/lib/index.js:29:18
+     16  100.0%          Function: ^timestampLevelAndCategory /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/log4js/lib/layouts.js:42:35
+     16  100.0%            Function: ^colouredLayout /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/log4js/lib/layouts.js:73:24
+     12    3.2%        Function: ^promisify node:internal/util:327:19
+     11   91.7%          Function: ^AbstractOperation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/operation.js:26:16
+     11  100.0%            Function: ^CommandOperation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/command.js:13:16
+      1    8.3%          LazyCompile: ~AbstractOperation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/operation.js:26:16
+      1  100.0%            LazyCompile: ~CommandOperation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/command.js:13:16
+     12    3.2%        Function: ^pipe /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/send/index.js:506:43
+     12  100.0%          Function: ^serveStatic /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/serve-static/index.js:72:31
+     10   83.3%            LazyCompile: *trim_prefix /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:293:23
+      1    8.3%            LazyCompile: *handle /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/layer.js:86:49
+      1    8.3%            Function: ^handle /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/layer.js:86:49
+     12    3.2%        Function: ^parse /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/minimatch/minimatch.js:296:16
+     12  100.0%          /usr/lib/x86_64-linux-gnu/libnode.so.108
+     12  100.0%            Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/minimatch/minimatch.js:196:26
+     12    3.2%        /usr/lib/x86_64-linux-gnu/libnode.so.108
+      7   58.3%          Function: ^isValid /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/read_preference.js:133:19
+      7  100.0%            Function: ^isValid /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/read_preference.js:149:12
+      2   16.7%          Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/connect-mongo/build/main/lib/MongoStore.js:236:10
+      2  100.0%            Function: ^set /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/connect-mongo/build/main/lib/MongoStore.js:234:8
+      1    8.3%          LazyCompile: *<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/connect-mongo/build/main/lib/MongoStore.js:236:10
+      1  100.0%            Function: ^set /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/connect-mongo/build/main/lib/MongoStore.js:234:8
+      1    8.3%          Function: ^Glob._processReaddir2 /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/glob/glob.js:375:44
+      1  100.0%            Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/glob/glob.js:370:43
+      1    8.3%          /usr/lib/x86_64-linux-gnu/libnode.so.108
+      1  100.0%            Function: ^Glob._processReaddir2 /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/glob/glob.js:375:44
+     11    3.0%        Function: ^expressInit /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/middleware/init.js:29:30
+      6   54.5%          LazyCompile: *trim_prefix /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:293:23
+      6  100.0%            LazyCompile: *next /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:177:16
+      3   27.3%          LazyCompile: *handle /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/layer.js:86:49
+      3  100.0%            Function: ^trim_prefix /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:293:23
+      2   18.2%          Function: ^handle /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/layer.js:86:49
+      2  100.0%            Function: ^trim_prefix /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:293:23
+     11    3.0%        Function: ^FastBuffer node:internal/buffer:958:14
+      7   63.6%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      5   71.4%            Function: ^allocUnsafeSlow node:buffer:388:50
+      2   28.6%            Function: ^createPool node:buffer:155:20
+      4   36.4%          Function: ^alloc node:buffer:365:30
+      4  100.0%            Function: ^serialize /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/bson.js:110:19
+     10    2.7%        Function: ^fromString /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/utils.js:314:22
+     10  100.0%          Function: ^ns /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/utils.js:292:12
+      9   90.0%            Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cursor/abstract_cursor.js:403:42
+      1   10.0%            Function: ^measureRoundTripTime /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/sdam/monitor.js:288:30
+     10    2.7%        Function: ^checkInvalidHeaderChar node:_http_common:221:32
+     10  100.0%          Function: ^<anonymous> node:_http_outgoing:618:45
+     10  100.0%            Function: ^setHeader node:_http_outgoing:642:57
+      9    2.4%        LazyCompile: *processTicksAndRejections node:internal/process/task_queues:67:35
+      9    2.4%        Function: ^readPackage node:internal/modules/cjs/loader:319:21
+      8   88.9%          Function: ^readPackageScope node:internal/modules/cjs/loader:361:26
+      6   75.0%            Function: ^trySelf node:internal/modules/cjs/loader:481:17
+      2   25.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1158:37
+      1   11.1%          Function: ^tryPackage node:internal/modules/cjs/loader:378:20
+      1  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:534:28
+      9    2.4%        Function: ^clone /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/sessions.js:559:17
+      9  100.0%          Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/sessions.js:134:43
+      9  100.0%            Function: ^maybeCallback /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/utils.js:335:23
+      8    2.2%        Function: ^parse /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/node_modules/cookie/index.js:48:15
+      8  100.0%          Function: ^getcookie /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/index.js:529:19
+      8  100.0%            Function: ^session /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/index.js:179:26
+      8    2.2%        Function: ^header /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/response.js:777:29
+      5   62.5%          Function: ^send /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/response.js:111:25
+      4   80.0%            LazyCompile: *renderView /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:183:19
+      1   20.0%            Function: ^done /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/response.js:1033:27
+      3   37.5%          Function: ^contentType /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/response.js:619:32
+      3  100.0%            Function: ^send /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/response.js:111:25
+      8    2.2%        Function: ^command /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection.js:251:12
+      7   87.5%          Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/sdam/server.js:197:42
+      5   71.4%            LazyCompile: *processWaitQueue /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection_pool.js:441:21
+      2   28.6%            Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection_pool.js:300:23
+      1   12.5%          Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connect.js:78:43
+      1  100.0%            Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/auth/scram.js:25:32
+      7    1.9%        Function: ^mergeSource /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:267:36
+      4   57.1%          LazyCompile: *compile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      3   75.0%            LazyCompile: *render /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+      1   25.0%            Function: ^compileInput /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      3   42.9%          Function: ^createFunctionContext /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:216:56
+      3  100.0%            Function: ^compile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      7    1.9%        Function: ^JSONCookies /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/cookie-parser/index.js:103:22
+      7  100.0%          Function: ^cookieParser /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/cookie-parser/index.js:44:32
+      4   57.1%            LazyCompile: *trim_prefix /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:293:23
+      2   28.6%            LazyCompile: *handle /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/layer.js:86:49
+      1   14.3%            Function: ^handle /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/layer.js:86:49
+      4    1.1%        LazyCompile: *promisify node:internal/util:327:19
+      2   50.0%          LazyCompile: *CommandOperation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/command.js:13:16
+      1   50.0%            Function: ^UpdateOperation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/update.js:10:16
+      1   50.0%            Function: ^FindOperation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/find.js:12:16
+      2   50.0%          Function: ^AbstractOperation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/operation.js:26:16
+      2  100.0%            Function: ^CommandOperation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/command.js:13:16
+    141    2.6%      Function: ^<anonymous> file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/src/routes/info.routes.js:6:32
+    103   73.0%        LazyCompile: *handle /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/layer.js:86:49
+    103  100.0%          Function: ^next /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/route.js:116:16
+    103  100.0%            Function: ^compression /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/compression/index.js:59:31
+     38   27.0%        Function: ^handle /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/layer.js:86:49
+     38  100.0%          Function: ^next /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/route.js:116:16
+     38  100.0%            Function: ^compression /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/compression/index.js:59:31
+    121    2.2%      Function: ^readFileAfterOpen node:fs:320:27
+    113    2.1%      Function: ^cpus node:os:141:14
+    113  100.0%        Function: ^<anonymous> file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/src/routes/info.routes.js:6:32
+     67   59.3%          LazyCompile: *handle /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/layer.js:86:49
+     67  100.0%            Function: ^next /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/route.js:116:16
+     46   40.7%          Function: ^handle /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/layer.js:86:49
+     46  100.0%            Function: ^next /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/route.js:116:16
+    102    1.9%      Function: ^read node:internal/fs/read_file_context:85:7
+    102  100.0%        Function: ^readFileAfterStat node:fs:336:27
+     96    1.7%      LazyCompile: *getColorDepth node:internal/tty:106:23
+     76   79.2%        LazyCompile: *log node:internal/console/constructor:376:6
+     76  100.0%          /usr/lib/x86_64-linux-gnu/libnode.so.108
+     57   75.0%            Function: ^<anonymous> file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/src/routes/info.routes.js:6:32
+     19   25.0%            Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/log4js/lib/appenders/console.js:5:10
+     20   20.8%        Function: ^value node:internal/console/constructor:315:20
+     20  100.0%          Function: ^value node:internal/console/constructor:337:20
+     20  100.0%            Function: ^log node:internal/console/constructor:376:6
+     96    1.7%      LazyCompile: *deserializeObject /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/deserializer.js:65:27
+     52   54.2%        LazyCompile: *deserializeObject /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/deserializer.js:65:27
+     25   48.1%          LazyCompile: *deserializeObject /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/deserializer.js:65:27
+     12   48.0%            LazyCompile: *deserializeObject /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/deserializer.js:65:27
+      7   28.0%            Function: ^deserialize /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/deserializer.js:36:21
+      6   24.0%            LazyCompile: *parse /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/commands.js:426:10
+     14   26.9%          Function: ^deserialize /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/deserializer.js:36:21
+     14  100.0%            Function: ^deserialize /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/bson.js:161:21
+     13   25.0%          LazyCompile: *parse /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/commands.js:426:10
+     12   92.3%            Function: ^onMessage /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection.js:156:14
+      1    7.7%            LazyCompile: *onMessage /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection.js:156:14
+     22   22.9%        LazyCompile: *parse /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/commands.js:426:10
+     19   86.4%          Function: ^onMessage /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection.js:156:14
+     19  100.0%            Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection.js:60:44
+      3   13.6%          LazyCompile: *onMessage /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection.js:156:14
+      3  100.0%            Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection.js:60:44
+     22   22.9%        Function: ^deserialize /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/deserializer.js:36:21
+     22  100.0%          Function: ^deserialize /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/bson.js:161:21
+     19   86.4%            Function: ^parse /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/commands.js:426:10
+      3   13.6%            Function: ^parse /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/commands.js:222:10
+     96    1.7%      LazyCompile: *compile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+     83   86.5%        LazyCompile: *render /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+     83  100.0%          /usr/lib/x86_64-linux-gnu/libnode.so.108
+     13   13.5%        Function: ^compileInput /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+     13  100.0%          Function: ^ret /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+     13  100.0%            Function: ^_renderTemplate /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:260:18
+     87    1.6%      Function: ^promisify node:internal/util:327:19
+     84   96.6%        Function: ^AbstractOperation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/operation.js:26:16
+     84  100.0%          Function: ^CommandOperation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/command.js:13:16
+     43   51.2%            Function: ^FindOperation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/find.js:12:16
+     30   35.7%            LazyCompile: *<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/connect-mongo/build/main/lib/MongoStore.js:236:10
+     10   11.9%            Function: ^UpdateOperation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/update.js:10:16
+      1    1.2%            LazyCompile: ~FindOperation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/find.js:12:16
+      3    3.4%        LazyCompile: ~AbstractOperation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/operation.js:26:16
+      3  100.0%          LazyCompile: ~CommandOperation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/command.js:13:16
+      3  100.0%            LazyCompile: ~UpdateOperation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/update.js:10:16
+     76    1.4%      Function: ^readFile node:fs:383:18
+     76  100.0%        Function: ^go$readFile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/graceful-fs/graceful-fs.js:117:26
+     76  100.0%          Function: ^readFile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/graceful-fs/graceful-fs.js:111:21
+     41   53.9%            Function: ^<anonymous> node:internal/util:350:24
+     26   34.2%            LazyCompile: *getTemplate /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:108:20
+      9   11.8%            LazyCompile: *_getFile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:299:17
+     75    1.4%      Function: ^session /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/index.js:179:26
+     44   58.7%        LazyCompile: *trim_prefix /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:293:23
+     44  100.0%          LazyCompile: *next /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:177:16
+     44  100.0%            Function: ^requestsLogger file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/src/middlewares/reqLogger.middleware.js:3:24
+     29   38.7%        Function: ^handle /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/layer.js:86:49
+     29  100.0%          Function: ^trim_prefix /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:293:23
+     17   58.6%            Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:280:64
+     12   41.4%            LazyCompile: *next /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:177:16
+      2    2.7%        LazyCompile: *handle /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/layer.js:86:49
+      2  100.0%          Function: ^trim_prefix /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:293:23
+      2  100.0%            LazyCompile: *next /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:177:16
+     67    1.2%      Function: ^initialize /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/passport/lib/middleware/initialize.js:51:29
+     37   55.2%        LazyCompile: *trim_prefix /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:293:23
+     37  100.0%          LazyCompile: *next /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:177:16
+     37  100.0%            Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/index.js:485:38
+     17   25.4%        Function: ^handle /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/layer.js:86:49
+     17  100.0%          Function: ^trim_prefix /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:293:23
+     10   58.8%            LazyCompile: *next /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:177:16
+      7   41.2%            Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:280:64
+     13   19.4%        LazyCompile: *handle /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/layer.js:86:49
+     13  100.0%          Function: ^trim_prefix /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:293:23
+     13  100.0%            LazyCompile: *next /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:177:16
+     64    1.2%      LazyCompile: *Long /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/long.js:59:18
+     44   68.8%        LazyCompile: *deserializeObject /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/deserializer.js:65:27
+     44  100.0%          LazyCompile: *deserializeObject /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/deserializer.js:65:27
+     18   40.9%            LazyCompile: *deserializeObject /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/deserializer.js:65:27
+     16   36.4%            LazyCompile: *parse /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/commands.js:426:10
+     10   22.7%            Function: ^deserialize /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/deserializer.js:36:21
+     17   26.6%        Function: ^Long.fromBits /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/long.js:89:30
+     14   82.4%          Function: ^Long.fromNumber /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/long.js:131:32
+      6   42.9%            Function: ^applySession /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/sessions.js:657:22
+      4   28.6%            Function: ^serializeDate /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/serializer.js:110:23
+      4   28.6%            Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cursor/abstract_cursor.js:403:42
+      3   17.6%          Function: ^Long.not /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/long.js:623:35
+      3  100.0%            Function: ^Long.negate /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/long.js:613:38
+      3    4.7%        Function: ^deserializeObject /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/deserializer.js:65:27
+      3  100.0%          Function: ^deserializeObject /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/deserializer.js:65:27
+      2   66.7%            Function: ^deserialize /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/deserializer.js:36:21
+      1   33.3%            Function: ^deserializeObject /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/deserializer.js:65:27
+     61    1.1%      Function: ^Store.createSession /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/session/store.js:86:41
+     61  100.0%        Function: ^inflate /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/index.js:371:22
+     61  100.0%          Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/index.js:485:38
+     61  100.0%            Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/connect-mongo/build/main/lib/MongoStore.js:203:10
+     59    1.1%      LazyCompile: *render /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+     55   93.2%        /usr/lib/x86_64-linux-gnu/libnode.so.108
+      4    6.8%        LazyCompile: *renderView /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:183:19
+      4  100.0%          /usr/lib/x86_64-linux-gnu/libnode.so.108
+     59    1.1%      LazyCompile: *readFile node:fs:383:18
+     29   49.2%        Function: ^go$readFile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/graceful-fs/graceful-fs.js:117:26
+     29  100.0%          Function: ^readFile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/graceful-fs/graceful-fs.js:111:21
+     22   75.9%            LazyCompile: *_getFile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:299:17
+      7   24.1%            LazyCompile: *getTemplate /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:108:20
+     27   45.8%        LazyCompile: *go$readFile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/graceful-fs/graceful-fs.js:117:26
+     27  100.0%          Function: ^readFile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/graceful-fs/graceful-fs.js:111:21
+     27  100.0%            LazyCompile: *_getFile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:299:17
+      3    5.1%        LazyCompile: *readFile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/graceful-fs/graceful-fs.js:111:21
+      3  100.0%          LazyCompile: *_getFile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:299:17
+      2   66.7%            LazyCompile: *getTemplates /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:135:21
+      1   33.3%            LazyCompile: *render /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+     57    1.0%      Function: ^stat node:fs:1508:14
+     57  100.0%        Function: ^sendFile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/send/index.js:712:51
+     56   98.2%          Function: ^pipe /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/send/index.js:506:43
+     56  100.0%            Function: ^serveStatic /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/serve-static/index.js:72:31
+      1    1.8%          LazyCompile: ~pipe /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/send/index.js:506:43
+      1  100.0%            Function: ^serveStatic /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/serve-static/index.js:72:31
+    162    1.5%    LazyCompile: *compileFunction node:vm:316:25
+    162  100.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1063:18
+    162  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1103:37
+    162  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1158:37
+    150   92.6%            Function: ^Module.load node:internal/modules/cjs/loader:1015:33
+     12    7.4%            LazyCompile: *Module._load node:internal/modules/cjs/loader:800:24
+
+    639    3.6%  __write@@GLIBC_2.2.5
+    361   56.5%    LazyCompile: *writeOrBuffer node:internal/streams/writable:368:23
+    201   55.7%      LazyCompile: *value node:internal/console/constructor:272:20
+    131   65.2%        LazyCompile: *log node:internal/console/constructor:376:6
+    131  100.0%          /usr/lib/x86_64-linux-gnu/libnode.so.108
+     92   70.2%            Function: ^<anonymous> file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/src/routes/info.routes.js:6:32
+     39   29.8%            Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/log4js/lib/appenders/console.js:5:10
+     70   34.8%        Function: ^log node:internal/console/constructor:376:6
+     70  100.0%          /usr/lib/x86_64-linux-gnu/libnode.so.108
+     58   82.9%            Function: ^<anonymous> file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/src/routes/info.routes.js:6:32
+     12   17.1%            Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/log4js/lib/appenders/console.js:5:10
+     78   21.6%      LazyCompile: *Writable.write node:internal/streams/writable:336:36
+     78  100.0%        Function: ^ondata node:internal/streams/readable:764:18
+     53   67.9%          LazyCompile: *readableAddChunk node:internal/streams/readable:242:26
+     28   52.8%            LazyCompile: *write /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection.js:404:15
+     25   47.2%            Function: ^Readable.push node:internal/streams/readable:233:35
+     25   32.1%          LazyCompile: *emit node:events:460:44
+     25  100.0%            Function: ^addChunk node:internal/streams/readable:312:18
+     68   18.8%      LazyCompile: *_write node:internal/streams/writable:286:16
+     68  100.0%        Function: ^Writable.write node:internal/streams/writable:336:36
+     59   86.8%          Function: ^value node:internal/console/constructor:272:20
+     59  100.0%            Function: ^log node:internal/console/constructor:376:6
+      9   13.2%          Function: ^ondata node:internal/streams/readable:764:18
+      9  100.0%            LazyCompile: *emit node:events:460:44
+     14    3.9%      Function: ^_write node:internal/streams/writable:286:16
+     14  100.0%        Function: ^Writable.write node:internal/streams/writable:336:36
+     10   71.4%          Function: ^value node:internal/console/constructor:272:20
+     10  100.0%            Function: ^log node:internal/console/constructor:376:6
+      4   28.6%          Function: ^ondata node:internal/streams/readable:764:18
+      4  100.0%            LazyCompile: *emit node:events:460:44
+    198   31.0%    /usr/lib/x86_64-linux-gnu/libnode.so.108
+     13    6.6%      /usr/lib/x86_64-linux-gnu/libnode.so.108
+      1    7.7%        LazyCompile: ~toUSVString node:internal/util:62:21
+      1  100.0%          LazyCompile: ~set search node:internal/url:957:13
+      1  100.0%            /usr/lib/x86_64-linux-gnu/libnode.so.108
+      1    7.7%        LazyCompile: ~pluralize /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongoose/lib/helpers/pluralize.js:82:19
+      1  100.0%          LazyCompile: ~exports.toCollectionName /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongoose/lib/utils.js:43:36
+      1  100.0%            LazyCompile: ~Mongoose._model /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongoose/lib/index.js:617:37
+      1    7.7%        LazyCompile: ~parseOpts /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/@mapbox/node-pre-gyp/lib/node-pre-gyp.js:144:37
+      1  100.0%          LazyCompile: ~Run /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/@mapbox/node-pre-gyp/lib/node-pre-gyp.js:78:13
+      1  100.0%            LazyCompile: ~exports.find /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1    7.7%        LazyCompile: ~parse /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/nopt/lib/nopt.js:242:16
+      1  100.0%          LazyCompile: ~nopt /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/nopt/lib/nopt.js:26:15
+      1  100.0%            LazyCompile: ~parseOpts /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/@mapbox/node-pre-gyp/lib/node-pre-gyp.js:144:37
+      1    7.7%        LazyCompile: ~isIPv6 node:internal/net:38:16
+      1  100.0%          LazyCompile: ~isIP node:internal/net:45:14
+      1  100.0%            LazyCompile: ~lookupAndConnect node:net:1130:26
+      1    7.7%        LazyCompile: ~Module._initPaths node:internal/modules/cjs/loader:1277:29
+      1  100.0%          LazyCompile: ~initializeCJSLoader node:internal/process/pre_execution:535:29
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1    7.7%        LazyCompile: ~<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/sdam/monitor.js:205:52
+      1  100.0%          LazyCompile: ~callback /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connect.js:63:31
+      1  100.0%            LazyCompile: ~<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connect.js:88:85
+      1    7.7%        LazyCompile: ~<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/indexes.js:88:36
+      1  100.0%          /usr/lib/x86_64-linux-gnu/libnode.so.108
+      1  100.0%            LazyCompile: ~CreateIndexesOperation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/indexes.js:84:16
+      1    7.7%        LazyCompile: ~<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/log4js/lib/appenders/index.js:157:27
+      1  100.0%          LazyCompile: ~<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/log4js/lib/configuration.js:51:21
+      1  100.0%            /usr/lib/x86_64-linux-gnu/libnode.so.108
+      1    7.7%        LazyCompile: *cpus node:os:141:14
+      1  100.0%          Function: ^<anonymous> file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/src/routes/info.routes.js:6:32
+      1  100.0%            LazyCompile: *handle /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/layer.js:86:49
+      1    7.7%        Function: ~<anonymous> node:internal/per_context/primordials:1:1
+      1    7.7%        Function: ^promisify node:internal/util:327:19
+      1  100.0%          Function: ^AbstractOperation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/operation.js:26:16
+      1  100.0%            Function: ^CommandOperation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/command.js:13:16
+      1    7.7%        /usr/lib/x86_64-linux-gnu/libnode.so.108
+      1  100.0%          /usr/lib/x86_64-linux-gnu/libnode.so.108
+      1  100.0%            Function: ^Glob._processReaddir2 /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/glob/glob.js:375:44
+      3    1.5%      LazyCompile: ~_setClient /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongoose/lib/connection.js:858:20
+      3  100.0%        LazyCompile: ~<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongoose/lib/connection.js:809:20
+      3  100.0%          LazyCompile: ~<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/utils.js:348:18
+      3  100.0%            /usr/lib/x86_64-linux-gnu/libnode.so.108
+      2    1.0%      Script: ~<anonymous> file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/server.js:1:1
+      2  100.0%        /usr/lib/x86_64-linux-gnu/libnode.so.108
+      2  100.0%          node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      2  100.0%            LazyCompile: ~run node:internal/modules/esm/module_job:188:12
+      2    1.0%      LazyCompile: ~write node:buffer:634:12
+      2  100.0%        Function: ^write node:buffer:1057:40
+      2  100.0%          Function: ^serializeString /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/serializer.js:19:25
+      2  100.0%            Function: ^serializeInto /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/serializer.js:553:23
+      2    1.0%      LazyCompile: ~executeOperationAsync /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/execute_operation.js:15:37
+      1   50.0%        LazyCompile: ~<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/execute_operation.js:12:39
+      1  100.0%          LazyCompile: ~maybeCallback /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/utils.js:335:23
+      1  100.0%            LazyCompile: ~executeOperation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/execute_operation.js:11:26
+      1   50.0%        /usr/lib/x86_64-linux-gnu/libnode.so.108
+      1  100.0%          /usr/lib/x86_64-linux-gnu/libnode.so.108
+      1  100.0%            Function: ^processTicksAndRejections node:internal/process/task_queues:67:35
+      2    1.0%      LazyCompile: ~end /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/compression/index.js:92:28
+      2  100.0%        LazyCompile: ~send /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/response.js:111:25
+      2  100.0%          LazyCompile: ~done /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/response.js:1033:27
+      2  100.0%            LazyCompile: ~renderView /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:183:19
+      2    1.0%      LazyCompile: ~checkIn /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection_pool.js:191:12
+      2  100.0%        LazyCompile: ~<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection_pool.js:302:27
+      1   50.0%          LazyCompile: ~<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/sdam/server.js:211:101
+      1  100.0%            LazyCompile: ~handleOperationResult /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/sdam/server.js:327:42
+      1   50.0%          Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/sdam/server.js:211:101
+      1  100.0%            LazyCompile: ~handleOperationResult /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/sdam/server.js:327:42
+      2    1.0%      LazyCompile: *resolvePath /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:492:36
+      2  100.0%        Function: ^lookupOnContext /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:448:44
+      2  100.0%          LazyCompile: *compile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      2  100.0%            LazyCompile: *render /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+      2    1.0%      LazyCompile: *onwrite node:internal/streams/writable:428:17
+      2  100.0%        LazyCompile: *writeOrBuffer node:internal/streams/writable:368:23
+      1   50.0%          LazyCompile: *value node:internal/console/constructor:272:20
+      1  100.0%            LazyCompile: *log node:internal/console/constructor:376:6
+      1   50.0%          LazyCompile: *_write node:internal/streams/writable:286:16
+      1  100.0%            Function: ^Writable.write node:internal/streams/writable:336:36
+      2    1.0%      LazyCompile: *next /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:177:16
+      2  100.0%        Function: ^initialize /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/passport/lib/middleware/initialize.js:51:29
+      2  100.0%          LazyCompile: *trim_prefix /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:293:23
+      2  100.0%            LazyCompile: *next /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/router/index.js:177:16
+      2    1.0%      Function: ~<anonymous> node:internal/bootstrap/node:1:1
+      2    1.0%      Function: ^onStreamRead node:internal/stream_base_commons:167:22
+      2    1.0%      Function: ^fromStringFast node:buffer:418:24
+      2  100.0%        Function: ^fromString node:buffer:437:20
+      1   50.0%          LazyCompile: ~from node:buffer:301:28
+      1  100.0%            LazyCompile: ~continueScramConversation /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1   50.0%          Function: ^from node:buffer:301:28
+      1  100.0%            Function: ^<anonymous> node:internal/crypto/util:114:46
+     49    7.7%    LazyCompile: *compileFunction node:vm:316:25
+     49  100.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1063:18
+     49  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1103:37
+     49  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1158:37
+     48   98.0%            Function: ^Module.load node:internal/modules/cjs/loader:1015:33
+      1    2.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:800:24
+
+    630    3.5%  node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    630  100.0%    /usr/lib/x86_64-linux-gnu/libnode.so.108
+    619   98.3%      Function: ^compileFunction node:vm:316:25
+    614   99.2%        Function: ^wrapSafe node:internal/modules/cjs/loader:1063:18
+    612   99.7%          Function: ^Module._compile node:internal/modules/cjs/loader:1103:37
+    595   97.2%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1158:37
+     17    2.8%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1158:37
+     11    1.7%      LazyCompile: ~compileFunction node:vm:316:25
+     11  100.0%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1063:18
+     11  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1103:37
+     11  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1158:37
+
+    590    3.3%  void node::StreamBase::JSMethod<&node::StreamBase::Writev>(v8::FunctionCallbackInfo<v8::Value> const&)
+    590  100.0%    /usr/lib/x86_64-linux-gnu/libnode.so.108
+    589   99.8%      Function: ^writevGeneric node:internal/stream_base_commons:122:23
+    589  100.0%        Function: ^Socket._writeGeneric node:net:892:42
+    589  100.0%          Function: ^Socket._writev node:net:924:36
+    588   99.8%            Function: ^doWrite node:internal/streams/writable:401:17
+
+    521    2.9%  epoll_pwait@@GLIBC_2.6
+
+    476    2.7%  /usr/lib/x86_64-linux-gnu/libc.so.6
+    211   44.3%    /usr/lib/x86_64-linux-gnu/libnode.so.108
+     37   17.5%      /usr/lib/x86_64-linux-gnu/libnode.so.108
+      5   13.5%        /usr/lib/x86_64-linux-gnu/libnode.so.108
+      3   60.0%          LazyCompile: *<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/connect-mongo/build/main/lib/MongoStore.js:236:10
+      3  100.0%            Function: ^set /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/connect-mongo/build/main/lib/MongoStore.js:234:8
+      2   40.0%          Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/connect-mongo/build/main/lib/MongoStore.js:236:10
+      2  100.0%            Function: ^set /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/connect-mongo/build/main/lib/MongoStore.js:234:8
+      4   10.8%        LazyCompile: *quotedString /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:118:38
+      2   50.0%          Function: ^pushSource /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      1   50.0%            Function: ^appendEscaped /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:416:40
+      1   50.0%            Function: ^append /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:394:26
+      1   25.0%          LazyCompile: *compile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1  100.0%            LazyCompile: *render /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+      1   25.0%          Function: ^quotedString /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:998:38
+      1  100.0%            Function: ^setupParams /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1034:36
+      4   10.8%        Function: ^<anonymous> node:internal/fs/utils:361:35
+      4  100.0%          Function: ^<anonymous> node:internal/fs/utils:674:38
+      4  100.0%            Function: ^<anonymous> node:internal/fs/utils:686:42
+      3    8.1%        LazyCompile: *render /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+      3  100.0%          /usr/lib/x86_64-linux-gnu/libnode.so.108
+      3    8.1%        LazyCompile: *pushSource /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      2   66.7%          Function: ^append /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:394:26
+      2  100.0%            LazyCompile: *compile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1   33.3%          Function: ^appendEscaped /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:416:40
+      1  100.0%            LazyCompile: *compile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      2    5.4%        Function: ^stat node:internal/modules/cjs/loader:157:14
+      1   50.0%          Function: ^tryFile node:internal/modules/cjs/loader:424:17
+      1  100.0%            Function: ^tryPackage node:internal/modules/cjs/loader:378:20
+      1   50.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:534:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:894:35
+      2    5.4%        Function: ^quotedString /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:118:38
+      2  100.0%          Function: ^pushSource /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      1   50.0%            Function: ^appendEscaped /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:416:40
+      1   50.0%            Function: ^append /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:394:26
+      2    5.4%        Function: ^FastBuffer node:internal/buffer:958:14
+      2  100.0%          Function: ^alloc node:buffer:365:30
+      2  100.0%            Function: ^serialize /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/bson.js:110:19
+      1    2.7%        LazyCompile: ~<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/log4js/lib/levels.js:52:22
+      1  100.0%          /usr/lib/x86_64-linux-gnu/libnode.so.108
+      1  100.0%            LazyCompile: ~addLevels /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/log4js/lib/levels.js:49:19
+      1    2.7%        LazyCompile: *serializeInto /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/parser/serializer.js:553:23
+      1  100.0%          Function: ^serialize /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/bson.js:110:19
+      1  100.0%            Function: ^serializeBson /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/commands.js:379:18
+      1    2.7%        LazyCompile: *processTicksAndRejections node:internal/process/task_queues:67:35
+      1    2.7%        Function: ^resolve node:path:1091:10
+      1  100.0%          LazyCompile: *readPackageScope node:internal/modules/cjs/loader:361:26
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1158:37
+      1    2.7%        Function: ^readPackage node:internal/modules/cjs/loader:319:21
+      1  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:361:26
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1158:37
+      1    2.7%        Function: ^parse /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/minimatch/minimatch.js:296:16
+      1  100.0%          /usr/lib/x86_64-linux-gnu/libnode.so.108
+      1  100.0%            Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/minimatch/minimatch.js:196:26
+      1    2.7%        Function: ^fromString /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/utils.js:314:22
+      1  100.0%          Function: ^ns /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/utils.js:292:12
+      1  100.0%            Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cursor/abstract_cursor.js:403:42
+      1    2.7%        Function: ^databaseNamespace /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/utils.js:353:27
+      1  100.0%          Function: ^Msg /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/commands.js:317:16
+      1  100.0%            Function: ^command /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection.js:251:12
+      1    2.7%        Function: ^checkInvalidHeaderChar node:_http_common:221:32
+      1  100.0%          Function: ^<anonymous> node:_http_outgoing:618:45
+      1  100.0%            Function: ^setHeader node:_http_outgoing:642:57
+      1    2.7%        Function: ^Program /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:113:28
+      1  100.0%          Function: ^accept /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:101:26
+      1  100.0%            Function: ^compile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:63:28
+      1    2.7%        Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/connect-mongo/build/main/lib/MongoStore.js:236:10
+      1  100.0%          Function: ^set /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/connect-mongo/build/main/lib/MongoStore.js:234:8
+      1  100.0%            Function: ^save /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/session/session.js:71:54
+     11    5.2%      LazyCompile: *FastBuffer node:internal/buffer:958:14
+      6   54.5%        Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      4   66.7%          Function: ^allocUnsafeSlow node:buffer:388:50
+      4  100.0%            Function: ^readFileAfterStat node:fs:336:27
+      2   33.3%          Function: ^createPool node:buffer:155:20
+      1   50.0%            LazyCompile: *fromStringFast node:buffer:418:24
+      1   50.0%            Function: ^fromStringFast node:buffer:418:24
+      5   45.5%        Function: ^alloc node:buffer:365:30
+      5  100.0%          Function: ^serialize /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/bson/lib/bson.js:110:19
+      4   80.0%            Function: ^serializeBson /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/commands.js:379:18
+      1   20.0%            LazyCompile: *write /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection.js:404:15
+      5    2.4%      Function: ^serialize /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/node_modules/cookie/index.js:101:19
+      5  100.0%        Function: ^setcookie /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/index.js:655:19
+      5  100.0%          Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/index.js:220:28
+      5  100.0%            Function: ^writeHead /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/on-headers/index.js:28:29
+      5    2.4%      Function: ^clone /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/sessions.js:559:17
+      5  100.0%        Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/sessions.js:134:43
+      5  100.0%          Function: ^maybeCallback /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/utils.js:335:23
+      3   60.0%            LazyCompile: *executeOperationAsync /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/operations/execute_operation.js:15:37
+      2   40.0%            Function: ^endSession /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/sessions.js:130:15
+      4    1.9%      Function: ^tryDecode /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/node_modules/cookie/index.js:196:19
+      4  100.0%        Function: ^parse /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/node_modules/cookie/index.js:48:15
+      4  100.0%          Function: ^getcookie /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/index.js:529:19
+      4  100.0%            Function: ^session /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/index.js:179:26
+      4    1.9%      Function: ^render /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+      4  100.0%        /usr/lib/x86_64-linux-gnu/libnode.so.108
+      3    1.4%      LazyCompile: ~alphasort /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/glob/common.js:19:20
+      3  100.0%        /usr/lib/x86_64-linux-gnu/libnode.so.108
+      3  100.0%          LazyCompile: ~finish /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/glob/common.js:120:17
+      3  100.0%            LazyCompile: ~Glob._finish /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/glob/glob.js:185:35
+      3    1.4%      LazyCompile: *processIncomingData /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/message_stream.js:84:29
+      2   66.7%        LazyCompile: *writeOrBuffer node:internal/streams/writable:368:23
+      2  100.0%          LazyCompile: *Writable.write node:internal/streams/writable:336:36
+      2  100.0%            Function: ^ondata node:internal/streams/readable:764:18
+      1   33.3%        Function: ^_write /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/message_stream.js:31:11
+      1  100.0%          Function: ^writeOrBuffer node:internal/streams/writable:368:23
+      1  100.0%            Function: ^_write node:internal/streams/writable:286:16
+      3    1.4%      LazyCompile: *anonymous /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:12:42
+      3  100.0%        LazyCompile: *parse /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      3  100.0%          LazyCompile: *render /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+      3  100.0%            /usr/lib/x86_64-linux-gnu/libnode.so.108
+      3    1.4%      Function: ^parse /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/content-type/index.js:106:16
+      3  100.0%        Function: ^setCharset /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/utils.js:248:41
+      3  100.0%          Function: ^send /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/response.js:111:25
+      2   66.7%            LazyCompile: *renderView /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:183:19
+      1   33.3%            Function: ^done /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express/lib/response.js:1033:27
+      3    1.4%      Function: ^isTraceHTTPEnabled node:internal/http:40:28
+      2   66.7%        Function: ^ServerResponse node:_http_server:190:24
+      2  100.0%          Function: ^parserOnIncoming node:_http_server:934:26
+      2  100.0%            Function: ^parserOnHeadersComplete node:_http_common:72:33
+      1   33.3%        Function: ^_finish node:_http_server:227:52
+      1  100.0%          Function: ^end node:_http_outgoing:953:45
+      1  100.0%            Function: ^writeend /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/index.js:260:24
+      3    1.4%      Function: ^inflight /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/inflight/inflight.js:7:19
+      2   66.7%        Function: ^wrapper /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/wrappy/wrappy.js:19:19
+      2  100.0%          Function: ^Glob._readdir /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/glob/glob.js:525:36
+      1   50.0%            Function: ^Glob._processReaddir /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/glob/glob.js:368:43
+      1   50.0%            Function: ^Glob._processGlobStar /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/glob/glob.js:623:44
+      1   33.3%        LazyCompile: *wrapper /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/wrappy/wrappy.js:19:19
+      1  100.0%          Function: ^Glob._readdir /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/glob/glob.js:525:36
+      1  100.0%            Function: ^Glob._processGlobStar /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/glob/glob.js:623:44
+      3    1.4%      Function: ^hash /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/index.js:596:14
+      2   66.7%        Function: ^save /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/index.js:403:20
+      2  100.0%          Function: ^end /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/index.js:250:27
+      2  100.0%            Function: ^end /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/compression/index.js:92:28
+      1   33.3%        Function: ^inflate /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/index.js:371:22
+      1  100.0%          Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-session/index.js:485:38
+      1  100.0%            Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/connect-mongo/build/main/lib/MongoStore.js:203:10
+      3    1.4%      Function: ^Minimatch /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/minimatch/minimatch.js:128:20
+      3  100.0%        Function: ^setopts /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/glob/common.js:48:18
+      3  100.0%          Function: ^Glob /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/glob/glob.js:117:15
+      3  100.0%            Function: ^glob /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/glob/glob.js:62:15
+     26    5.5%    LazyCompile: *readFile node:fs:383:18
+     16   61.5%      LazyCompile: *go$readFile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/graceful-fs/graceful-fs.js:117:26
+     16  100.0%        Function: ^readFile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/graceful-fs/graceful-fs.js:111:21
+     16  100.0%          LazyCompile: *_getFile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:299:17
+     14   87.5%            LazyCompile: *render /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+      2   12.5%            LazyCompile: *getTemplates /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:135:21
+     10   38.5%      Function: ^go$readFile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/graceful-fs/graceful-fs.js:117:26
+     10  100.0%        Function: ^readFile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/graceful-fs/graceful-fs.js:111:21
+      7   70.0%          LazyCompile: *_getFile /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:299:17
+      5   71.4%            LazyCompile: *render /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+      2   28.6%            LazyCompile: *getTemplates /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:135:21
+      3   30.0%          LazyCompile: *getTemplate /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:108:20
+      3  100.0%            Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/express-handlebars/lib/express-handlebars.js:139:53
+     12    2.5%    LazyCompile: *writeOrBuffer node:internal/streams/writable:368:23
+     10   83.3%      LazyCompile: *Writable.write node:internal/streams/writable:336:36
+     10  100.0%        Function: ^ondata node:internal/streams/readable:764:18
+      7   70.0%          LazyCompile: *emit node:events:460:44
+      7  100.0%            Function: ^addChunk node:internal/streams/readable:312:18
+      3   30.0%          LazyCompile: *readableAddChunk node:internal/streams/readable:242:26
+      3  100.0%            LazyCompile: *write /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/mongodb/lib/cmap/connection.js:404:15
+      1    8.3%      LazyCompile: *value node:internal/console/constructor:272:20
+      1  100.0%        LazyCompile: *log node:internal/console/constructor:376:6
+      1  100.0%          /usr/lib/x86_64-linux-gnu/libnode.so.108
+      1  100.0%            Function: ^<anonymous> /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_14/node_modules/log4js/lib/appenders/console.js:5:10
+      1    8.3%      LazyCompile: *_write node:internal/streams/writable:286:16
+      1  100.0%        Function: ^Writable.write node:internal/streams/writable:336:36
+      1  100.0%          Function: ^ondata node:internal/streams/readable:764:18
+      1  100.0%            LazyCompile: *emit node:events:460:44
+     10    2.1%    LazyCompile: *compileFunction node:vm:316:25
+     10  100.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1063:18
+     10  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1103:37
+     10  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1158:37
+     10  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1015:33
+      9    1.9%    LazyCompile: *close node:internal/fs/read_file_context:112:8
+      9  100.0%      Function: ^readFileAfterRead node:internal/fs/read_file_context:25:27
+
+    316    1.8%  node::loader::ModuleWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+    316  100.0%    /usr/lib/x86_64-linux-gnu/libnode.so.108
+    313   99.1%      Function: ^moduleStrategy node:internal/modules/esm/translators:114:56
+    313  100.0%        Function: ^moduleProvider node:internal/modules/esm/loader:452:28
+    313  100.0%          /usr/lib/x86_64-linux-gnu/libnode.so.108
+
+    226    1.3%  node::builtins::BuiltinLoader::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    226  100.0%    /usr/lib/x86_64-linux-gnu/libnode.so.108
+    207   91.6%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+    102   49.3%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      8    7.8%          Function: ~<anonymous> node:internal/webstreams/transformstream:1:1
+      8  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      7    6.9%          Function: ~<anonymous> node:http:1:1
+      7  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      7    6.9%          Function: ~<anonymous> node:http2:1:1
+      7  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      5    4.9%          Function: ~<anonymous> node:tls:1:1
+      5  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      5    4.9%          Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      5  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      5    4.9%          Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      5  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      4    3.9%          Function: ~<anonymous> node:_http_client:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    2.9%          LazyCompile: ~initializeCJSLoader node:internal/process/pre_execution:535:29
+      3  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      3    2.9%          Function: ~<anonymous> node:perf_hooks:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    2.9%          Function: ~<anonymous> node:internal/webstreams/readablestream:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    2.9%          Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    2.9%          Function: ~<anonymous> node:internal/http2/core:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    2.9%          Function: ~<anonymous> node:internal/cluster/primary:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    2.9%          Function: ~<anonymous> node:internal/child_process:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    2.9%          Function: ~<anonymous> node:assert:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    2.0%          LazyCompile: ~lazyWebCrypto node:crypto:125:23
+      2  100.0%            LazyCompile: ~get node:crypto:369:8
+      2    2.0%          LazyCompile: ~initCJSParse node:internal/modules/esm/translators:58:28
+      2  100.0%            LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:147:60
+      2    2.0%          Function: ~<anonymous> node:internal/webstreams/compression:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    2.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      2    2.0%          Function: ~<anonymous> node:internal/bootstrap/browser:1:1
+      2    2.0%          Function: ~<anonymous> node:https:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    2.0%          Function: ~<anonymous> node:cluster:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    2.0%          Function: ~<anonymous> node:child_process:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     91   44.0%        LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:353:29
+     20   22.0%          Function: ~<anonymous> node:internal/bootstrap/node:1:1
+     11   12.1%          Function: ~<anonymous> node:fs:1:1
+     11  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      9    9.9%          Function: ~<anonymous> node:crypto:1:1
+      9  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      5    5.5%          Function: ~<anonymous> node:internal/streams/duplex:1:1
+      5  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      4    4.4%          Function: ~<anonymous> node:internal/abort_controller:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      4    4.4%          Function: ~<anonymous> node:buffer:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    3.3%          LazyCompile: ~setupBuffer node:internal/bootstrap/node:427:21
+      3  100.0%            Function: ~<anonymous> node:internal/bootstrap/node:1:1
+      3    3.3%          Function: ~<anonymous> node:stream:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    3.3%          Function: ~<anonymous> node:internal/streams/readable:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    3.3%          Function: ~<anonymous> node:internal/process/execution:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    3.3%          Function: ~<anonymous> node:internal/console/global:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    2.2%          LazyCompile: ~setupProcessObject node:internal/bootstrap/node:386:28
+      2  100.0%            Function: ~<anonymous> node:internal/bootstrap/node:1:1
+      2    2.2%          Function: ~<anonymous> node:v8:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    2.2%          Function: ~<anonymous> node:internal/url:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    2.2%          Function: ~<anonymous> node:internal/streams/operators:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    2.2%          Function: ~<anonymous> node:internal/process/task_queues:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.1%          Function: ~<anonymous> node:util:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.1%          Function: ~<anonymous> node:url:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.1%          Function: ~<anonymous> node:internal/util/parse_args/parse_args:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.1%          Function: ~<anonymous> node:internal/timers:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.1%          Function: ~<anonymous> node:internal/streams/pipeline:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.1%          Function: ~<anonymous> node:internal/streams/compose:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.1%          Function: ~<anonymous> node:internal/process/per_thread:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.1%          Function: ~<anonymous> node:internal/heap_utils:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.1%          Function: ~<anonymous> node:internal/event_target:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.1%          Function: ~<anonymous> node:internal/crypto/pbkdf2:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.1%          Function: ~<anonymous> node:internal/crypto/hkdf:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.1%          Function: ~<anonymous> node:internal/crypto/cipher:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    1.1%          Function: ~<anonymous> node:internal/blob:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     10    4.8%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:263:25
+     10  100.0%          Function: ^loadBuiltinModule node:internal/modules/cjs/helpers:45:27
+     10  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:800:24
+      4    1.9%        LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      4  100.0%          LazyCompile: ~loadBuiltinModule node:internal/modules/cjs/helpers:45:27
+      3   75.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:800:24
+      1   25.0%            LazyCompile: ~builtinStrategy node:internal/modules/esm/translators:253:58
+     19    8.4%      LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     19  100.0%        LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      7   36.8%          Function: ~<anonymous> node:internal/timers:1:1
+      7  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      5   26.3%          LazyCompile: ~setupPrepareStackTrace node:internal/bootstrap/node:367:32
+      5  100.0%            Function: ~<anonymous> node:internal/bootstrap/node:1:1
+      2   10.5%          Function: ~<anonymous> node:internal/promise_hooks:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2   10.5%          Function: ~<anonymous> node:internal/bootstrap/node:1:1
+      1    5.3%          Function: ~<anonymous> node:internal/validators:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    5.3%          Function: ~<anonymous> node:internal/util/inspect:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    5.3%          Function: ~<anonymous> node:internal/async_hooks:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:316:27
+

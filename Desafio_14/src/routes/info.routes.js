@@ -15,7 +15,16 @@ router.get('/', compression(), (req, res) => {
     memoryUsage: process.memoryUsage.rss() / 2 ** 20, //Memoria total reservada (rss) en MiB
     numCPUs: cpus().length,
   };
-
+  /* ------------------------ Evaluación de rendimiento ----------------------- */
+  // console.log(info.args);
+  // console.log(info.path);
+  // console.log(info.os);
+  // console.log(info.pid);
+  // console.log(info.nodeVersion);
+  // console.log(info.dirPath);
+  // console.log(info.memoryUsage);
+  // console.log(info.numCPUs);
+  /* ----------------------------------- -- ----------------------------------- */
   res.status(200).render('partials/viewInfo', {
     info,
   });

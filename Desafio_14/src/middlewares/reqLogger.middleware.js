@@ -2,11 +2,11 @@ import { loggerInfo, loggerWarn } from '../../config/log4.js';
 
 const requestsLogger = (req, res, next) => {
   res.on('finish', () => {
-    const message = `Ruta: "${req.url}" | Método: "${req.method}" | Respuesta HTTP: "${res.statusCode}: ${res.statusMessage}"`;
+    const msg = `Ruta: "${req.originalUrl}" | Método: "${req.method}" | Respuesta HTTP: "${res.statusCode}: ${res.statusMessage}"`;
     if (res.statusCode !== 404) {
-      loggerInfo.info(message);
+      loggerInfo.info(msg);
     } else {
-      loggerWarn.warn(message);
+      loggerWarn.warn(msg);
     }
   });
 
