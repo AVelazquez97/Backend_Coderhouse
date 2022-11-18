@@ -1,4 +1,4 @@
-import generateProduct from '../utils/productGenerator.js';
+import generateProduct from './productGenerator.js';
 
 class ProductFakerMock {
   constructor() {

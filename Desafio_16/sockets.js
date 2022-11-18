@@ -4,8 +4,8 @@ import MsgContainer from './src/containers/msgContainer.js';
 import option from './src/databases/configMariaDB.js';
 import config from './src/databases/configSQLiteDB.js';
 
-import normalizeMessages from './src/normalizer/normalizeMessages.js'
-import { loggerInfo } from './config/log4.js';
+import normalizeMessages from './src/utils/normalizer/normalizeMessages.js'
+import { loggerInfo } from './src/config/log4.js';
 
 const productsApi = new ProductContainer(option, 'products');
 const messagesApi = new MsgContainer(config, 'messages');

@@ -1,4 +1,4 @@
-import { loggerInfo, loggerWarn } from '../../config/log4.js';
+import { loggerInfo, loggerWarn } from '../config/log4.js';
 
 const requestsLogger = (req, res, next) => {
   res.on('finish', () => {

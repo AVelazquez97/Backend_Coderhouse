@@ -1,5 +1,5 @@
 import knex from 'knex';
-import { loggerError } from '../../config/log4.js';
+import { loggerError } from '../config/log4.js';
 
 const readAllElements = async (option, tableName) => {
   const db = knex(option);

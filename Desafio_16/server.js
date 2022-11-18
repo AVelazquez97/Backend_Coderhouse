@@ -6,7 +6,7 @@ import parseArgs from 'minimist';
 
 import app from './app.js';
 import Sockets from './sockets.js';
-import { loggerInfo, loggerError } from './config/log4.js';
+import { loggerInfo, loggerError } from './src/config/log4.js';
 
 /* ----------------------------- params settings ---------------------------- */
 const options = { default: { port: 8080 } };
@@ -14,8 +14,14 @@ const args = parseArgs(process.argv.slice(2), options);
 const clusterMode = process.argv[4] == 'CLUSTER';
 
 /* ----------------------------- server settings ---------------------------- */
+const logServerMode = clusterMode
+  ? 'Servidor en modo CLUSTER'
+  : 'Servidor en modo FORK';
+loggerInfo.info(logServerMode);
+
 if (clusterMode && cluster.isPrimary) {
   const numCPUs = cpus().length;
+
   loggerInfo.info(`PID MASTER ${process.pid}`);
 
   for (let i = 0; i < numCPUs; i++) {

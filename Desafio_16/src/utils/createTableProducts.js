@@ -1,5 +1,5 @@
 import knex from 'knex';
-import { loggerInfo, loggerError } from '../../config/log4.js';
+import { loggerInfo, loggerError } from '../config/log4.js';
 
 const setColumns = (table) => {
   table.increments('id');

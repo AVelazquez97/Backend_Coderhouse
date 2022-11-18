@@ -1,5 +1,5 @@
 import path from 'path';
-import { loggerError } from '../../../config/log4.js';
+import { loggerError } from '../../config/log4.js';
 
 const logoutController = {
   postLogout: (req, res) => {

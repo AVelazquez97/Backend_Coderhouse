@@ -2,7 +2,7 @@ import knex from 'knex';
 import createTable from '../utils/createTableProducts.js';
 import insertNewElement from '../utils/insertElement.js';
 import readAllElements from '../utils/readElements.js';
-import { loggerError } from '../../config/log4.js';
+import { loggerError } from '../config/log4.js';
 
 class ProductContainer {
   constructor(dbConfigs, tableName) {

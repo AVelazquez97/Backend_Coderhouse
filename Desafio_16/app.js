@@ -4,7 +4,7 @@ import handlebars from 'express-handlebars';
 import cookieParser from 'cookie-parser';
 import session from 'express-session';
 import { default as MongoStore } from 'connect-mongo';
-import passport from './src/passport/passport-local.js';
+import passport from './src/middlewares/passport/passport-local.js';
 import requestsLogger from './src/middlewares/reqLogger.middleware.js'
 
 /* ---------------------------- routes importing ---------------------------- */

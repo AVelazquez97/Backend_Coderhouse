@@ -1,6 +1,6 @@
 import passport from 'passport';
 import { Strategy as LocalStrategy } from 'passport-local';
-import User from '../models/users.js';
+import User from '../../models/users.js';
 import { loggerError } from '../../config/log4.js';
 
 passport.use(

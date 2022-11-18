@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import { loggerInfo, loggerError } from '../../config/log4.js';
+import { loggerInfo, loggerError } from '../config/log4.js';
 dotenv.config();
 
 mongoose
