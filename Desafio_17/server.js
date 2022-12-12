@@ -1,25 +1,19 @@
-import { Server as httpServer } from 'http';
-import { Server as ioServer } from 'socket.io';
 import cluster from 'cluster';
 import { cpus } from 'os';
-import parseArgs from 'minimist';
-
-import app from './app.js';
-import Sockets from './sockets.js';
+import { Server as httpServer } from 'http';
+import { Server as ioServer } from 'socket.io';
+import { CLUSTER_MODE, APP_PORT } from './src/config/index.js';
 import { loggerInfo, loggerError } from './src/config/log4.js';
-
-/* ----------------------------- params settings ---------------------------- */
-const options = { default: { port: 8080 } };
-const args = parseArgs(process.argv.slice(2), options);
-const clusterMode = process.argv[4] == 'CLUSTER';
+import app from './app.js';
+import webSocket from './src/controllers/sockets/index.js';
 
 /* ----------------------------- server settings ---------------------------- */
-const logServerMode = clusterMode
+const logServerMode = CLUSTER_MODE
   ? 'Servidor en modo CLUSTER'
   : 'Servidor en modo FORK';
 loggerInfo.info(logServerMode);
 
-if (clusterMode && cluster.isPrimary) {
+if (CLUSTER_MODE && cluster.isPrimary) {
   const numCPUs = cpus().length;
 
   loggerInfo.info(`PID MASTER ${process.pid}`);
@@ -37,11 +31,11 @@ if (clusterMode && cluster.isPrimary) {
   });
 } else {
   const serverHTTP = new httpServer(app);
+  /* --------------------------- WebSocket settings --------------------------- */
   const io = new ioServer(serverHTTP);
+  webSocket(io);
 
-  /* ----------------------------- socket settings ---------------------------- */
-  Sockets(io);
-  const server = serverHTTP.listen(args.port, () => {
+  const server = serverHTTP.listen(APP_PORT, () => {
     loggerInfo.info(
       `Servidor HTTP escuchando en el puerto ${server.address().port}`
     );
