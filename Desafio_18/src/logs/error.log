@@ -1,0 +1,1492 @@
+[2022-11-06T23:45:03.734] [ERROR] Error - La contraseña no coincide.
+[2022-11-06T23:45:34.934] [ERROR] Error - No existe el usuario con el mail indicado.
+[2022-11-17T22:33:54.197] [ERROR] Error - No existe el usuario con el mail indicado.
+[2022-12-08T20:05:45.293] [ERROR] Error - No existe el usuario con el mail indicado.
+[2022-12-08T21:09:09.779] [ERROR] Error - TypeError: MsgDTO.toDto is not a constructor
+    at MsgContainer.readMsgs (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/containers/msgContainer.js:55:14)
+    at async Namespace.<anonymous> (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/sockets.js:39:54)
+[2022-12-08T21:28:55.008] [ERROR] Error - RangeError: Maximum call stack size exceeded
+    at MsgDTO.toDto (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DTO/msgDTO.js:15:5)
+    at MsgDTO.toDto (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DTO/msgDTO.js:15:24)
+    at MsgDTO.toDto (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DTO/msgDTO.js:15:24)
+    at MsgDTO.toDto (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DTO/msgDTO.js:15:24)
+    at MsgDTO.toDto (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DTO/msgDTO.js:15:24)
+    at MsgDTO.toDto (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DTO/msgDTO.js:15:24)
+    at MsgDTO.toDto (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DTO/msgDTO.js:15:24)
+    at MsgDTO.toDto (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DTO/msgDTO.js:15:24)
+    at MsgDTO.toDto (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DTO/msgDTO.js:15:24)
+    at MsgDTO.toDto (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DTO/msgDTO.js:15:24)
+[2022-12-08T21:30:44.501] [ERROR] Error - TypeError: Class constructor MsgDTO cannot be invoked without 'new'
+    at file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DTO/msgDTO.js:16:63
+    at Array.map (<anonymous>)
+    at MsgDTO.toDto (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DTO/msgDTO.js:16:50)
+    at MsgContainer.readMsgs (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/containers/msgContainer.js:55:21)
+    at async Namespace.<anonymous> (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/sockets.js:39:54)
+[2022-12-08T21:47:04.068] [ERROR] Error - TypeError: MsgDTO.toDto is not a function
+    at MsgContainer.readMsgs (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/containers/msgContainer.js:55:21)
+    at async Namespace.<anonymous> (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/sockets.js:39:54)
+[2022-12-08T22:35:42.612] [ERROR] Error - Error: ER_BAD_DB_ERROR: Unknown database 'desafio17'
+    at Sequence._packetToError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:116:18)
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:66:18
+    at new Promise (<anonymous>)
+    at Client_MySQL.acquireRawConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:61:12)
+    at create (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/client.js:249:39) {
+  code: 'ER_BAD_DB_ERROR',
+  errno: 1049,
+  sqlMessage: "Unknown database 'desafio17'",
+  sqlState: '42000',
+  fatal: true
+}
+[2022-12-09T00:02:55.007] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T00:12:06.561] [ERROR] Error - TypeError: Cannot read properties of undefined (reading 'getInstance')
+    at DAOFactory.getPersistency (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/DAOFactory.js:7:26)
+    at async file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/controllers/sockets/messages.socket.js:13:18
+[2022-12-09T00:12:59.841] [ERROR] Error - TypeError: Cannot read properties of undefined (reading 'getInstance')
+    at DAOFactory.getPersistency (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/DAOFactory.js:7:26)
+    at async file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/controllers/sockets/products.socket.js:12:18
+[2022-12-09T00:46:31.420] [ERROR] Error - Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/models/mongoose/messages.model.js' imported from /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/messages/mongoDB.js
+    at new NodeError (node:internal/errors:393:5)
+    at finalizeResolution (node:internal/modules/esm/resolve:323:11)
+    at moduleResolve (node:internal/modules/esm/resolve:916:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1124:11)
+    at nextResolve (node:internal/modules/esm/loader:163:28)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:837:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:424:18)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:76:40)
+    at link (node:internal/modules/esm/module_job:75:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+[2022-12-09T00:47:06.446] [ERROR] Error - Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/models/mongoose/products.model.js' imported from /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/products/mongoDB.js
+    at new NodeError (node:internal/errors:393:5)
+    at finalizeResolution (node:internal/modules/esm/resolve:323:11)
+    at moduleResolve (node:internal/modules/esm/resolve:916:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1124:11)
+    at nextResolve (node:internal/modules/esm/loader:163:28)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:837:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:424:18)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:76:40)
+    at link (node:internal/modules/esm/module_job:75:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+[2022-12-09T00:47:15.503] [ERROR] Error - Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/config/databases/connectionMongoDB.js' imported from /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/containers/mongoDBContainer.js
+    at new NodeError (node:internal/errors:393:5)
+    at finalizeResolution (node:internal/modules/esm/resolve:323:11)
+    at moduleResolve (node:internal/modules/esm/resolve:916:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1124:11)
+    at nextResolve (node:internal/modules/esm/loader:163:28)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:837:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:424:18)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:76:40)
+    at link (node:internal/modules/esm/module_job:75:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+[2022-12-09T00:47:59.098] [ERROR] Error - file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/config/databases/connectionMongoDB.js:3
+import { LoggerInfo, LoggerError } from '../log4.js';
+                     ^^^^^^^^^^^
+SyntaxError: The requested module '../log4.js' does not provide an export named 'LoggerError'
+    at ModuleJob._instantiate (node:internal/modules/esm/module_job:123:21)
+    at async ModuleJob.run (node:internal/modules/esm/module_job:189:5)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)
+    at async DAOFactory.getPersistency (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/DAOFactory.js:6:40)
+    at async file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/controllers/sockets/products.socket.js:12:18
+[2022-12-09T00:49:14.776] [ERROR] Error - file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/products/mongoDB.js:4
+import loggerError from '../../../config/log4.js'
+       ^^^^^^^^^^^
+SyntaxError: The requested module '../../../config/log4.js' does not provide an export named 'default'
+    at ModuleJob._instantiate (node:internal/modules/esm/module_job:123:21)
+    at async ModuleJob.run (node:internal/modules/esm/module_job:189:5)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)
+    at async DAOFactory.getPersistency (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/DAOFactory.js:6:40)
+    at async file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/controllers/sockets/products.socket.js:12:18
+[2022-12-09T00:50:26.279] [ERROR] Error - file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/products/mongoDB.js:4
+import loggerError from '../../../config/log4.js'
+       ^^^^^^^^^^^
+SyntaxError: The requested module '../../../config/log4.js' does not provide an export named 'default'
+    at ModuleJob._instantiate (node:internal/modules/esm/module_job:123:21)
+    at async ModuleJob.run (node:internal/modules/esm/module_job:189:5)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)
+    at async DAOFactory.getPersistency (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/DAOFactory.js:6:40)
+    at async file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/controllers/sockets/products.socket.js:12:18
+[2022-12-09T00:52:23.820] [ERROR] Error - Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/config/log4.js' imported from /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/products/mongoDB.js
+    at new NodeError (node:internal/errors:393:5)
+    at finalizeResolution (node:internal/modules/esm/resolve:323:11)
+    at moduleResolve (node:internal/modules/esm/resolve:916:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1124:11)
+    at nextResolve (node:internal/modules/esm/loader:163:28)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:837:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:424:18)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:76:40)
+    at link (node:internal/modules/esm/module_job:75:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+[2022-12-09T00:53:54.435] [ERROR] Error - file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/products/mongoDB.js:4
+import loggerError from '../../../config/log4.js'
+       ^^^^^^^^^^^
+SyntaxError: The requested module '../../../config/log4.js' does not provide an export named 'default'
+    at ModuleJob._instantiate (node:internal/modules/esm/module_job:123:21)
+    at async ModuleJob.run (node:internal/modules/esm/module_job:189:5)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)
+    at async DAOFactory.getPersistency (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/DAOFactory.js:6:40)
+    at async file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/controllers/sockets/products.socket.js:12:18
+[2022-12-09T00:54:06.738] [ERROR] Error - file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/messages/mongoDB.js:4
+import loggerError from '../../../config/log4.js';
+       ^^^^^^^^^^^
+SyntaxError: The requested module '../../../config/log4.js' does not provide an export named 'default'
+    at ModuleJob._instantiate (node:internal/modules/esm/module_job:123:21)
+    at async ModuleJob.run (node:internal/modules/esm/module_job:189:5)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)
+    at async DAOFactory.getPersistency (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/DAOFactory.js:6:40)
+    at async file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/controllers/sockets/messages.socket.js:13:18
+[2022-12-09T00:54:45.050] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T00:54:45.111] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T00:55:08.364] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T00:55:08.422] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T00:56:21.318] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T00:56:21.330] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T00:56:30.091] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T00:56:30.111] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T00:57:30.204] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T00:57:30.210] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T00:57:36.191] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T00:57:36.237] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T00:59:16.586] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:00:01.292] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:02:03.937] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:02:03.946] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-09T01:02:11.189] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:02:11.205] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-09T01:05:35.854] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-09T01:05:35.863] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:07:21.566] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:07:21.618] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-09T01:07:33.412] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-09T01:07:33.417] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:07:38.640] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-09T01:07:38.641] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:08:26.363] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:08:26.371] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-09T01:08:28.641] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-09T01:08:28.646] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:08:55.915] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:08:55.955] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-09T01:08:56.435] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:08:56.453] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-09T01:09:36.852] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:09:37.286] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-09T01:09:39.141] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:09:39.147] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-09T01:12:32.052] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:13:59.477] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:14:18.725] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:15:37.608] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:15:45.117] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:15:48.830] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:17:30.381] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:18:25.023] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:18:45.903] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:20:12.119] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:26:57.248] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:43:46.573] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T01:43:52.865] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T02:08:13.541] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T02:09:11.059] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T02:12:04.912] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-09T02:13:13.943] [ERROR] Error - TypeError: Cannot read properties of undefined (reading 'getInstance')
+    at DAOFactory.getPersistency (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/DAOFactory.js:7:26)
+    at async file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/controllers/sockets/products.socket.js:8:18
+[2022-12-09T02:17:17.493] [ERROR] Error - TypeError: Cannot read properties of undefined (reading 'getInstance')
+    at DAOFactory.getPersistency (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/DAOFactory.js:7:26)
+    at async file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/controllers/sockets/messages.socket.js:9:18
+[2022-12-09T02:18:21.581] [ERROR] Error - TypeError: Cannot read properties of undefined (reading 'getInstance')
+    at DAOFactory.getPersistency (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/DAOFactory.js:7:26)
+    at async file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/controllers/sockets/messages.socket.js:9:18
+[2022-12-09T02:19:00.843] [ERROR] Error - TypeError: Cannot read properties of undefined (reading 'getInstance')
+    at DAOFactory.getPersistency (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/DAOFactory.js:7:26)
+    at async file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/controllers/sockets/messages.socket.js:9:18
+[2022-12-09T02:19:07.023] [ERROR] Error - TypeError: Cannot read properties of undefined (reading 'getInstance')
+    at DAOFactory.getPersistency (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/DAOFactory.js:7:26)
+    at async file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/controllers/sockets/messages.socket.js:9:18
+[2022-12-09T02:23:18.174] [ERROR] Error - Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/utils/insertElement.js' imported from /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/products/mySQL.js
+    at new NodeError (node:internal/errors:393:5)
+    at finalizeResolution (node:internal/modules/esm/resolve:323:11)
+    at moduleResolve (node:internal/modules/esm/resolve:916:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1124:11)
+    at nextResolve (node:internal/modules/esm/loader:163:28)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:837:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:424:18)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:76:40)
+    at link (node:internal/modules/esm/module_job:75:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+[2022-12-09T02:24:13.618] [ERROR] Error - TypeError: Cannot read properties of undefined (reading 'getInstance')
+    at DAOFactory.getPersistency (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/DAOFactory.js:7:26)
+    at async file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/controllers/sockets/messages.socket.js:9:18
+[2022-12-09T02:26:41.494] [ERROR] Error - Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DTO/messageDTO.js' imported from /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/messages/mySQL.js
+    at new NodeError (node:internal/errors:393:5)
+    at finalizeResolution (node:internal/modules/esm/resolve:323:11)
+    at moduleResolve (node:internal/modules/esm/resolve:916:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1124:11)
+    at nextResolve (node:internal/modules/esm/loader:163:28)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:837:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:424:18)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:76:40)
+    at link (node:internal/modules/esm/module_job:75:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+[2022-12-09T02:27:22.690] [ERROR] Error - Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DTO/msgeDTO.js' imported from /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/messages/mySQL.js
+    at new NodeError (node:internal/errors:393:5)
+    at finalizeResolution (node:internal/modules/esm/resolve:323:11)
+    at moduleResolve (node:internal/modules/esm/resolve:916:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1124:11)
+    at nextResolve (node:internal/modules/esm/loader:163:28)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:837:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:424:18)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:76:40)
+    at link (node:internal/modules/esm/module_job:75:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+[2022-12-09T02:27:57.601] [ERROR] Error - Error iniciando sesión: MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+[2022-12-09T02:57:30.763] [ERROR] Error - TypeError: Cannot read properties of undefined (reading 'getInstance')
+    at DAOFactory.getPersistency (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/DAOFactory.js:7:26)
+    at async file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/middlewares/passport/passport-local.js:11:15
+[2022-12-09T03:03:17.042] [ERROR] Error - No existe el usuario con el mail indicado.
+[2022-12-09T03:03:23.910] [ERROR] Error - MongoServerError: E11000 duplicate key error collection: desafio17.users index: email_1 dup key: { email: "alexisvelazquez2012@gmail.com" }
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongodb/lib/operations/insert.js:53:33
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongodb/lib/cmap/connection_pool.js:307:25
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongodb/lib/sdam/server.js:213:17
+    at handleOperationResult (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongodb/lib/sdam/server.js:329:20)
+    at Connection.onMessage (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongodb/lib/cmap/connection.js:242:9)
+    at MessageStream.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongodb/lib/cmap/connection.js:61:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongodb/lib/cmap/message_stream.js:125:16)
+    at MessageStream._write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongodb/lib/cmap/message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'alexisvelazquez2012@gmail.com' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-12-09T03:03:23.915] [ERROR] Error - Error creando el usuario: MongoServerError: E11000 duplicate key error collection: desafio17.users index: email_1 dup key: { email: "alexisvelazquez2012@gmail.com" }
+[2022-12-09T03:08:06.869] [ERROR] Error - SyntaxError: Unexpected token '{'
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:119:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:468:14)
+    at async link (node:internal/modules/esm/module_job:67:21)
+[2022-12-09T03:11:24.994] [ERROR] Error - MongoServerError: E11000 duplicate key error collection: desafio17.users index: email_1 dup key: { email: "alexisvelazquez2012@gmail.com" }
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongodb/lib/operations/insert.js:53:33
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongodb/lib/cmap/connection_pool.js:307:25
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongodb/lib/sdam/server.js:213:17
+    at handleOperationResult (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongodb/lib/sdam/server.js:329:20)
+    at Connection.onMessage (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongodb/lib/cmap/connection.js:242:9)
+    at MessageStream.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongodb/lib/cmap/connection.js:61:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongodb/lib/cmap/message_stream.js:125:16)
+    at MessageStream._write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongodb/lib/cmap/message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'alexisvelazquez2012@gmail.com' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-12-09T03:11:24.999] [ERROR] Error - Error creando el usuario: MongoServerError: E11000 duplicate key error collection: desafio17.users index: email_1 dup key: { email: "alexisvelazquez2012@gmail.com" }
+[2022-12-09T03:14:39.801] [ERROR] Error - Falló el registro de usuario: ReferenceError: findOrCreateUser is not defined
+[2022-12-09T03:19:19.085] [ERROR] Error - ReferenceError: schema is not defined
+    at file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/models/mongoose/users.model.js:9:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)
+    at async DAOFactory.getPersistency (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/DAOFactory.js:6:40)
+    at async file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/middlewares/passport/passport-local.js:11:15
+[2022-12-09T03:19:21.928] [ERROR] Error - ReferenceError: schema is not defined
+    at file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/models/mongoose/users.model.js:9:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)
+    at async DAOFactory.getPersistency (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/DAOFactory.js:6:40)
+    at async file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/middlewares/passport/passport-local.js:11:15
+[2022-12-09T03:56:06.399] [ERROR] Error - MongoServerError: E11000 duplicate key error collection: desafio17.users index: email_1 dup key: { email: "alexisvelazquez2012@gmail.com" }
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongodb/lib/operations/insert.js:53:33
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongodb/lib/cmap/connection_pool.js:307:25
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongodb/lib/sdam/server.js:213:17
+    at handleOperationResult (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongodb/lib/sdam/server.js:329:20)
+    at Connection.onMessage (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongodb/lib/cmap/connection.js:242:9)
+    at MessageStream.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongodb/lib/cmap/connection.js:61:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongodb/lib/cmap/message_stream.js:125:16)
+    at MessageStream._write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongodb/lib/cmap/message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'alexisvelazquez2012@gmail.com' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-12-09T03:56:06.412] [ERROR] Error - Error creando el usuario: MongoServerError: E11000 duplicate key error collection: desafio17.users index: email_1 dup key: { email: "alexisvelazquez2012@gmail.com" }
+[2022-12-09T04:04:02.087] [ERROR] Error - No existe el usuario con el mail indicado.
+[2022-12-09T04:07:51.680] [ERROR] Error - Usuario ya existe
+[2022-12-09T04:08:38.725] [ERROR] Error - Usuario ya existe
+[2022-12-09T04:10:35.131] [ERROR] Error - Usuario ya existe
+[2022-12-09T04:11:15.824] [ERROR] Error - Usuario ya existe
+[2022-12-09T04:19:37.120] [ERROR] Error - Usuario ya existe
+[2022-12-10T14:30:44.460] [ERROR] Error - Error iniciando sesión: TypeError: userDAO.getUserByEmail is not a function
+[2022-12-10T14:53:25.244] [ERROR] Error - Usuario ya existe
+[2022-12-10T15:01:16.960] [ERROR] Error - Usuario ya existe
+[2022-12-10T15:08:56.770] [ERROR] Error - Error iniciando sesión: TypeError: Cannot read properties of undefined (reading 'password')
+[2022-12-10T15:10:23.782] [ERROR] Error - Error iniciando sesión: TypeError: Cannot read properties of undefined (reading 'password')
+[2022-12-10T15:17:11.217] [ERROR] Error - TypeError: Cannot read properties of undefined (reading 'getInstance')
+    at DAOFactory.getPersistency (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/DAOFactory.js:8:26)
+    at async file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/middlewares/passport/passport-local.js:12:15
+[2022-12-10T15:22:04.597] [ERROR] Error - ReferenceError: createUser is not defined
+    at file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js:66:12
+    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)
+    at async DAOFactory.getPersistency (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/DAOFactory.js:7:40)
+    at async file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/middlewares/passport/passport-local.js:12:15
+[2022-12-10T15:24:00.542] [ERROR] Error - ReferenceError: getUserByEmail is not defined
+    at file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js:54:16
+    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)
+    at async DAOFactory.getPersistency (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/DAOFactory.js:7:40)
+    at async file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/middlewares/passport/passport-local.js:12:15
+[2022-12-11T18:18:46.470] [ERROR] Error - Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/insertElement.js' imported from /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js
+    at new NodeError (node:internal/errors:393:5)
+    at finalizeResolution (node:internal/modules/esm/resolve:323:11)
+    at moduleResolve (node:internal/modules/esm/resolve:916:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1124:11)
+    at nextResolve (node:internal/modules/esm/loader:163:28)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:837:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:424:18)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:76:40)
+    at link (node:internal/modules/esm/module_job:75:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+[2022-12-11T18:19:38.149] [ERROR] Error - Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/knex/utils/insertElement.js' imported from /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js
+    at new NodeError (node:internal/errors:393:5)
+    at finalizeResolution (node:internal/modules/esm/resolve:323:11)
+    at moduleResolve (node:internal/modules/esm/resolve:916:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1124:11)
+    at nextResolve (node:internal/modules/esm/loader:163:28)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:837:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:424:18)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:76:40)
+    at link (node:internal/modules/esm/module_job:75:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+[2022-12-11T18:20:11.657] [ERROR] Error - Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/knex/utils/insertElement.js' imported from /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/products/mySQL.js
+    at new NodeError (node:internal/errors:393:5)
+    at finalizeResolution (node:internal/modules/esm/resolve:323:11)
+    at moduleResolve (node:internal/modules/esm/resolve:916:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1124:11)
+    at nextResolve (node:internal/modules/esm/loader:163:28)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:837:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:424:18)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:76:40)
+    at link (node:internal/modules/esm/module_job:75:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+[2022-12-11T18:20:26.826] [ERROR] Error - Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/knex/utils/insertElement.js' imported from /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/messages/mySQL.js
+    at new NodeError (node:internal/errors:393:5)
+    at finalizeResolution (node:internal/modules/esm/resolve:323:11)
+    at moduleResolve (node:internal/modules/esm/resolve:916:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1124:11)
+    at nextResolve (node:internal/modules/esm/loader:163:28)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:837:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:424:18)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:76:40)
+    at link (node:internal/modules/esm/module_job:75:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+[2022-12-11T18:20:40.194] [ERROR] Error - Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/knex/utils/createTable.js' imported from /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/containers/SQLContainer.js
+    at new NodeError (node:internal/errors:393:5)
+    at finalizeResolution (node:internal/modules/esm/resolve:323:11)
+    at moduleResolve (node:internal/modules/esm/resolve:916:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1124:11)
+    at nextResolve (node:internal/modules/esm/loader:163:28)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:837:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:424:18)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:76:40)
+    at link (node:internal/modules/esm/module_job:75:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+[2022-12-11T18:21:00.268] [ERROR] Error - ReferenceError: createTable is not defined
+    at file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/knex/createTable.js:5:28
+    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)
+    at async DAOFactory.getPersistency (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/DAOFactory.js:6:40)
+    at async file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/controllers/sockets/products.socket.js:9:18
+[2022-12-11T18:23:18.272] [ERROR] Error - Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/models/knex/users.model.js' imported from /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/knex/createTable.js
+    at new NodeError (node:internal/errors:393:5)
+    at finalizeResolution (node:internal/modules/esm/resolve:323:11)
+    at moduleResolve (node:internal/modules/esm/resolve:916:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1124:11)
+    at nextResolve (node:internal/modules/esm/loader:163:28)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:837:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:424:18)
+    at ESMLoader.import (node:internal/modules/esm/loader:521:22)
+    at importModuleDynamically (node:internal/modules/esm/translators:110:35)
+    at importModuleDynamicallyCallback (node:internal/process/esm_loader:35:14) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+[2022-12-11T18:27:48.071] [ERROR] Error - Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/models/knex/users.model.js' imported from /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/knex/createTable.js
+    at new NodeError (node:internal/errors:393:5)
+    at finalizeResolution (node:internal/modules/esm/resolve:323:11)
+    at moduleResolve (node:internal/modules/esm/resolve:916:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1124:11)
+    at nextResolve (node:internal/modules/esm/loader:163:28)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:837:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:424:18)
+    at ESMLoader.import (node:internal/modules/esm/loader:521:22)
+    at importModuleDynamically (node:internal/modules/esm/translators:110:35)
+    at importModuleDynamicallyCallback (node:internal/process/esm_loader:35:14) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+[2022-12-11T18:28:33.187] [ERROR] Error - Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/models/knex/users.model.js' imported from /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/knex/createTable.js
+    at new NodeError (node:internal/errors:393:5)
+    at finalizeResolution (node:internal/modules/esm/resolve:323:11)
+    at moduleResolve (node:internal/modules/esm/resolve:916:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1124:11)
+    at nextResolve (node:internal/modules/esm/loader:163:28)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:837:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:424:18)
+    at ESMLoader.import (node:internal/modules/esm/loader:521:22)
+    at importModuleDynamically (node:internal/modules/esm/translators:110:35)
+    at importModuleDynamicallyCallback (node:internal/process/esm_loader:35:14) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+[2022-12-11T18:28:50.354] [ERROR] Error - Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/models/knex/users.model.js' imported from /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/knex/createTable.js
+    at new NodeError (node:internal/errors:393:5)
+    at finalizeResolution (node:internal/modules/esm/resolve:323:11)
+    at moduleResolve (node:internal/modules/esm/resolve:916:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1124:11)
+    at nextResolve (node:internal/modules/esm/loader:163:28)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:837:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:424:18)
+    at ESMLoader.import (node:internal/modules/esm/loader:521:22)
+    at importModuleDynamically (node:internal/modules/esm/translators:110:35)
+    at importModuleDynamicallyCallback (node:internal/process/esm_loader:35:14) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+[2022-12-11T18:29:50.998] [ERROR] Error - Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/models/knex/users.model.js' imported from /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/knex/createTable.js
+    at new NodeError (node:internal/errors:393:5)
+    at finalizeResolution (node:internal/modules/esm/resolve:323:11)
+    at moduleResolve (node:internal/modules/esm/resolve:916:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1124:11)
+    at nextResolve (node:internal/modules/esm/loader:163:28)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:837:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:424:18)
+    at ESMLoader.import (node:internal/modules/esm/loader:521:22)
+    at importModuleDynamically (node:internal/modules/esm/translators:110:35)
+    at importModuleDynamicallyCallback (node:internal/process/esm_loader:35:14) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+[2022-12-11T18:30:07.588] [ERROR] Error - Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/models/knex/users.model.js' imported from /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/knex/createTable.js
+    at new NodeError (node:internal/errors:393:5)
+    at finalizeResolution (node:internal/modules/esm/resolve:323:11)
+    at moduleResolve (node:internal/modules/esm/resolve:916:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1124:11)
+    at nextResolve (node:internal/modules/esm/loader:163:28)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:837:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:424:18)
+    at ESMLoader.import (node:internal/modules/esm/loader:521:22)
+    at importModuleDynamically (node:internal/modules/esm/translators:110:35)
+    at importModuleDynamicallyCallback (node:internal/process/esm_loader:35:14) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+[2022-12-11T18:35:14.764] [ERROR] Error - Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/models/knex/users.model.js' imported from /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/knex/createTable.js
+    at new NodeError (node:internal/errors:393:5)
+    at finalizeResolution (node:internal/modules/esm/resolve:323:11)
+    at moduleResolve (node:internal/modules/esm/resolve:916:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1124:11)
+    at nextResolve (node:internal/modules/esm/loader:163:28)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:837:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:424:18)
+    at ESMLoader.import (node:internal/modules/esm/loader:521:22)
+    at importModuleDynamically (node:internal/modules/esm/translators:110:35)
+    at importModuleDynamicallyCallback (node:internal/process/esm_loader:35:14) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+[2022-12-11T18:45:21.385] [ERROR] Error - Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/models/knex/users.model.js' imported from /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/knex/createTable.js
+    at new NodeError (node:internal/errors:393:5)
+    at finalizeResolution (node:internal/modules/esm/resolve:323:11)
+    at moduleResolve (node:internal/modules/esm/resolve:916:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1124:11)
+    at nextResolve (node:internal/modules/esm/loader:163:28)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:837:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:424:18)
+    at ESMLoader.import (node:internal/modules/esm/loader:521:22)
+    at importModuleDynamically (node:internal/modules/esm/translators:110:35)
+    at importModuleDynamicallyCallback (node:internal/process/esm_loader:35:14) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+[2022-12-11T18:46:28.208] [ERROR] Error - Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/models/knex/users.model.js' imported from /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/knex/createTable.js
+    at new NodeError (node:internal/errors:393:5)
+    at finalizeResolution (node:internal/modules/esm/resolve:323:11)
+    at moduleResolve (node:internal/modules/esm/resolve:916:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1124:11)
+    at nextResolve (node:internal/modules/esm/loader:163:28)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:837:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:424:18)
+    at ESMLoader.import (node:internal/modules/esm/loader:521:22)
+    at importModuleDynamically (node:internal/modules/esm/translators:110:35)
+    at importModuleDynamicallyCallback (node:internal/process/esm_loader:35:14) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+[2022-12-11T19:08:08.294] [ERROR] Error - file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js:6
+import getUserByEmail from '../../../utils/knex/getUserByEmail.js';
+       ^^^^^^^^^^^^^^
+SyntaxError: The requested module '../../../utils/knex/getUserByEmail.js' does not provide an export named 'default'
+    at ModuleJob._instantiate (node:internal/modules/esm/module_job:123:21)
+    at async ModuleJob.run (node:internal/modules/esm/module_job:189:5)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)
+    at async DAOFactory.getPersistency (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/DAOFactory.js:6:40)
+    at async file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/middlewares/passport/passport-local.js:12:15
+[2022-12-11T19:14:14.435] [ERROR] Error - Error iniciando sesión: Error: data and hash arguments required
+[2022-12-11T19:16:12.899] [ERROR] Error - Error iniciando sesión: Error: data and hash arguments required
+[2022-12-11T19:17:55.941] [ERROR] Error - Usuario no encontrado
+[2022-12-11T19:17:55.944] [ERROR] Error - Error iniciando sesión: Usuario no encontrado
+[2022-12-11T19:18:33.762] [ERROR] Error - Error iniciando sesión: Error: data and hash arguments required
+[2022-12-11T19:19:09.619] [ERROR] Error - No existe el usuario con el mail indicado.
+[2022-12-11T19:20:00.013] [ERROR] Error - No existe el usuario con el mail indicado.
+[2022-12-11T19:21:00.314] [ERROR] Error - No existe el usuario con el mail indicado.
+[2022-12-11T19:21:31.337] [ERROR] Error - No existe el usuario con el mail indicado.
+[2022-12-11T19:25:11.325] [ERROR] Error - No existe el usuario con el mail indicado.
+[2022-12-11T19:36:32.879] [ERROR] Error - No existe el usuario con el mail indicado.
+[2022-12-11T19:52:37.198] [ERROR] Error - No existe el usuario con el mail indicado.
+[2022-12-11T19:59:47.374] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T20:00:16.556] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T20:01:02.660] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T20:05:17.985] [ERROR] Error - Error: ER_DUP_ENTRY: Duplicate entry 'alexisvelazquez2012@gmail.com' for key 'users_email_unique'
+    at Sequence._packetToError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:198:25)
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:132:18
+    at new Promise (<anonymous>)
+    at Client_MySQL._query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:126:12)
+    at executeQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/query-executioner.js:37:17)
+    at Client_MySQL.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/client.js:146:12)
+    at Runner.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:123:36)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:13:17)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry 'alexisvelazquez2012@gmail.com' for key 'users_email_unique'",
+  sqlState: '23000',
+  index: 0,
+  sql: "insert into `users` (`email`, `password`) values ('alexisvelazquez2012@gmail.com', '$2b$10$pn0t6aVQXpaS5rXKPgWFM.YfmepLA112P4M4Jvnb8mGtw5n6jh1h6')"
+}
+[2022-12-11T20:05:17.990] [ERROR] Error - Error: ER_DUP_ENTRY: Duplicate entry 'alexisvelazquez2012@gmail.com' for key 'users_email_unique'
+    at Sequence._packetToError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:198:25)
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:132:18
+    at new Promise (<anonymous>)
+    at Client_MySQL._query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:126:12)
+    at executeQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/query-executioner.js:37:17)
+    at Client_MySQL.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/client.js:146:12)
+    at Runner.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:123:36)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:13:17)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20) {
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry 'alexisvelazquez2012@gmail.com' for key 'users_email_unique'",
+  sqlState: '23000',
+  index: 0,
+  sql: "insert into `users` (`email`, `password`) values ('alexisvelazquez2012@gmail.com', '$2b$10$pn0t6aVQXpaS5rXKPgWFM.YfmepLA112P4M4Jvnb8mGtw5n6jh1h6')"
+}
+[2022-12-11T20:05:17.991] [ERROR] Error - Error creando el usuario: Error: insert into `users` (`email`, `password`) values ('alexisvelazquez2012@gmail.com', '$2b$10$pn0t6aVQXpaS5rXKPgWFM.YfmepLA112P4M4Jvnb8mGtw5n6jh1h6') - ER_DUP_ENTRY: Duplicate entry 'alexisvelazquez2012@gmail.com' for key 'users_email_unique'
+[2022-12-11T20:07:51.970] [ERROR] Error - No existe el usuario con el mail indicado.
+[2022-12-11T20:10:56.899] [ERROR] Error - TypeError: Cannot read properties of undefined (reading 'length')
+    at UsersDAOMySQL.getUserByEmail (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js:38:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Strategy._verify (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/middlewares/passport/passport-local.js:79:22)
+[2022-12-11T20:10:56.906] [ERROR] Error - Error iniciando sesión: TypeError: Cannot read properties of undefined (reading 'length')
+[2022-12-11T20:15:19.460] [ERROR] Error - No existe el usuario con el mail indicado.
+[2022-12-11T20:23:11.852] [ERROR] Error - ReferenceError: id is not defined
+    at getUserByEmail (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/knex/getUserByEmail.js:7:65)
+    at UsersDAOMySQL.getUserByEmail (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js:36:26)
+    at Strategy._verify (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/middlewares/passport/passport-local.js:79:36)
+    at Strategy.authenticate (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/passport-local/lib/strategy.js:88:12)
+    at attempt (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/passport/lib/middleware/authenticate.js:369:16)
+    at authenticate (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/passport/lib/middleware/authenticate.js:370:7)
+    at Layer.handle [as handle_request] (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/express/lib/router/layer.js:95:5)
+[2022-12-11T20:23:11.856] [ERROR] Error - ReferenceError: id is not defined
+    at getUserByEmail (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/knex/getUserByEmail.js:7:65)
+    at UsersDAOMySQL.getUserByEmail (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js:36:26)
+    at Strategy._verify (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/middlewares/passport/passport-local.js:79:36)
+    at Strategy.authenticate (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/passport-local/lib/strategy.js:88:12)
+    at attempt (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/passport/lib/middleware/authenticate.js:369:16)
+    at authenticate (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/passport/lib/middleware/authenticate.js:370:7)
+    at Layer.handle [as handle_request] (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/express/lib/router/layer.js:95:5)
+[2022-12-11T20:23:11.857] [ERROR] Error - Error iniciando sesión: ReferenceError: id is not defined
+[2022-12-11T20:23:34.449] [ERROR] Error - No existe el usuario con el mail indicado.
+[2022-12-11T20:24:04.109] [ERROR] Error - No existe el usuario con el mail indicado.
+[2022-12-11T20:24:32.819] [ERROR] Error - No existe el usuario con el mail indicado.
+[2022-12-11T20:25:27.234] [ERROR] Error - ReferenceError: Cannot access 'email' before initialization
+    at getUserByEmail (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/knex/getUserByEmail.js:7:23)
+    at UsersDAOMySQL.getUserByEmail (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js:36:26)
+    at Strategy._verify (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/middlewares/passport/passport-local.js:79:36)
+    at Strategy.authenticate (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/passport-local/lib/strategy.js:88:12)
+    at attempt (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/passport/lib/middleware/authenticate.js:369:16)
+    at authenticate (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/passport/lib/middleware/authenticate.js:370:7)
+    at Layer.handle [as handle_request] (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/express/lib/router/layer.js:95:5)
+[2022-12-11T20:25:27.240] [ERROR] Error - ReferenceError: Cannot access 'email' before initialization
+    at getUserByEmail (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/knex/getUserByEmail.js:7:23)
+    at UsersDAOMySQL.getUserByEmail (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js:36:26)
+    at Strategy._verify (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/middlewares/passport/passport-local.js:79:36)
+    at Strategy.authenticate (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/passport-local/lib/strategy.js:88:12)
+    at attempt (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/passport/lib/middleware/authenticate.js:369:16)
+    at authenticate (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/passport/lib/middleware/authenticate.js:370:7)
+    at Layer.handle [as handle_request] (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/express/lib/router/layer.js:95:5)
+[2022-12-11T20:25:27.249] [ERROR] Error - Error iniciando sesión: ReferenceError: Cannot access 'email' before initialization
+[2022-12-11T20:26:50.990] [ERROR] Error - ReferenceError: Cannot access 'user' before initialization
+    at getUserByEmail (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/knex/getUserByEmail.js:7:37)
+    at UsersDAOMySQL.getUserByEmail (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js:36:26)
+    at Strategy._verify (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/middlewares/passport/passport-local.js:79:36)
+    at Strategy.authenticate (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/passport-local/lib/strategy.js:88:12)
+    at attempt (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/passport/lib/middleware/authenticate.js:369:16)
+    at authenticate (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/passport/lib/middleware/authenticate.js:370:7)
+    at Layer.handle [as handle_request] (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/express/lib/router/layer.js:95:5)
+[2022-12-11T20:26:50.994] [ERROR] Error - ReferenceError: Cannot access 'user' before initialization
+    at getUserByEmail (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/knex/getUserByEmail.js:7:37)
+    at UsersDAOMySQL.getUserByEmail (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js:36:26)
+    at Strategy._verify (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/middlewares/passport/passport-local.js:79:36)
+    at Strategy.authenticate (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/passport-local/lib/strategy.js:88:12)
+    at attempt (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/passport/lib/middleware/authenticate.js:369:16)
+    at authenticate (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/passport/lib/middleware/authenticate.js:370:7)
+    at Layer.handle [as handle_request] (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/express/lib/router/layer.js:95:5)
+[2022-12-11T20:26:50.997] [ERROR] Error - Error iniciando sesión: ReferenceError: Cannot access 'user' before initialization
+[2022-12-11T20:27:26.257] [ERROR] Error - Error iniciando sesión: Error: data and hash arguments required
+[2022-12-11T20:28:23.938] [ERROR] Error - Error iniciando sesión: Error: data and hash arguments required
+[2022-12-11T20:31:06.653] [ERROR] Error - No existe el usuario con el mail indicado.
+[2022-12-11T20:32:00.390] [ERROR] Error - No existe el usuario con el mail indicado.
+[2022-12-11T20:35:33.958] [ERROR] Error - No existe el usuario con el mail indicado.
+[2022-12-11T20:37:45.382] [ERROR] Error - No existe el usuario con el mail indicado.
+[2022-12-11T20:38:05.800] [ERROR] Error - No existe el usuario con el mail indicado.
+[2022-12-11T20:40:10.563] [ERROR] Error - TypeError: Cannot read properties of undefined (reading 'length')
+    at UsersDAOMySQL.getUserByEmail (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js:39:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async findOrCreateUser (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/middlewares/passport/passport-local.js:35:24)
+[2022-12-11T20:41:07.670] [ERROR] Error - Error: Undefined binding(s) detected when compiling SELECT. Undefined column(s): [id] query: select * from `users` where `id` = ?
+    at QueryCompiler_MySQL.toSQL (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/query/querycompiler.js:110:13)
+    at Builder.toSQL (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/query/querybuilder.js:83:44)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:4:30)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Runner.run (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:30:19)
+    at async getUserById (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/knex/getUserById.js:7:18)
+    at async UsersDAOMySQL.getUserById (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js:53:20)
+    at async UsersDAOMySQL.createUser (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js:27:23)
+    at async findOrCreateUser (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/middlewares/passport/passport-local.js:48:33)
+[2022-12-11T20:41:07.674] [ERROR] Error - Error: Undefined binding(s) detected when compiling SELECT. Undefined column(s): [id] query: select * from `users` where `id` = ?
+    at QueryCompiler_MySQL.toSQL (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/query/querycompiler.js:110:13)
+    at Builder.toSQL (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/query/querybuilder.js:83:44)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:4:30)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Runner.run (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:30:19)
+    at async getUserById (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/knex/getUserById.js:7:18)
+    at async UsersDAOMySQL.getUserById (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js:53:20)
+    at async UsersDAOMySQL.createUser (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js:27:23)
+    at async findOrCreateUser (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/middlewares/passport/passport-local.js:48:33)
+[2022-12-11T20:41:07.675] [ERROR] Error - Error: Undefined binding(s) detected when compiling SELECT. Undefined column(s): [id] query: select * from `users` where `id` = ?
+    at QueryCompiler_MySQL.toSQL (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/query/querycompiler.js:110:13)
+    at Builder.toSQL (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/query/querybuilder.js:83:44)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:4:30)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Runner.run (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:30:19)
+    at async getUserById (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/knex/getUserById.js:7:18)
+    at async UsersDAOMySQL.getUserById (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js:53:20)
+    at async UsersDAOMySQL.createUser (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js:27:23)
+    at async findOrCreateUser (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/middlewares/passport/passport-local.js:48:33)
+[2022-12-11T20:41:07.676] [ERROR] Error - Error creando el usuario: Error: Undefined binding(s) detected when compiling SELECT. Undefined column(s): [id] query: select * from `users` where `id` = ?
+[2022-12-11T20:43:02.139] [ERROR] Error - ReferenceError: id is not defined
+    at getUserById (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/knex/getUserById.js:7:17)
+    at UsersDAOMySQL.getUserById (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js:53:26)
+    at UsersDAOMySQL.createUser (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js:27:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async findOrCreateUser (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/middlewares/passport/passport-local.js:48:33)
+[2022-12-11T20:43:02.144] [ERROR] Error - ReferenceError: id is not defined
+    at getUserById (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/knex/getUserById.js:7:17)
+    at UsersDAOMySQL.getUserById (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js:53:26)
+    at UsersDAOMySQL.createUser (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js:27:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async findOrCreateUser (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/middlewares/passport/passport-local.js:48:33)
+[2022-12-11T20:43:02.148] [ERROR] Error - ReferenceError: id is not defined
+    at getUserById (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/knex/getUserById.js:7:17)
+    at UsersDAOMySQL.getUserById (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js:53:26)
+    at UsersDAOMySQL.createUser (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/users/mySQL.js:27:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async findOrCreateUser (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/middlewares/passport/passport-local.js:48:33)
+[2022-12-11T20:43:02.150] [ERROR] Error - Error creando el usuario: ReferenceError: id is not defined
+[2022-12-11T20:43:36.023] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T20:46:31.317] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T20:46:47.149] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T20:47:30.362] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T20:47:35.828] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T20:47:43.442] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T20:48:43.818] [ERROR] Error - Error: ER_BAD_FIELD_ERROR: Unknown column 'age' in 'field list'
+    at Sequence._packetToError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:198:25)
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:132:18
+    at new Promise (<anonymous>)
+    at Client_MySQL._query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:126:12)
+    at executeQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/query-executioner.js:37:17)
+    at Client_MySQL.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/client.js:146:12)
+    at Runner.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:123:36)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:13:17)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column 'age' in 'field list'",
+  sqlState: '42S22',
+  index: 0,
+  sql: "insert into `messages` (`age`, `avatar`, `email`, `firstName`, `fyh`, `lastName`, `msg`, `nickName`) values ('25', 'https://cdn2.iconfinder.com/data/icons/avatars-60/5985/13-Captain-128.png', 'alexisvelazquez2012@gmail.com', 'Alexis', '11/12/2022, 20:48:43', 'Velázquez', 'Hola desde Mysql!', 'AlexisVP97')"
+}
+[2022-12-11T20:48:43.822] [ERROR] Error - Error: ER_BAD_FIELD_ERROR: Unknown column 'age' in 'field list'
+    at Sequence._packetToError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:198:25)
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:132:18
+    at new Promise (<anonymous>)
+    at Client_MySQL._query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:126:12)
+    at executeQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/query-executioner.js:37:17)
+    at Client_MySQL.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/client.js:146:12)
+    at Runner.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:123:36)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:13:17)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column 'age' in 'field list'",
+  sqlState: '42S22',
+  index: 0,
+  sql: "insert into `messages` (`age`, `avatar`, `email`, `firstName`, `fyh`, `lastName`, `msg`, `nickName`) values ('25', 'https://cdn2.iconfinder.com/data/icons/avatars-60/5985/13-Captain-128.png', 'alexisvelazquez2012@gmail.com', 'Alexis', '11/12/2022, 20:48:43', 'Velázquez', 'Hola desde Mysql!', 'AlexisVP97')"
+}
+[2022-12-11T20:49:42.236] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T20:51:13.818] [ERROR] Error - Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '11/12/2022, 20:51:13' for column `desafio17`.`messages`.`fyh` at row 1
+    at Sequence._packetToError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:198:25)
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:132:18
+    at new Promise (<anonymous>)
+    at Client_MySQL._query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:126:12)
+    at executeQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/query-executioner.js:37:17)
+    at Client_MySQL.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/client.js:146:12)
+    at Runner.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:123:36)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:13:17)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20) {
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: "Incorrect datetime value: '11/12/2022, 20:51:13' for column `desafio17`.`messages`.`fyh` at row 1",
+  sqlState: '22007',
+  index: 0,
+  sql: "insert into `messages` (`age`, `avatar`, `email`, `firstName`, `fyh`, `lastName`, `msg`, `nickName`) values ('25', 'https://cdn2.iconfinder.com/data/icons/avatars-60/5985/13-Captain-128.png', 'alexisvelazquez2012@gmail.com', 'Alexis', '11/12/2022, 20:51:13', 'Velázquez', 'Hola desde Mysql!', 'AlexisVP97')"
+}
+[2022-12-11T20:51:13.824] [ERROR] Error - Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '11/12/2022, 20:51:13' for column `desafio17`.`messages`.`fyh` at row 1
+    at Sequence._packetToError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:198:25)
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:132:18
+    at new Promise (<anonymous>)
+    at Client_MySQL._query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:126:12)
+    at executeQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/query-executioner.js:37:17)
+    at Client_MySQL.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/client.js:146:12)
+    at Runner.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:123:36)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:13:17)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20) {
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: "Incorrect datetime value: '11/12/2022, 20:51:13' for column `desafio17`.`messages`.`fyh` at row 1",
+  sqlState: '22007',
+  index: 0,
+  sql: "insert into `messages` (`age`, `avatar`, `email`, `firstName`, `fyh`, `lastName`, `msg`, `nickName`) values ('25', 'https://cdn2.iconfinder.com/data/icons/avatars-60/5985/13-Captain-128.png', 'alexisvelazquez2012@gmail.com', 'Alexis', '11/12/2022, 20:51:13', 'Velázquez', 'Hola desde Mysql!', 'AlexisVP97')"
+}
+[2022-12-11T20:54:47.539] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T20:55:49.378] [ERROR] Error - CastError: Cast to ObjectId failed for value "8" (type number) at path "_id" for model "Users"
+    at model.Query.exec (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/query.js:4897:21)
+    at Query.then (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/query.js:4996:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"8"',
+  kind: 'ObjectId',
+  value: 8,
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at SchemaType.applySetters (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/schematype.js:1201:12)
+      at SchemaType._castForQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/schematype.js:1648:15)
+      at SchemaType.castForQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/cast.js:342:32)
+      at Query.cast (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/query.js:5325:12),
+  valueType: 'number'
+}
+[2022-12-11T20:56:46.463] [ERROR] Error - CastError: Cast to ObjectId failed for value "8" (type number) at path "_id" for model "Users"
+    at model.Query.exec (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/query.js:4897:21)
+    at Query.then (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/query.js:4996:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"8"',
+  kind: 'ObjectId',
+  value: 8,
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at SchemaType.applySetters (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/schematype.js:1201:12)
+      at SchemaType._castForQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/schematype.js:1648:15)
+      at SchemaType.castForQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/cast.js:342:32)
+      at Query.cast (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/query.js:5325:12),
+  valueType: 'number'
+}
+[2022-12-11T20:57:19.600] [ERROR] Error - CastError: Cast to ObjectId failed for value "8" (type number) at path "_id" for model "Users"
+    at model.Query.exec (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/query.js:4897:21)
+    at Query.then (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/query.js:4996:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"8"',
+  kind: 'ObjectId',
+  value: 8,
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/bson/lib/error.js:41:28)
+      at new ObjectId (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/bson/lib/objectid.js:67:23)
+      at castObjectId (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at SchemaType.applySetters (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/schematype.js:1201:12)
+      at SchemaType._castForQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/schematype.js:1648:15)
+      at SchemaType.castForQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/schematype.js:1612:20)
+      at cast (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/cast.js:342:32)
+      at Query.cast (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mongoose/lib/query.js:5325:12),
+  valueType: 'number'
+}
+[2022-12-11T20:58:19.272] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T20:58:56.259] [ERROR] Error - Usuario ya existe
+[2022-12-11T21:01:16.948] [ERROR] Error - Usuario ya existe
+[2022-12-11T21:01:36.297] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T21:01:57.112] [ERROR] Error - Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '11/12/2022, 21:01:57' for column `desafio17`.`messages`.`fyh` at row 1
+    at Sequence._packetToError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:198:25)
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:132:18
+    at new Promise (<anonymous>)
+    at Client_MySQL._query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:126:12)
+    at executeQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/query-executioner.js:37:17)
+    at Client_MySQL.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/client.js:146:12)
+    at Runner.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:123:36)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:13:17)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20) {
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: "Incorrect datetime value: '11/12/2022, 21:01:57' for column `desafio17`.`messages`.`fyh` at row 1",
+  sqlState: '22007',
+  index: 0,
+  sql: "insert into `messages` (`age`, `avatar`, `email`, `firstName`, `fyh`, `lastName`, `msg`, `nickName`) values ('25', 'https://cdn2.iconfinder.com/data/icons/avatars-60/5985/13-Captain-128.png', 'alexisvelazquez2012@gmail.com', 'Alexis', '11/12/2022, 21:01:57', 'Velázquez', 'Hola desde MySQL!', 'AlexisVP97')"
+}
+[2022-12-11T21:01:57.117] [ERROR] Error - Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '11/12/2022, 21:01:57' for column `desafio17`.`messages`.`fyh` at row 1
+    at Sequence._packetToError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:198:25)
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:132:18
+    at new Promise (<anonymous>)
+    at Client_MySQL._query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:126:12)
+    at executeQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/query-executioner.js:37:17)
+    at Client_MySQL.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/client.js:146:12)
+    at Runner.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:123:36)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:13:17)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20) {
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: "Incorrect datetime value: '11/12/2022, 21:01:57' for column `desafio17`.`messages`.`fyh` at row 1",
+  sqlState: '22007',
+  index: 0,
+  sql: "insert into `messages` (`age`, `avatar`, `email`, `firstName`, `fyh`, `lastName`, `msg`, `nickName`) values ('25', 'https://cdn2.iconfinder.com/data/icons/avatars-60/5985/13-Captain-128.png', 'alexisvelazquez2012@gmail.com', 'Alexis', '11/12/2022, 21:01:57', 'Velázquez', 'Hola desde MySQL!', 'AlexisVP97')"
+}
+[2022-12-11T21:10:53.797] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T21:10:58.199] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T21:11:16.483] [ERROR] Error - Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '11/12/2022, 21:11:16' for column `desafio17`.`messages`.`fyh` at row 1
+    at Sequence._packetToError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:198:25)
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:132:18
+    at new Promise (<anonymous>)
+    at Client_MySQL._query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:126:12)
+    at executeQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/query-executioner.js:37:17)
+    at Client_MySQL.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/client.js:146:12)
+    at Runner.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:123:36)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:13:17)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20) {
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: "Incorrect datetime value: '11/12/2022, 21:11:16' for column `desafio17`.`messages`.`fyh` at row 1",
+  sqlState: '22007',
+  index: 0,
+  sql: "insert into `messages` (`age`, `avatar`, `email`, `firstName`, `fyh`, `lastName`, `msg`, `nickName`) values ('25', 'https://cdn2.iconfinder.com/data/icons/avatars-60/5985/13-Captain-128.png', 'alexisvelazquez2012@gmail.com', 'Alexis', '11/12/2022, 21:11:16', 'Velázquez', 'Hola desde MySQL!', 'AlexisVP97')"
+}
+[2022-12-11T21:11:16.488] [ERROR] Error - Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '11/12/2022, 21:11:16' for column `desafio17`.`messages`.`fyh` at row 1
+    at Sequence._packetToError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:198:25)
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:132:18
+    at new Promise (<anonymous>)
+    at Client_MySQL._query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:126:12)
+    at executeQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/query-executioner.js:37:17)
+    at Client_MySQL.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/client.js:146:12)
+    at Runner.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:123:36)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:13:17)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20) {
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: "Incorrect datetime value: '11/12/2022, 21:11:16' for column `desafio17`.`messages`.`fyh` at row 1",
+  sqlState: '22007',
+  index: 0,
+  sql: "insert into `messages` (`age`, `avatar`, `email`, `firstName`, `fyh`, `lastName`, `msg`, `nickName`) values ('25', 'https://cdn2.iconfinder.com/data/icons/avatars-60/5985/13-Captain-128.png', 'alexisvelazquez2012@gmail.com', 'Alexis', '11/12/2022, 21:11:16', 'Velázquez', 'Hola desde MySQL!', 'AlexisVP97')"
+}
+[2022-12-11T21:41:18.774] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T21:43:22.763] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T21:43:40.017] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T21:44:57.779] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T21:47:53.776] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T21:48:38.834] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T21:48:48.166] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T21:49:10.421] [ERROR] Error - Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '11/12/2022, 21:49:10' for column `desafio17`.`messages`.`fyh` at row 1
+    at Sequence._packetToError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:198:25)
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:132:18
+    at new Promise (<anonymous>)
+    at Client_MySQL._query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:126:12)
+    at executeQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/query-executioner.js:37:17)
+    at Client_MySQL.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/client.js:146:12)
+    at Runner.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:123:36)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:13:17)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20) {
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: "Incorrect datetime value: '11/12/2022, 21:49:10' for column `desafio17`.`messages`.`fyh` at row 1",
+  sqlState: '22007',
+  index: 0,
+  sql: "insert into `messages` (`age`, `avatar`, `email`, `firstName`, `fyh`, `lastName`, `msg`, `nickName`) values ('25', 'https://cdn2.iconfinder.com/data/icons/avatars-60/5985/13-Captain-128.png', 'alexisvelazquez2012@gmail.com', 'Alexis', '11/12/2022, 21:49:10', 'Velázquez', 'Hola desde MySQL!', 'AlexisVP97')"
+}
+[2022-12-11T21:49:10.425] [ERROR] Error - Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '11/12/2022, 21:49:10' for column `desafio17`.`messages`.`fyh` at row 1
+    at Sequence._packetToError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:198:25)
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:132:18
+    at new Promise (<anonymous>)
+    at Client_MySQL._query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:126:12)
+    at executeQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/query-executioner.js:37:17)
+    at Client_MySQL.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/client.js:146:12)
+    at Runner.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:123:36)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:13:17)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20) {
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: "Incorrect datetime value: '11/12/2022, 21:49:10' for column `desafio17`.`messages`.`fyh` at row 1",
+  sqlState: '22007',
+  index: 0,
+  sql: "insert into `messages` (`age`, `avatar`, `email`, `firstName`, `fyh`, `lastName`, `msg`, `nickName`) values ('25', 'https://cdn2.iconfinder.com/data/icons/avatars-60/5985/13-Captain-128.png', 'alexisvelazquez2012@gmail.com', 'Alexis', '11/12/2022, 21:49:10', 'Velázquez', 'Hola desde MySQL!', 'AlexisVP97')"
+}
+[2022-12-11T21:50:59.190] [ERROR] Error - ReferenceError: formatDateToMysql is not defined
+    at file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/dateFormaterToMySQL.js:4:34
+    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)
+    at async DAOFactory.getPersistency (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/DAOFactory.js:6:40)
+    at async file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/controllers/sockets/messages.socket.js:10:18
+[2022-12-11T21:53:32.399] [ERROR] Error - file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/messages/mySQL.js:7
+import dateFormaterToMySQL from '../../../utils/dateFormaterToMySQL.js';
+       ^^^^^^^^^^^^^^^^^^^
+SyntaxError: The requested module '../../../utils/dateFormaterToMySQL.js' does not provide an export named 'default'
+    at ModuleJob._instantiate (node:internal/modules/esm/module_job:123:21)
+    at async ModuleJob.run (node:internal/modules/esm/module_job:189:5)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)
+    at async DAOFactory.getPersistency (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/DAOFactory.js:6:40)
+    at async file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/controllers/sockets/messages.socket.js:10:18
+[2022-12-11T21:54:59.782] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T21:55:19.935] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T21:55:32.413] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T21:55:54.141] [ERROR] Error - Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '2022, 21:55:54-12-11 21:55:54' for column `desafio17`.`messages`.`fyh` at row 1
+    at Sequence._packetToError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:198:25)
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:132:18
+    at new Promise (<anonymous>)
+    at Client_MySQL._query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:126:12)
+    at executeQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/query-executioner.js:37:17)
+    at Client_MySQL.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/client.js:146:12)
+    at Runner.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:123:36)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:13:17)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20) {
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: "Incorrect datetime value: '2022, 21:55:54-12-11 21:55:54' for column `desafio17`.`messages`.`fyh` at row 1",
+  sqlState: '22007',
+  index: 0,
+  sql: "insert into `messages` (`age`, `avatar`, `email`, `firstName`, `fyh`, `lastName`, `msg`, `nickName`) values ('25', 'https://cdn2.iconfinder.com/data/icons/avatars-60/5985/13-Captain-128.png', 'alexisvelazquez2012@gmail.com', 'Alexis', '2022, 21:55:54-12-11 21:55:54', 'Velázquez', 'Hola desde MySQL!', 'AlexisVP97')"
+}
+[2022-12-11T21:55:54.167] [ERROR] Error - Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '2022, 21:55:54-12-11 21:55:54' for column `desafio17`.`messages`.`fyh` at row 1
+    at Sequence._packetToError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:198:25)
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:132:18
+    at new Promise (<anonymous>)
+    at Client_MySQL._query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:126:12)
+    at executeQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/query-executioner.js:37:17)
+    at Client_MySQL.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/client.js:146:12)
+    at Runner.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:123:36)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:13:17)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20) {
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: "Incorrect datetime value: '2022, 21:55:54-12-11 21:55:54' for column `desafio17`.`messages`.`fyh` at row 1",
+  sqlState: '22007',
+  index: 0,
+  sql: "insert into `messages` (`age`, `avatar`, `email`, `firstName`, `fyh`, `lastName`, `msg`, `nickName`) values ('25', 'https://cdn2.iconfinder.com/data/icons/avatars-60/5985/13-Captain-128.png', 'alexisvelazquez2012@gmail.com', 'Alexis', '2022, 21:55:54-12-11 21:55:54', 'Velázquez', 'Hola desde MySQL!', 'AlexisVP97')"
+}
+[2022-12-11T21:57:08.398] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T21:58:29.825] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T21:58:47.152] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T21:59:37.400] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T21:59:50.766] [ERROR] Error - Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '2022, 21:59:50-12-11 21:59:50' for column `desafio17`.`messages`.`fyh` at row 1
+    at Sequence._packetToError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:198:25)
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:132:18
+    at new Promise (<anonymous>)
+    at Client_MySQL._query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:126:12)
+    at executeQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/query-executioner.js:37:17)
+    at Client_MySQL.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/client.js:146:12)
+    at Runner.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:123:36)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:13:17)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20) {
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: "Incorrect datetime value: '2022, 21:59:50-12-11 21:59:50' for column `desafio17`.`messages`.`fyh` at row 1",
+  sqlState: '22007',
+  index: 0,
+  sql: "insert into `messages` (`age`, `avatar`, `email`, `firstName`, `fyh`, `lastName`, `msg`, `nickName`) values ('25', 'https://cdn2.iconfinder.com/data/icons/avatars-60/5985/13-Captain-128.png', 'alexisvelazquez2012@gmail.com', 'Alexis', '2022, 21:59:50-12-11 21:59:50', 'Velázquez', 'Hola desde MySQL!', 'AlexisVP97')"
+}
+[2022-12-11T21:59:50.772] [ERROR] Error - Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '2022, 21:59:50-12-11 21:59:50' for column `desafio17`.`messages`.`fyh` at row 1
+    at Sequence._packetToError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:198:25)
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:132:18
+    at new Promise (<anonymous>)
+    at Client_MySQL._query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:126:12)
+    at executeQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/query-executioner.js:37:17)
+    at Client_MySQL.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/client.js:146:12)
+    at Runner.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:123:36)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:13:17)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20) {
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: "Incorrect datetime value: '2022, 21:59:50-12-11 21:59:50' for column `desafio17`.`messages`.`fyh` at row 1",
+  sqlState: '22007',
+  index: 0,
+  sql: "insert into `messages` (`age`, `avatar`, `email`, `firstName`, `fyh`, `lastName`, `msg`, `nickName`) values ('25', 'https://cdn2.iconfinder.com/data/icons/avatars-60/5985/13-Captain-128.png', 'alexisvelazquez2012@gmail.com', 'Alexis', '2022, 21:59:50-12-11 21:59:50', 'Velázquez', 'Hola desde MySQL!', 'AlexisVP97')"
+}
+[2022-12-11T22:01:48.926] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T22:02:05.833] [ERROR] Error - Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '2022, 22:02:05-12-11 22:02:05' for column `desafio17`.`messages`.`fyh` at row 1
+    at Sequence._packetToError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:198:25)
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:132:18
+    at new Promise (<anonymous>)
+    at Client_MySQL._query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:126:12)
+    at executeQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/query-executioner.js:37:17)
+    at Client_MySQL.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/client.js:146:12)
+    at Runner.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:123:36)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:13:17)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20) {
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: "Incorrect datetime value: '2022, 22:02:05-12-11 22:02:05' for column `desafio17`.`messages`.`fyh` at row 1",
+  sqlState: '22007',
+  index: 0,
+  sql: "insert into `messages` (`age`, `avatar`, `email`, `firstName`, `fyh`, `lastName`, `msg`, `nickName`) values ('25', 'https://cdn2.iconfinder.com/data/icons/avatars-60/5985/13-Captain-128.png', 'alexisvelazquez2012@gmail.com', 'Alexis', '2022, 22:02:05-12-11 22:02:05', 'Velázquez', 'Hola desde MySQL!', 'AlexisVP97')"
+}
+[2022-12-11T22:02:05.842] [ERROR] Error - Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '2022, 22:02:05-12-11 22:02:05' for column `desafio17`.`messages`.`fyh` at row 1
+    at Sequence._packetToError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:198:25)
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:132:18
+    at new Promise (<anonymous>)
+    at Client_MySQL._query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:126:12)
+    at executeQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/query-executioner.js:37:17)
+    at Client_MySQL.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/client.js:146:12)
+    at Runner.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:123:36)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:13:17)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20) {
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: "Incorrect datetime value: '2022, 22:02:05-12-11 22:02:05' for column `desafio17`.`messages`.`fyh` at row 1",
+  sqlState: '22007',
+  index: 0,
+  sql: "insert into `messages` (`age`, `avatar`, `email`, `firstName`, `fyh`, `lastName`, `msg`, `nickName`) values ('25', 'https://cdn2.iconfinder.com/data/icons/avatars-60/5985/13-Captain-128.png', 'alexisvelazquez2012@gmail.com', 'Alexis', '2022, 22:02:05-12-11 22:02:05', 'Velázquez', 'Hola desde MySQL!', 'AlexisVP97')"
+}
+[2022-12-11T22:04:03.056] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T22:04:17.912] [ERROR] Error - TypeError: console is not a function
+    at formatDateToMysql (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/utils/dateFormaterToMySQL.js:5:3)
+    at MessagesDAOMySQL.insertMsg (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/persistency/DAO/messages/mySQL.js:27:41)
+    at Socket.<anonymous> (file:///home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/src/controllers/sockets/messages.socket.js:34:24)
+    at Socket.emit (node:events:513:28)
+    at Socket.emitUntyped (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/socket.io/dist/typed-events.js:69:22)
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/socket.io/dist/socket.js:614:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+[2022-12-11T22:04:38.764] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T22:04:54.002] [ERROR] Error - Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '2022, 22:04:53-12-11 22:04:53' for column `desafio17`.`messages`.`fyh` at row 1
+    at Sequence._packetToError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:198:25)
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:132:18
+    at new Promise (<anonymous>)
+    at Client_MySQL._query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:126:12)
+    at executeQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/query-executioner.js:37:17)
+    at Client_MySQL.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/client.js:146:12)
+    at Runner.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:123:36)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:13:17)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20) {
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: "Incorrect datetime value: '2022, 22:04:53-12-11 22:04:53' for column `desafio17`.`messages`.`fyh` at row 1",
+  sqlState: '22007',
+  index: 0,
+  sql: "insert into `messages` (`age`, `avatar`, `email`, `firstName`, `fyh`, `lastName`, `msg`, `nickName`) values ('25', 'https://cdn2.iconfinder.com/data/icons/avatars-60/5985/13-Captain-128.png', 'alexisvelazquez2012@gmail.com', 'Alexis', '2022, 22:04:53-12-11 22:04:53', 'Velázquez', 'Hola!', 'AlexisVP97')"
+}
+[2022-12-11T22:04:54.005] [ERROR] Error - Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '2022, 22:04:53-12-11 22:04:53' for column `desafio17`.`messages`.`fyh` at row 1
+    at Sequence._packetToError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:198:25)
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:132:18
+    at new Promise (<anonymous>)
+    at Client_MySQL._query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:126:12)
+    at executeQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/query-executioner.js:37:17)
+    at Client_MySQL.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/client.js:146:12)
+    at Runner.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:123:36)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:13:17)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20) {
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: "Incorrect datetime value: '2022, 22:04:53-12-11 22:04:53' for column `desafio17`.`messages`.`fyh` at row 1",
+  sqlState: '22007',
+  index: 0,
+  sql: "insert into `messages` (`age`, `avatar`, `email`, `firstName`, `fyh`, `lastName`, `msg`, `nickName`) values ('25', 'https://cdn2.iconfinder.com/data/icons/avatars-60/5985/13-Captain-128.png', 'alexisvelazquez2012@gmail.com', 'Alexis', '2022, 22:04:53-12-11 22:04:53', 'Velázquez', 'Hola!', 'AlexisVP97')"
+}
+[2022-12-11T22:07:20.410] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T22:07:27.839] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T22:07:48.101] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T22:08:20.662] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T22:08:33.672] [ERROR] Error - Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '2022, 22:08:33-12-11 22:08:33' for column `desafio17`.`messages`.`fyh` at row 1
+    at Sequence._packetToError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:198:25)
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:132:18
+    at new Promise (<anonymous>)
+    at Client_MySQL._query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:126:12)
+    at executeQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/query-executioner.js:37:17)
+    at Client_MySQL.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/client.js:146:12)
+    at Runner.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:123:36)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:13:17)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20) {
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: "Incorrect datetime value: '2022, 22:08:33-12-11 22:08:33' for column `desafio17`.`messages`.`fyh` at row 1",
+  sqlState: '22007',
+  index: 0,
+  sql: "insert into `messages` (`age`, `avatar`, `email`, `firstName`, `fyh`, `lastName`, `msg`, `nickName`) values ('25', 'https://cdn2.iconfinder.com/data/icons/avatars-60/5985/13-Captain-128.png', 'alexisvelazquez2012@gmail.com', 'Alexis', '2022, 22:08:33-12-11 22:08:33', 'Velázquez', 'Hola!', 'AlexisVP97')"
+}
+[2022-12-11T22:08:33.678] [ERROR] Error - Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '2022, 22:08:33-12-11 22:08:33' for column `desafio17`.`messages`.`fyh` at row 1
+    at Sequence._packetToError (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/mysql/lib/Connection.js:198:25)
+    at /home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:132:18
+    at new Promise (<anonymous>)
+    at Client_MySQL._query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/dialects/mysql/index.js:126:12)
+    at executeQuery (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/query-executioner.js:37:17)
+    at Client_MySQL.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/client.js:146:12)
+    at Runner.query (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:123:36)
+    at ensureConnectionCallback (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:13:17)
+    at Runner.ensureConnection (/home/alexisvp97/Escritorio/CursoBackend/Desafios/Desafio_17/node_modules/knex/lib/execution/runner.js:300:20) {
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: "Incorrect datetime value: '2022, 22:08:33-12-11 22:08:33' for column `desafio17`.`messages`.`fyh` at row 1",
+  sqlState: '22007',
+  index: 0,
+  sql: "insert into `messages` (`age`, `avatar`, `email`, `firstName`, `fyh`, `lastName`, `msg`, `nickName`) values ('25', 'https://cdn2.iconfinder.com/data/icons/avatars-60/5985/13-Captain-128.png', 'alexisvelazquez2012@gmail.com', 'Alexis', '2022, 22:08:33-12-11 22:08:33', 'Velázquez', 'Hola!', 'AlexisVP97')"
+}
+[2022-12-11T22:12:41.789] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T22:12:50.777] [ERROR] Error - No se encontraron mensajes en la base de datos.
+[2022-12-11T22:19:17.875] [ERROR] Error - No se encontraron productos en la base de datos.
+[2022-12-11T22:19:24.517] [ERROR] Error - No se encontraron productos en la base de datos.
