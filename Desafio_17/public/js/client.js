@@ -48,9 +48,21 @@ inputPrice.addEventListener('input', () => {
 /* ---------------------------- messages section ---------------------------- */
 
 /* ----------------------------- denormalization ---------------------------- */
-const schemaAuthor = new normalizr.schema.Entity('author', {}, { idAttribute: 'id' });
-const schemaMsg = new normalizr.schema.Entity('post', { author: schemaAuthor }, { idAttribute: '_id' })
-const schemaMessages = new normalizr.schema.Entity('posts', { messages: [schemaMsg] }, { idAttribute: 'id' })
+const schemaAuthor = new normalizr.schema.Entity(
+  'author',
+  {},
+  { idAttribute: 'id' }
+);
+const schemaMsg = new normalizr.schema.Entity(
+  'post',
+  { author: schemaAuthor },
+  { idAttribute: '_id' }
+);
+const schemaMessages = new normalizr.schema.Entity(
+  'posts',
+  { messages: [schemaMsg] },
+  { idAttribute: 'id' }
+);
 /* ----------------------------------------------------------------------------- */
 
 const inputEmail = document.getElementById('inputEmail');
@@ -83,29 +95,39 @@ addMessageForm.addEventListener('submit', (evt) => {
 });
 
 socket.on('view-messages', (messages) => {
-  const messagesSize = JSON.stringify(messages).length;
-  console.log(messages, messagesSize);
+  if (!messages.error) {
+    const messagesSize = JSON.stringify(messages).length;
+    console.log(messages, messagesSize);
 
-  const denormalizedMessages = normalizr.denormalize(
-    messages.result,
-    schemaMessages,
-    messages.entities
-  );
+    const denormalizedMessages = normalizr.denormalize(
+      messages.result,
+      schemaMessages,
+      messages.entities
+    );
 
-  const denormalizedMessagesSize = JSON.stringify(denormalizedMessages).length;
-  console.log(denormalizedMessages, denormalizedMessagesSize);
+    const denormalizedMessagesSize =
+      JSON.stringify(denormalizedMessages).length;
+    console.log(denormalizedMessages, denormalizedMessagesSize);
 
-  let compressionPercentage = parseInt(
-    (messagesSize * 100) / denormalizedMessagesSize
-  );
+    let compressionPercentage = parseInt(
+      (messagesSize * 100) / denormalizedMessagesSize
+    );
 
-  console.log(`Porcentaje de compresión ${compressionPercentage}%`);
-  document.getElementById('compression-info').innerText = compressionPercentage;
+    console.log(`Porcentaje de compresión ${compressionPercentage}%`);
+    document.getElementById('compression-info').innerText =
+      compressionPercentage;
 
-  console.log(denormalizedMessages.messages);
-  makeHtmlList(denormalizedMessages.messages).then(
-    (html) => (document.getElementById('message-list').innerHTML = html)
-  );
+    console.log(denormalizedMessages.messages);
+    makeHtmlList(denormalizedMessages.messages).then(
+      (html) => (document.getElementById('message-list').innerHTML = html)
+    );
+  } else {
+    console.log(messages);
+    document.getElementById('compression-info').innerText = '0';
+    makeHtmlList(messages).then(
+      (html) => (document.getElementById('message-list').innerHTML = html)
+    );
+  }
 });
 
 const makeHtmlList = async (messages) => {

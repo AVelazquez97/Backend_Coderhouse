@@ -1,9 +1,9 @@
 import express, { json } from 'express';
-import dotenv from 'dotenv';
 import handlebars from 'express-handlebars';
 import cookieParser from 'cookie-parser';
 import session from 'express-session';
 import { default as MongoStore } from 'connect-mongo';
+import { COOKIES_SECRET, SESSION_SECRET, MONGO_URL } from './src/config/index.js';
 import passport from './src/middlewares/passport/passport-local.js';
 import requestsLogger from './src/middlewares/reqLogger.middleware.js'
 
@@ -15,16 +15,12 @@ import homeRouter from './src/routes/home.routes.js';
 import authRouter from './src/routes/auth/index.routes.js';
 import notFoundRouter from './src/routes/404.notFound.routes.js';
 
-dotenv.config();
 const app = express();
-
-/* ---------------------------- database settings --------------------------- */
-import './src/databases/connectionMongoDB.js';
 
 /* -------------------------- middlewares settings -------------------------- */
 app.use(json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cookieParser(process.env.COOKIES_SECRET));
+app.use(cookieParser(COOKIES_SECRET));
 app.use(express.static('public'));
 app.use(requestsLogger);
 
@@ -44,12 +40,12 @@ app.set('views', './src/views');
 /* ---------------------------- session settings ---------------------------- */
 app.use(
   session({
-    secret: process.env.SESSION_SECRET,
+    secret: SESSION_SECRET,
     resave: true,
     saveUninitialized: true,
     rolling: true,
     store: MongoStore.create({
-      mongoUrl: process.env.MONGO_URL,
+      mongoUrl: MONGO_URL,
       collection: 'sessions',
       mongoOptions: {
         useNewUrlParser: true,
