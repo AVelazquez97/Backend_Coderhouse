@@ -1,0 +1,12 @@
+[2022-12-12T23:01:30.515] [WARN] Warn - Error al insertar: uno o más campos quedaron vacíos.
+[2022-12-12T23:01:30.568] [WARN] Warn - Ruta: "/api/products" | Método: "POST" | Respuesta HTTP: "404: Not Found"
+[2022-12-12T23:01:30.655] [WARN] Warn - Error al listar: no se encontró el producto con el id indicado.
+[2022-12-12T23:01:30.711] [WARN] Warn - Ruta: "/api/products/6397ade98336bc2b8db2a23f" | Método: "GET" | Respuesta HTTP: "404: Not Found"
+[2022-12-12T23:01:30.806] [WARN] Warn - Error al actualizar: uno o más campos quedaron vacíos.
+[2022-12-12T23:01:30.861] [WARN] Warn - Ruta: "/api/products/30" | Método: "PUT" | Respuesta HTTP: "404: Not Found"
+[2022-12-12T23:01:30.883] [WARN] Warn - Error al actualizar: no se encontró el producto con el id indicado.
+[2022-12-12T23:01:30.981] [WARN] Warn - Ruta: "/api/products/6397ade98336bc2b8db2a23f" | Método: "PUT" | Respuesta HTTP: "404: Not Found"
+[2022-12-12T23:01:31.057] [WARN] Warn - Error al borrar: no se encontró el producto con el id indicado.
+[2022-12-12T23:01:31.105] [WARN] Warn - Ruta: "/api/products/6397ade98336bc2b8db2a23f" | Método: "DELETE" | Respuesta HTTP: "404: Not Found"
+[2022-12-12T23:17:36.842] [WARN] Warn - Ruta: "/prods/78asui" | Método: "DELETE" | Respuesta HTTP: "404: Not Found"
+[2022-12-12T23:19:14.092] [WARN] Warn - Ruta: "/prods/78asui" | Método: "DELETE" | Respuesta HTTP: "404: Not Found"
