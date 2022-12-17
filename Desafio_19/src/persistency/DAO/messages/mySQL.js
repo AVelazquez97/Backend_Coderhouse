@@ -3,6 +3,7 @@ import MsgDTO from '../../DTO/msgDTO.js';
 import { loggerError } from '../../../config/log4.js';
 import insertNewElement from '../../../utils/knex/insertElement.js';
 import readAllElements from '../../../utils/knex/readElements.js';
+import getElementById from '../../../utils/knex/getElementById.js';
 import MySQLConnection from '../../../config/databases/configMySQL.js';
 import { formatDateToMysql } from '../../../utils/dateFormaterToMySQL.js';
 
@@ -33,11 +34,11 @@ class MessagesDAOMySQL extends SQLContainer {
         msg: msgData.msg,
         fyh: formatDateToMysql(msgData.fyh),
       };
-      const messageInsertedId = await insertNewElement(this.config, this.tableName, data);
-      return { success: 'El mensaje fue añadido al sistema.' };
+      const addedMessage = await insertNewElement(this.config, this.tableName, data);
+      return addedMessage[0].toString();
     } catch (error) {
       loggerError.error(error);
-      throw error;
+      throw error.message;
     }
   };
 
@@ -45,12 +46,28 @@ class MessagesDAOMySQL extends SQLContainer {
     try {
       const messages = await readAllElements(this.config, this.tableName);
       if (!messages.length) {
-        throw 'No se encontraron mensajes en la base de datos.';
+        throw new Error(
+          'Error al listar: no se encontraron mensajes en la base de datos.'
+        );
       }
       return MsgDTO.toDTO(messages);
     } catch (error) {
       loggerError.error(error);
-      throw error;
+      throw error.message;
+    }
+  };
+
+  readMessageById = async (id) => {
+    try {
+      const message = await getElementById(this.config, this.tableName, id);
+      if (!message) {
+        throw new Error(
+          'Error al listar: no se encontró el mensaje con el id indicado.'
+        );
+      }
+      return MsgDTO.toDTO(message);
+    } catch (error) {
+      throw error.message;
     }
   };
 }

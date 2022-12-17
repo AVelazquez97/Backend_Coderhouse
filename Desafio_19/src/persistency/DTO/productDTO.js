@@ -1,5 +1,6 @@
 class ProductDTO {
-  constructor({ title, price, thumbnail }) {
+  constructor({ id, title, price, thumbnail }) {
+    this.id = id;
     this.title = title;
     this.price = price;
     this.thumbnail = thumbnail;
@@ -7,6 +8,7 @@ class ProductDTO {
 
   #toJSON = () => {
     return {
+      id: this.id,
       title: this.title,
       price: this.price,
       thumbnail: this.thumbnail,

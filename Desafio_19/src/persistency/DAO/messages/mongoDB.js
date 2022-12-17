@@ -22,7 +22,6 @@ class MessagesDAOMongoDB extends MongoDBContainer {
       const { email, firstName, lastName, age, nickName, avatar } =
         msgData.author;
       const msg = msgData.msg;
-      const fyh = msgData.fyh;
 
       const data = {
         email,
@@ -32,13 +31,12 @@ class MessagesDAOMongoDB extends MongoDBContainer {
         nickName,
         avatar,
         msg,
-        fyh,
       };
-      await this.collectionName.create(data);
-      return { success: 'El mensaje fue añadido al sistema.' };
+      const addedMessage = await this.collectionName.create(data);
+      return addedMessage.id;
     } catch (error) {
       loggerError.error(error);
-      throw error;
+      throw error.message;
     }
   };
 
@@ -46,12 +44,28 @@ class MessagesDAOMongoDB extends MongoDBContainer {
     try {
       const messages = await this.collectionName.find();
       if (!messages.length) {
-        throw 'No se encontraron mensajes en la base de datos.';
+        throw new Error(
+          'Error al listar: no se encontraron mensajes en la base de datos.'
+        );
       }
       return MsgDTO.toDTO(messages);
     } catch (error) {
       loggerError.error(error);
-      throw error;
+      throw error.message;
+    }
+  };
+
+  readMessageById = async (id) => {
+    try {
+      const message = await this.collectionName.findById(id);
+      if (!message) {
+        throw new Error(
+          'Error al listar: no se encontró el mensaje con el id indicado.'
+        );
+      }
+      return MsgDTO.toDTO(message);
+    } catch (error) {
+      throw error.message;
     }
   };
 }

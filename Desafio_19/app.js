@@ -14,7 +14,8 @@ import apiRouter from './src/routes/api/index.routes.js'
 import infoRouter from './src/routes/info.routes.js';
 import authRouter from './src/routes/auth/index.routes.js';
 import notFoundRouter from './src/routes/404.notFound.routes.js';
-
+import GraphQLProductsController from './src/controllers/graphql/products.controller.js';
+import GraphQLMessagesController from './src/controllers/graphql/messages.controller.js';
 const app = express();
 
 /* -------------------------- middlewares settings -------------------------- */
@@ -67,6 +68,8 @@ app.use(homeRouter);
 app.use('/api', apiRouter);
 app.use('/info', infoRouter);
 app.use('/auth', authRouter);
+app.use('/graphql/products', new GraphQLProductsController());
+app.use('/graphql/messages', new GraphQLMessagesController());
 app.use(notFoundRouter);
 
 /* ------------------------------ error handler ----------------------------- */

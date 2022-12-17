@@ -1,0 +1,57 @@
+# Querys
+
+## Obtener todos los mensajes:
+query{
+  getMessages{
+    id
+    email
+    avatar
+    msg
+    fyh
+  }
+}
+
+## Obtener un mensaje por id de MongoDB:
+query {
+  getMessage(id: "63966eadad5f331dda963c50") {
+    id
+    email
+    avatar
+    msg
+    fyh
+  }
+}
+
+## Obtener un mensaje por id de MySQL:
+query {
+  getMessage(id: "1") {
+    id
+    email
+    avatar
+    msg
+    fyh
+  }
+}
+
+# Mutations
+
+## Insertar un mensaje nuevo:
+mutation {
+  createMessage(
+    data: {
+      email: "pepe-mujica@gmail.com"
+      firstName: "José"
+      lastName: "Mujica"
+      age: 87
+      nickName: "pepón"
+      avatar: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Jos%C3%A9_Mujica2.jpg/220px-Jos%C3%A9_Mujica2.jpg"
+      msg: "Hola, fui presidente de Uruguay"
+    }
+  ) {
+      id
+      email
+      avatar
+      msg
+      fyh
+  }
+}

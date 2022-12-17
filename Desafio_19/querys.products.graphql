@@ -1,0 +1,88 @@
+# Querys
+
+## Obtener todos los productos:
+query {
+  getProducts {
+    id
+    title
+    price
+    thumbnail
+  }
+}
+
+## Obtener un producto por id de MongoDB:
+query {
+  getProduct(id: "639681c9c0a2d5895350fc59") {
+    id
+    title
+    price
+    thumbnail
+  }
+}
+
+## Obtener un producto por id de MySQL:
+query {
+  getProduct(id: "1") {
+    id
+    title
+    price
+    thumbnail
+  }
+}
+
+# Mutations
+
+## Insertar un producto nuevo:
+mutation {
+  createProduct(
+    data: {
+      title: "Mouse"
+      price: 500
+      thumbnail: "https://cdn4.iconfinder.com/data/icons/STROKE/computer_gadgets/png/256/ergonomic_mouse.png"
+    }
+  ) {
+    id
+  }
+}
+
+## Actualizar un producto por id de MongoDB:
+mutation {
+  updateProduct(
+    id: "639df439c586946db9ade899"
+    data: {
+      title: "Mouse"
+      price: 600
+      thumbnail: "https://cdn4.iconfinder.com/data/icons/STROKE/computer_gadgets/png/256/ergonomic_mouse.png"
+    }
+  ) {
+    id
+  }
+}
+
+## Actualizar un producto por id de MySQL:
+mutation {
+  updateProduct(
+    id: "76"
+    data: {
+      title: "Mouse"
+      price: 600
+      thumbnail: "https://cdn4.iconfinder.com/data/icons/STROKE/computer_gadgets/png/256/ergonomic_mouse.png"
+    }
+  ) {
+    id
+  }
+}
+
+## Borrar producto con id de MongoDB:
+mutation {
+  deleteProduct(id: "639df439c586946db9ade899") {
+    id
+  }
+}
+
+## Borrar producto con id de MySQL:
+mutation {
+  deleteProduct(id: "76") {
+    id
+  }
+}
