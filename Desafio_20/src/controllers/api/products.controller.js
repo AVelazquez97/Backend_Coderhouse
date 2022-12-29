@@ -2,6 +2,8 @@ import DAOFactory from '../../persistency/DAO/DAOFactory.js';
 import { PERSISTENCY } from '../../config/index.js';
 import { loggerError } from '../../config/log4.js';
 import areFieldsFilled from '../../utils/areFieldsFilled.js';
+import errorHandler from '../../middlewares/errorHandler.middleware.js'
+
 
 let productDAO;
 (async () => {
@@ -15,48 +17,45 @@ let productDAO;
 })();
 
 const productsController = {
-  getAllProducts: async (req, res, next) => {
+  getAllProducts: async (ctx) => {
     try {
-      const allProducts = await productDAO.readProducts();
-      res.status(200).json(allProducts);
+      ctx.body = await productDAO.readProducts();
     } catch (error) {
-      next(error);
+      errorHandler(error, ctx);
     }
   },
-  getProductById: async (req, res, next) => {
-    const { id } = req.params;
+  getProductById: async (ctx) => {
+    const { id } = ctx.params;
     try {
-      const product = await productDAO.readProductById(id);
-      res.status(200).json(product);
+      ctx.body = await productDAO.readProductById(id);
     } catch (error) {
-      next(error);
+      errorHandler(error, ctx);
     }
   },
-  addProduct: async (req, res, next) => {
-    if (areFieldsFilled(req.body)) {
-      const { title, thumbnail, price } = req.body;
+  addProduct: async (ctx) => {
+    if (areFieldsFilled(ctx.request.body)) {
+      const { title, thumbnail, price } = ctx.request.body;
       // Si no quedó ningún campo vacío, se procede a ingresar el producto
       try {
-        const productId = await productDAO.insertProduct({
+        ctx.body = await productDAO.insertProduct({
           title,
           price: parseFloat(price),
           thumbnail,
         });
-        res.status(200).json(productId);
       } catch (error) {
-        next(error);
+        errorHandler(error, ctx);
       }
     } else {
-      next('Error al insertar: uno o más campos quedaron vacíos.');
+      errorHandler('Error al insertar: uno o más campos quedaron vacíos.', ctx);
     }
   },
-  updateProductById: async (req, res, next) => {
-    if (areFieldsFilled(req.body)) {
-      const { id } = req.params;
-      const { title, thumbnail, price } = req.body;
+  updateProductById: async (ctx) => {
+    if (areFieldsFilled(ctx.request.body)) {
+      const { id } = ctx.params;
+      const { title, thumbnail, price } = ctx.request.body;
       // Si no quedó ningún campo vacío, se procede a actualizar el producto
       try {
-        const msg = await productDAO.updateProduct(
+        ctx.body = await productDAO.updateProduct(
           { id },
           {
             title,
@@ -64,21 +63,19 @@ const productsController = {
             thumbnail,
           }
         );
-        res.status(200).json(msg);
       } catch (error) {
-        next(error);
+        errorHandler(error, ctx);
       }
     } else {
-      next('Error al actualizar: uno o más campos quedaron vacíos.');
+      errorHandler('Error al actualizar: uno o más campos quedaron vacíos.', ctx);
     }
   },
-  deleteProductById: async (req, res, next) => {
-    const { id } = req.params;
+  deleteProductById: async (ctx) => {
+    const { id } = ctx.params;
     try {
-      const msg = await productDAO.deleteProductById(id);
-      res.status(200).json(msg);
+      ctx.body = await productDAO.deleteProductById(id);
     } catch (error) {
-      next(error);
+      errorHandler(error, ctx);
     }
   },
 };

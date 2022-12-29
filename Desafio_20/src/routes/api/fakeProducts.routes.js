@@ -8,7 +8,7 @@ const router = new Router({
 router.get('/', async (ctx) => {
   const fakeProducts = new ProductFakerMock();
   const products = fakeProducts.populateProducts(5);
-  await ctx.render('partials/viewFakeProducts', {
+  await ctx.render('layouts/viewFakeProducts', {
     products,
     existProducts: products.length,
   });

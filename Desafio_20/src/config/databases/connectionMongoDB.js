@@ -16,8 +16,7 @@ class MongoDBConnection {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
-
-    return connection;
+    return mongoose.connection;
   };
 
   msgConnect = () => {

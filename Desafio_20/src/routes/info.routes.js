@@ -1,5 +1,4 @@
 import Router from 'koa-router';
-import compression from "compression";
 import { cpus } from 'os';
 
 const router = new Router({
@@ -7,7 +6,7 @@ const router = new Router({
 });
 
 
-router.get('/',/* compression(), */ async (ctx) => {
+router.get('/', async (ctx) => {
   const args = process.argv.slice(2).join('; ');
   const info = {
     args, //Argumentos de entrada

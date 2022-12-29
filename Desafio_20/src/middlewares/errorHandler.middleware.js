@@ -1,6 +1,6 @@
-import { loggerError, loggerWarn } from "../config/log4.js";
+import { loggerError, loggerWarn } from '../config/log4.js';
 
-const errorHandler = (error, req, res, next) => {
+const errorHandler = (error, ctx) => {
   const notFoundedErrors = [
     /* -------------------- Errores relacionados a productos -------------------- */
     'Error al insertar: uno o más campos quedaron vacíos.',
@@ -11,13 +11,13 @@ const errorHandler = (error, req, res, next) => {
     'Error al borrar: no se encontró el producto con el id indicado.',
   ];
   if (notFoundedErrors.includes(error)) {
-    res.status(404);
+    ctx.status = 404;
     loggerWarn.warn(error);
   } else {
-    res.status(500);
+    ctx.status = 500;
     loggerError.error(error);
   }
-  return res.json({ error });
+  return (ctx.body = { status: ctx.status, error });
 };
 
 export default errorHandler;
